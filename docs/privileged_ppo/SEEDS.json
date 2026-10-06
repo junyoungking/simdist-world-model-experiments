@@ -1,0 +1,70 @@
+{
+  "status": "FROZEN_PRE_RESULT",
+  "seed_roles": {
+    "train": [
+      62001,
+      62002,
+      62003
+    ],
+    "primary": [
+      61001,
+      61002,
+      61003,
+      61004,
+      61005,
+      61006,
+      61007,
+      61008,
+      61009,
+      61010
+    ],
+    "validation": [
+      65001,
+      65002,
+      65003,
+      65004,
+      65005,
+      65006,
+      65007,
+      65008,
+      65009,
+      65010
+    ],
+    "zero_kg": [
+      66001,
+      66002,
+      66003,
+      66004,
+      66005,
+      66006,
+      66007,
+      66008,
+      66009,
+      66010
+    ],
+    "critic": [
+      67001,
+      67002,
+      67003,
+      67004,
+      67005,
+      67006,
+      67007,
+      67008,
+      67009,
+      67010
+    ],
+    "smoke": [
+      64001
+    ]
+  },
+  "historical_only": [
+    23501,
+    23502,
+    23503,
+    23504,
+    23505
+  ],
+  "collision_scan": "no seed-role matches in retained experiment/checkpoint/data/output text; prior unexecuted proposals excluded",
+  "unknown_source_seed_provenance": "source PPO/M0 original data seed logs unavailable"
+}

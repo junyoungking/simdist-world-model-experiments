@@ -1,0 +1,14 @@
+# T3 fresh replication summary
+
+Fresh r4/r5 completed with the frozen +8 kg, M0 step 367004, f-only, N=500, K=1000 protocol. All 8 fresh MATCHED/DISTANT cells pass the joint support-separation gate.
+
+## Primary Δ_MD = L_DISTANT − L_MATCHED (positive favors MATCHED)
+
+- vx=0.2: r1–r5=[0.00147880975068225, -5.179067884100719e-05, 0.009528567355559396, 0.004221355041921664, 0.010311944815990091]; mean=0.0050977773; 95% t CI=[-0.00069969462, 0.010895249]; positive=4/5; fresh r4/r5=[0.004221355041921664, 0.010311944815990091].
+- vx=0.5: r1–r5=[-0.008133265240238885, -0.0083749075273796, -0.0011891343916854563, 0.006823271026679942, -0.00036321259243871085]; mean=-0.0022474497; 95% t CI=[-0.010079213, 0.0055843138]; positive=1/5; fresh r4/r5=[0.006823271026679942, -0.00036321259243871085].
+- vx=0.8: r1–r5=[0.012774298362262244, 0.0006180492302638105, 0.006427529895818032, -0.0015628261457082057, 0.0008854104918312178]; mean=0.0038284924; 95% t CI=[-0.0033800444, 0.011037029]; positive=4/5; fresh r4/r5=[-0.0015628261457082057, 0.0008854104918312178].
+- vx=1.0: r1–r5=[0.006035486079828102, -0.002512360420899591, 0.013277336386634246, -0.006756744029388528, 0.00842660188985514]; mean=0.003694064; 95% t CI=[-0.0064590996, 0.013847228]; positive=3/5; fresh r4/r5=[-0.006756744029388528, 0.00842660188985514].
+
+## Interpretation
+
+The fresh data preserve positive directional signals at vx=0.2 and vx=0.8, but individual fresh directions are mixed at vx=0.5, 0.8, and 1.0; every n=5 command-specific 95% t interval spans zero. The frozen decision is therefore **INCONCLUSIVE_VARIANCE**, not SUPPORT_REQUIREMENT_SUPPORTED and not a control-transfer claim.

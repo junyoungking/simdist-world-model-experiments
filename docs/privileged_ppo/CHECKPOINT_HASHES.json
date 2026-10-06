@@ -1,0 +1,80 @@
+{
+  "M0": {
+    "path": "checkpoint://models/go2_2026-02-12",
+    "file_sha256": {
+      "367004/_CHECKPOINT_METADATA": "c257b22c7f9e7a9739291e67da81fa11e95b055501ad566c99af0feada925294",
+      "367004/default/_METADATA": "346eb47a3c6e59265c6c0cca4e772f1bdd908642d70c8e4737dd61f63c3ad7d4",
+      "367004/default/_sharding": "50915f84ede17d43efd4dcbcc6e7046ba6104afffaad60ae7f9082dc4694f7ad",
+      "367004/default/array_metadatas/process_0": "e28f7ec555f3649044ad907e10797f54e0101b99252bce5c1772c8e659a5569a",
+      "367004/default/d/bb1d47dbc42420eaec00bf46770018da": "514818de0b44b8c2f1d87e36eabf80f72fd82e77622043e60cb9f20f58005995",
+      "367004/default/manifest.ocdbt": "b30760b4826d0f7b07b063991650e5797b9667ab6c502fd1e98e85f4e1141068",
+      "367004/default/ocdbt.process_0/d/00414f806badecd90c455c935bc1ed16": "42234cbb0f2c26477fad4d61fcae7cd1f697624a06e853c77d15436cfd21eeb8",
+      "367004/default/ocdbt.process_0/d/158a82d045191961301a4583923a6f97": "a096c5f14b165b79dd274a80905e6545210389012d494aec79c0f8607ebe5f58",
+      "367004/default/ocdbt.process_0/d/3ed41cfa20cd291c000301a0fd04836f": "3a08c66466f81ab8856d00b8fe28c3e11939abe4fd71da0a4d547ee0d36c1182",
+      "367004/default/ocdbt.process_0/d/5c1e82f303acf109146adeaedb748a93": "7df0e7d49986a6bceee3f27d8006b74cac128c9c00751c6a711b229951ca16f3",
+      "367004/default/ocdbt.process_0/d/ad8506469496b5106aa86f5d9ad21ab2": "8a6d1090a8a9bd84e6baf0fd0d2a1fba0bffcdb18eccff6e419b2afe148ca0b7",
+      "367004/default/ocdbt.process_0/d/daf4b8ef65b7e1bde063d412c9451528": "3d59e0b2f0452c82fbb6665244ffdce5c6178e5bff735c83192959f5cf7916b5",
+      "367004/default/ocdbt.process_0/d/f4316263a18078d9a2a791af407692da": "e80ae79c97f7240167a222e2a6cb60d33655bd44ebdf5221a782967aec49bce3",
+      "367004/default/ocdbt.process_0/manifest.ocdbt": "21eb242efa4a6291954165f4d412d61e1762a03fe470158a8b1bb57697c7c02c",
+      "model_config.yaml": "415d458e3b004aa7299bde791c8088e0d710a0c2c57945a557dfe99bc8d1adf4"
+    },
+    "bundle_sha256": "5f079929f9829d60f3fb90d46196e85a3f7fd3790292473a6baf12a05f7d8727"
+  },
+  "MB1": {
+    "path": "artifact://legacy/targetB_friction_mass_fixedgain_reevaluation_20260913T094049Z/models/added_mass_8_stage3_confirmation_mb1_23401",
+    "file_sha256": {
+      "368004/_CHECKPOINT_METADATA": "02230079bba83eba6962e8f8a76af52d7c7148652af0a9143fcbf5d6d55704a0",
+      "368004/default/_METADATA": "346eb47a3c6e59265c6c0cca4e772f1bdd908642d70c8e4737dd61f63c3ad7d4",
+      "368004/default/_sharding": "50915f84ede17d43efd4dcbcc6e7046ba6104afffaad60ae7f9082dc4694f7ad",
+      "368004/default/array_metadatas/process_0": "e28f7ec555f3649044ad907e10797f54e0101b99252bce5c1772c8e659a5569a",
+      "368004/default/d/f0575618f1af6afce16d5a0fc9b07d38": "f495d5a2a5ec863765640053daf1536b4676b34a32f935505751218108f7da96",
+      "368004/default/manifest.ocdbt": "0f6d1795aa916a0569f486cee8254484fdd36af76f49f1f1b11db58131740bf0",
+      "368004/default/ocdbt.process_0/d/08f64a66ee8a60008a0ccae72a4de588": "3a08c66466f81ab8856d00b8fe28c3e11939abe4fd71da0a4d547ee0d36c1182",
+      "368004/default/ocdbt.process_0/d/25436eabdc8e96ae667b74479a76ede6": "65ceeaf01c4556cdd33438f21d4f0ce46a28f699d2a4b1141e0ba832e75a2d72",
+      "368004/default/ocdbt.process_0/d/ade9cefbf90e859b92928b5f6c600935": "e5ddd49ed8e931f2c1d72e933d910d169de95d23fb77eff0ca0e75a472329327",
+      "368004/default/ocdbt.process_0/d/c5743059ec60f876a6fce2d14adaf08d": "78d2961fda227be5a4ab2ce7d181b94e48382f302295bb80118cde767b9b3358",
+      "368004/default/ocdbt.process_0/d/cbf76cd25b60866e29434cfd81ec12e9": "47cebdecc17d640a19da0f3f26e4196eae319e8cf7f9f87db2e05c6dc0954956",
+      "368004/default/ocdbt.process_0/manifest.ocdbt": "3bb19f16fecb2ba4279fe2d8e7d08761edfd356e1fda64ea7bf21216fed642d3",
+      "model_config.yaml": "53c1c4620dfb186f0ff9a9ff4912436ed24b1adb259f22e81b8bf625fccb7ab5"
+    },
+    "bundle_sha256": "399eaf575a92c72248100cf20353c6093a6cfbf0c26929ac157fbb9c25d66be6"
+  },
+  "MB2": {
+    "path": "artifact://legacy/targetB_friction_mass_fixedgain_reevaluation_20260913T094049Z/models/added_mass_8_stage3_confirmation_mb2_23402",
+    "file_sha256": {
+      "368004/_CHECKPOINT_METADATA": "ff67e764f61eb47e71feca9c179572a1336a0daa6ed8cd867434e1eadf3422c0",
+      "368004/default/_METADATA": "346eb47a3c6e59265c6c0cca4e772f1bdd908642d70c8e4737dd61f63c3ad7d4",
+      "368004/default/_sharding": "50915f84ede17d43efd4dcbcc6e7046ba6104afffaad60ae7f9082dc4694f7ad",
+      "368004/default/array_metadatas/process_0": "e28f7ec555f3649044ad907e10797f54e0101b99252bce5c1772c8e659a5569a",
+      "368004/default/d/f48b8fb77b4e0f3952ec25687ac51a4f": "fe94c73b5fe7843dd9d13fd96871420f0af66987dc0ceff4893fcc2dd0d70a23",
+      "368004/default/manifest.ocdbt": "254413c019f3a79bcb973bd3e90ad3eea840a31dbc5f9a706df7b80ecc45c7a0",
+      "368004/default/ocdbt.process_0/d/0a341125e6b1751f6be37e85e5513d7e": "ecb54d0c34e15123e2a4ac0564769a493119234344ea49937addcf28fc1f4ad8",
+      "368004/default/ocdbt.process_0/d/912ba2d95bd587e820f9a59d7e1e8a36": "cc4122acc8f0e640f9b8ab4f16a356a115f3f7f550e662bcfb13e7bda5ceb13f",
+      "368004/default/ocdbt.process_0/d/a53fb786c151cff5476b9f894cec0287": "3a08c66466f81ab8856d00b8fe28c3e11939abe4fd71da0a4d547ee0d36c1182",
+      "368004/default/ocdbt.process_0/d/b359249737162b6dd70b43f6af5b9054": "58156beea5155bee52c9bbc9876fa085b8032c631ec591c1d0b44ad45db3a1e5",
+      "368004/default/ocdbt.process_0/d/cf84635c19021d1441bc3e6e60425ac1": "3d59e0b2f0452c82fbb6665244ffdce5c6178e5bff735c83192959f5cf7916b5",
+      "368004/default/ocdbt.process_0/manifest.ocdbt": "a275b9dc24eb90a9088876fd203a021d55bbd051fa5957e0e9f1c08faf2a6093",
+      "model_config.yaml": "5ccd90124e3c0322fb5ea7590b6ecb22a5778696c50e0a1d6788d6f38526b1b4"
+    },
+    "bundle_sha256": "54310095e54942468cfc3984194e75f25f07e68f79f3d3b48131b4d369b2366a"
+  },
+  "MB3": {
+    "path": "artifact://legacy/targetB_friction_mass_fixedgain_reevaluation_20260913T094049Z/models/added_mass_8_stage3_confirmation_mb3_23403",
+    "file_sha256": {
+      "368004/_CHECKPOINT_METADATA": "142bc3c89af7f3dd61937493ea9049928b080628872ddc28fab44b07427f76f1",
+      "368004/default/_METADATA": "346eb47a3c6e59265c6c0cca4e772f1bdd908642d70c8e4737dd61f63c3ad7d4",
+      "368004/default/_sharding": "50915f84ede17d43efd4dcbcc6e7046ba6104afffaad60ae7f9082dc4694f7ad",
+      "368004/default/array_metadatas/process_0": "e28f7ec555f3649044ad907e10797f54e0101b99252bce5c1772c8e659a5569a",
+      "368004/default/d/5284bebcd00a1b15639eb486193506b5": "2daf1b84f927d560b2962ec2de7b1e798b122eb38fe79fd7149d44edf81907ea",
+      "368004/default/manifest.ocdbt": "064594ffb2bc4ec62ee0737c47cf1062a3b23884b1c9933dbe098236c30d642f",
+      "368004/default/ocdbt.process_0/d/060ea15f14297c712b0fc09a452ee094": "a32f7e6d8735a2d81453f0235255eda313cf60e690b7a7a742a4b537ae6c3ec3",
+      "368004/default/ocdbt.process_0/d/3b514856bdf5379ab6e982ea0ddef558": "9b6220e555eee88b9b3b8cbfafd0867409041f0ef5b10d3ff5f1e2d7cf9206c8",
+      "368004/default/ocdbt.process_0/d/a9f5d889bee4aadb70bf67c0863060d2": "489618aed563b2eb969a47c1efa0e6ec862ff36f7a4c4da7007841d2d79a6ec5",
+      "368004/default/ocdbt.process_0/d/ad6625147031d7320b038f78fa0c5124": "3a08c66466f81ab8856d00b8fe28c3e11939abe4fd71da0a4d547ee0d36c1182",
+      "368004/default/ocdbt.process_0/d/bf3bd657e4bd7d7dec6bdd0c29f2b27a": "3d59e0b2f0452c82fbb6665244ffdce5c6178e5bff735c83192959f5cf7916b5",
+      "368004/default/ocdbt.process_0/manifest.ocdbt": "749a74c9d180f811b83a7b4fbe8e54f5e8da656c7acf4122e955caba643de70f",
+      "model_config.yaml": "1efcff2c41eb71be898a6995bef166d9d091fde32f815412d29ebd96688363c1"
+    },
+    "bundle_sha256": "0f3f989170a8c43129dcc5e59fa7676a169c7cb035c8c3f35a0a51bc6722373d"
+  }
+}

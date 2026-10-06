@@ -1,0 +1,1232 @@
+{
+  "actions": {
+    "joint_pos": {
+      "asset_name": "robot",
+      "class_type": "isaaclab.envs.mdp.actions.joint_actions:JointPositionAction",
+      "clip": null,
+      "debug_vis": false,
+      "joint_names": [
+        "FR_hip_joint",
+        "FR_thigh_joint",
+        "FR_calf_joint",
+        "FL_hip_joint",
+        "FL_thigh_joint",
+        "FL_calf_joint",
+        "RR_hip_joint",
+        "RR_thigh_joint",
+        "RR_calf_joint",
+        "RL_hip_joint",
+        "RL_thigh_joint",
+        "RL_calf_joint"
+      ],
+      "offset": 0.0,
+      "preserve_order": true,
+      "scale": 0.25,
+      "use_default_offset": true
+    }
+  },
+  "commands": {
+    "base_velocity": {
+      "asset_name": "robot",
+      "class_type": "simdist.rl.go2_mdp:WalkStraightCommand",
+      "current_vel_visualizer_cfg": {
+        "markers": {
+          "arrow": {
+            "activate_contact_sensors": false,
+            "articulation_props": null,
+            "collision_props": null,
+            "copy_from_source": true,
+            "deformable_props": null,
+            "fixed_tendons_props": null,
+            "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+            "joint_drive_props": null,
+            "mass_props": null,
+            "rigid_props": null,
+            "scale": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "semantic_tags": null,
+            "usd_path": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.5/Isaac/Props/UIElements/arrow_x.usd",
+            "variants": null,
+            "visible": true,
+            "visual_material": {
+              "diffuse_color": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "emissive_color": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+              "metallic": 0.0,
+              "opacity": 1.0,
+              "roughness": 0.5
+            },
+            "visual_material_path": "material"
+          }
+        },
+        "prim_path": "/Visuals/Command/velocity_current"
+      },
+      "debug_vis": true,
+      "forward_vel": 0.5,
+      "goal_vel_visualizer_cfg": {
+        "markers": {
+          "arrow": {
+            "activate_contact_sensors": false,
+            "articulation_props": null,
+            "collision_props": null,
+            "copy_from_source": true,
+            "deformable_props": null,
+            "fixed_tendons_props": null,
+            "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+            "joint_drive_props": null,
+            "mass_props": null,
+            "rigid_props": null,
+            "scale": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "semantic_tags": null,
+            "usd_path": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.5/Isaac/Props/UIElements/arrow_x.usd",
+            "variants": null,
+            "visible": true,
+            "visual_material": {
+              "diffuse_color": [
+                0.0,
+                1.0,
+                0.0
+              ],
+              "emissive_color": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+              "metallic": 0.0,
+              "opacity": 1.0,
+              "roughness": 0.5
+            },
+            "visual_material_path": "material"
+          }
+        },
+        "prim_path": "/Visuals/Command/velocity_goal"
+      },
+      "k_heading": 1.0,
+      "kx": 1.0,
+      "ky": 1.0,
+      "kyaw": 1.0,
+      "ranges": {
+        "ang_vel_z": [
+          -1.0,
+          1.0
+        ],
+        "lin_vel_x": [
+          -0.5,
+          1.5
+        ],
+        "lin_vel_y": [
+          -0.5,
+          0.5
+        ]
+      },
+      "resampling_time_range": [
+        1000.0,
+        1000.0
+      ]
+    }
+  },
+  "rewards": {
+    "action_rate_l2": {
+      "func": "isaaclab.envs.mdp.rewards:action_rate_l2",
+      "params": {},
+      "weight": -0.01
+    },
+    "ang_vel_xy_l2": {
+      "func": "isaaclab.envs.mdp.rewards:ang_vel_xy_l2",
+      "params": {},
+      "weight": -0.05
+    },
+    "dof_acc_l2": {
+      "func": "isaaclab.envs.mdp.rewards:joint_acc_l2",
+      "params": {},
+      "weight": -2.5e-07
+    },
+    "dof_pos_limits": {
+      "func": "isaaclab.envs.mdp.rewards:joint_pos_limits",
+      "params": {},
+      "weight": 0.0
+    },
+    "dof_torques_l2": {
+      "func": "isaaclab.envs.mdp.rewards:joint_torques_l2",
+      "params": {},
+      "weight": -0.0002
+    },
+    "feet_air_time": {
+      "func": "isaaclab_tasks.manager_based.locomotion.velocity.config.spot.mdp.rewards:air_time_reward",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": null,
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": false
+        },
+        "mode_time": 0.3,
+        "sensor_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "FR_foot",
+            "FL_foot",
+            "RR_foot",
+            "RL_foot"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "contact_forces",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "velocity_threshold": 0.75
+      },
+      "weight": 0.0
+    },
+    "feet_height_gait": {
+      "func": "simdist.rl.go2_mdp:feet_height_gait_reward",
+      "params": {
+        "bias": [
+          0.0,
+          0.5,
+          0.5,
+          0.0
+        ],
+        "command_name": "base_velocity",
+        "command_threshold": 0.1,
+        "contact_ratio": 0.5,
+        "foot_radius": 0.023,
+        "period": 0.5,
+        "scan_sensor_names": [
+          "fr_foot_scan",
+          "fl_foot_scan",
+          "rr_foot_scan",
+          "rl_foot_scan"
+        ],
+        "swing_height": 0.09
+      },
+      "weight": 0.2
+    },
+    "flat_orientation_l2": {
+      "func": "isaaclab.envs.mdp.rewards:flat_orientation_l2",
+      "params": {},
+      "weight": -4.0
+    },
+    "foot_clearance": {
+      "func": "simdist.rl.go2_mdp:foot_clearance_reward",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "FR_foot",
+            "FL_foot",
+            "RR_foot",
+            "RL_foot"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "foot_radius": 0.023,
+        "scan_sensor_names": [
+          "fr_foot_scan",
+          "fl_foot_scan",
+          "rr_foot_scan",
+          "rl_foot_scan"
+        ],
+        "std": 0.05,
+        "tanh_mult": 2.0,
+        "target_height": 0.09
+      },
+      "weight": 0.0
+    },
+    "foot_slip_penalty": {
+      "func": "isaaclab_tasks.manager_based.locomotion.velocity.config.spot.mdp.rewards:foot_slip_penalty",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "FR_foot",
+            "FL_foot",
+            "RR_foot",
+            "RL_foot"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "sensor_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "FR_foot",
+            "FL_foot",
+            "RR_foot",
+            "RL_foot"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "contact_forces",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "threshold": 1.0
+      },
+      "weight": 0.0
+    },
+    "gait": {
+      "func": "simdist.rl.go2_mdp:gait_reward",
+      "params": {
+        "bias": [
+          0.0,
+          0.5,
+          0.5,
+          0.0
+        ],
+        "command_name": "base_velocity",
+        "command_threshold": 0.1,
+        "contact_ratio": 0.5,
+        "period": 0.5,
+        "sensor_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "FR_foot",
+            "FL_foot",
+            "RR_foot",
+            "RL_foot"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "contact_forces",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        }
+      },
+      "weight": 0.05
+    },
+    "joint_deviation_l1": {
+      "func": "simdist.rl.go2_mdp:joint_deviation_l1_weighted",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": null,
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": [
+            "FR_hip_joint",
+            "FR_thigh_joint",
+            "FR_calf_joint",
+            "FL_hip_joint",
+            "FL_thigh_joint",
+            "FL_calf_joint",
+            "RR_hip_joint",
+            "RR_thigh_joint",
+            "RR_calf_joint",
+            "RL_hip_joint",
+            "RL_thigh_joint",
+            "RL_calf_joint"
+          ],
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "weights": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "weight": -0.25
+    },
+    "lin_vel_z_l2": {
+      "func": "isaaclab.envs.mdp.rewards:lin_vel_z_l2",
+      "params": {},
+      "weight": -2.0
+    },
+    "track_ang_vel_z_exp": {
+      "func": "isaaclab.envs.mdp.rewards:track_ang_vel_z_exp",
+      "params": {
+        "command_name": "base_velocity",
+        "std": 0.5
+      },
+      "weight": 0.75
+    },
+    "track_lin_vel_xy_exp": {
+      "func": "isaaclab.envs.mdp.rewards:track_lin_vel_xy_exp",
+      "params": {
+        "command_name": "base_velocity",
+        "std": 0.5
+      },
+      "weight": 1.5
+    },
+    "undesired_contacts": null
+  },
+  "terminations": {
+    "bad_orientation": {
+      "func": "isaaclab.envs.mdp.terminations:bad_orientation",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": null,
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": false
+        },
+        "limit_angle": 1.0472
+      },
+      "time_out": false
+    },
+    "base_contact": {
+      "func": "isaaclab.envs.mdp.terminations:illegal_contact",
+      "params": {
+        "sensor_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "base",
+            ".*_thigh",
+            "Head.*"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "contact_forces",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": false
+        },
+        "threshold": 1.0
+      },
+      "time_out": false
+    },
+    "time_out": {
+      "func": "isaaclab.envs.mdp.terminations:time_out",
+      "params": {},
+      "time_out": true
+    }
+  },
+  "events": {
+    "add_base_mass": {
+      "func": "isaaclab.envs.mdp.events:randomize_rigid_body_mass",
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "startup",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": "base",
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": false
+        },
+        "mass_distribution_params": [
+          8.0,
+          8.0
+        ],
+        "operation": "add"
+      }
+    },
+    "base_external_force_torque": {
+      "func": "isaaclab.envs.mdp.events:apply_external_force_torque",
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "reset",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": "base",
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": false
+        },
+        "force_range": [
+          0.0,
+          0.0
+        ],
+        "torque_range": [
+          -0.0,
+          0.0
+        ]
+      }
+    },
+    "joint_friction": {
+      "func": "simdist.rl.go2_mdp:randomize_joint_friction",
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "reset",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": null,
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": [
+            "FR_hip_joint",
+            "FR_thigh_joint",
+            "FR_calf_joint",
+            "FL_hip_joint",
+            "FL_thigh_joint",
+            "FL_calf_joint",
+            "RR_hip_joint",
+            "RR_thigh_joint",
+            "RR_calf_joint",
+            "RL_hip_joint",
+            "RL_thigh_joint",
+            "RL_calf_joint"
+          ],
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "distribution": "uniform",
+        "friction_distribution_params": [
+          0.0,
+          0.05
+        ],
+        "operation": "add"
+      }
+    },
+    "joint_stiffness_and_damping": null,
+    "physics_material": {
+      "func": "simdist.rl.go2_mdp:randomize_rigid_body_material_same",
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "startup",
+      "params": {
+        "asset_cfg": {
+          "body_ids": "slice(None, None, None)",
+          "body_names": [
+            "FR_foot",
+            "FL_foot",
+            "RR_foot",
+            "RL_foot"
+          ],
+          "fixed_tendon_ids": "slice(None, None, None)",
+          "fixed_tendon_names": null,
+          "joint_ids": "slice(None, None, None)",
+          "joint_names": null,
+          "name": "robot",
+          "object_collection_ids": "slice(None, None, None)",
+          "object_collection_names": null,
+          "preserve_order": true
+        },
+        "dynamic_friction_range": [
+          0.8,
+          0.8
+        ],
+        "make_consistent": true,
+        "num_buckets": 4096,
+        "restitution_range": [
+          0.05,
+          0.05
+        ],
+        "static_friction_range": [
+          0.8,
+          0.8
+        ]
+      }
+    },
+    "push_robot": null,
+    "reset_base": {
+      "func": "isaaclab.envs.mdp.events:reset_root_state_uniform",
+      "interval_range_s": null,
+      "is_global_time": false,
+      "min_step_count_between_reset": 0,
+      "mode": "reset",
+      "params": {
+        "pose_range": {
+          "x": [
+            0.0,
+            0.0
+          ],
+          "y": [
+            0.0,
+            0.0
+          ],
+          "yaw": [
+            0.0,
+            0.0
+          ]
+        },
+        "velocity_range": {
+          "pitch": [
+            0.0,
+            0.0
+          ],
+          "roll": [
+            0.0,
+            0.0
+          ],
+          "x": [
+            0.0,
+            0.0
+          ],
+          "y": [
+            0.0,
+            0.0
+          ],
+          "yaw": [
+            0.0,
+            0.0
+          ],
+          "z": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "reset_robot_joints": null
+  },
+  "observations": {
+    "curriculum": {
+      "concatenate_terms": false,
+      "cum_cmd_vel_similarity": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:cum_cmd_vel_similarity",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {},
+        "scale": null
+      },
+      "enable_corruption": false,
+      "flatten_history_dim": true,
+      "history_length": null
+    },
+    "obs": {
+      "base_ang_vel": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:base_ang_vel",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {},
+        "scale": null
+      },
+      "base_lin_acc": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:imu_lin_acc",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": null,
+            "name": "imu_body",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": false
+          }
+        },
+        "scale": null
+      },
+      "base_lin_vel": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:base_lin_vel",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {},
+        "scale": null
+      },
+      "concatenate_terms": false,
+      "cos_sin_phase": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:cos_sin_phase",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "period": 0.5
+        },
+        "scale": null
+      },
+      "enable_corruption": false,
+      "flatten_history_dim": true,
+      "height_scan": {
+        "clip": [
+          -2.0,
+          2.0
+        ],
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:height_scan",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "offset": 0.3,
+          "sensor_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": null,
+            "name": "height_scanner",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": false
+          }
+        },
+        "scale": null
+      },
+      "history_length": null,
+      "joint_pos": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:joint_pos_rel",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          }
+        },
+        "scale": null
+      },
+      "joint_vel": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:joint_vel_rel",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          }
+        },
+        "scale": null
+      },
+      "projected_gravity": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:projected_gravity",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {},
+        "scale": null
+      }
+    },
+    "policy": {
+      "actions": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:last_action",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": null,
+        "params": {},
+        "scale": null
+      },
+      "base_ang_vel": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:base_ang_vel",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": {
+          "func": "isaaclab.utils.noise.noise_model:gaussian_noise",
+          "mean": 0.0,
+          "operation": "add",
+          "std": 0.1
+        },
+        "params": {},
+        "scale": null
+      },
+      "base_lin_vel": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:base_lin_vel",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": {
+          "func": "isaaclab.utils.noise.noise_model:gaussian_noise",
+          "mean": 0.0,
+          "operation": "add",
+          "std": 0.05
+        },
+        "params": {},
+        "scale": null
+      },
+      "base_mass": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:mass",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": "base",
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": null,
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          }
+        },
+        "scale": null
+      },
+      "concatenate_terms": true,
+      "cos_sin_phase": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:cos_sin_phase",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "period": 0.5
+        },
+        "scale": null
+      },
+      "enable_corruption": false,
+      "feet_body_forces": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:body_incoming_wrench",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": [
+              "FR_foot",
+              "FL_foot",
+              "RR_foot",
+              "RL_foot"
+            ],
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": null,
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          }
+        },
+        "scale": 0.1
+      },
+      "feet_height": {
+        "clip": [
+          -2.0,
+          2.0
+        ],
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:feet_height",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "foot_radius": 0.023,
+          "scan_sensor_names": [
+            "fr_foot_scan",
+            "fl_foot_scan",
+            "rr_foot_scan",
+            "rl_foot_scan"
+          ]
+        },
+        "scale": null
+      },
+      "flatten_history_dim": true,
+      "height_scan": {
+        "clip": [
+          -1.0,
+          1.0
+        ],
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:height_scan",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": {
+          "func": "isaaclab.utils.noise.noise_model:gaussian_noise",
+          "mean": 0.0,
+          "operation": "add",
+          "std": 0.02
+        },
+        "params": {
+          "offset": 0.3,
+          "sensor_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": null,
+            "name": "height_scanner",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": false
+          }
+        },
+        "scale": null
+      },
+      "history_length": null,
+      "joint_damping": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:joint_damping",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          },
+          "bias": -10.0,
+          "scale": 20.0
+        },
+        "scale": null
+      },
+      "joint_friction": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:joint_friction",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          },
+          "bias": -1.0,
+          "scale": 40.0
+        },
+        "scale": null
+      },
+      "joint_pos": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:joint_pos_rel",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": {
+          "func": "isaaclab.utils.noise.noise_model:gaussian_noise",
+          "mean": 0.0,
+          "operation": "add",
+          "std": 0.01
+        },
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          }
+        },
+        "scale": null
+      },
+      "joint_stiffness": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:joint_stiffness",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          },
+          "bias": -10.0,
+          "scale": 0.4
+        },
+        "scale": null
+      },
+      "joint_vel": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:joint_vel_rel",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": {
+          "func": "isaaclab.utils.noise.noise_model:gaussian_noise",
+          "mean": 0.0,
+          "operation": "add",
+          "std": 0.75
+        },
+        "params": {
+          "asset_cfg": {
+            "body_ids": "slice(None, None, None)",
+            "body_names": null,
+            "fixed_tendon_ids": "slice(None, None, None)",
+            "fixed_tendon_names": null,
+            "joint_ids": "slice(None, None, None)",
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint"
+            ],
+            "name": "robot",
+            "object_collection_ids": "slice(None, None, None)",
+            "object_collection_names": null,
+            "preserve_order": true
+          }
+        },
+        "scale": null
+      },
+      "material_properties": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "simdist.rl.go2_mdp:material_properties",
+        "history_length": 0,
+        "modifiers": null,
+        "noise": null,
+        "params": {},
+        "scale": null
+      },
+      "projected_gravity": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:projected_gravity",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": {
+          "func": "isaaclab.utils.noise.noise_model:gaussian_noise",
+          "mean": 0.0,
+          "operation": "add",
+          "std": 0.025
+        },
+        "params": {},
+        "scale": null
+      },
+      "velocity_commands": {
+        "clip": null,
+        "flatten_history_dim": true,
+        "func": "isaaclab.envs.mdp.observations:generated_commands",
+        "history_length": 1,
+        "modifiers": null,
+        "noise": null,
+        "params": {
+          "command_name": "base_velocity"
+        },
+        "scale": null
+      }
+    }
+  }
+}

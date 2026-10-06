@@ -1,0 +1,6 @@
+A_hist_count,B_core_B_extra_overlap,B_core_count,B_eval_count,B_extra_count,all_roles_unique_within_arm,current_train_eval_overlap,mixed_train_eval_overlap,repeat,same_B_core_across_arms,status
+500,0,500,930,500,True,0,0,1,True,PASS
+500,0,500,930,500,True,0,0,2,True,PASS
+500,0,500,859,500,True,0,0,3,True,PASS
+500,0,500,860,500,True,0,0,4,True,PASS
+500,0,500,875,500,True,0,0,5,True,PASS

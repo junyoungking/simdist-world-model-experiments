@@ -1,0 +1,11 @@
+# Frozen support causal protocol
+
+Frozen before causal adaptation outcomes. The primary support point is the Phase-0 `x=concat(z_t^f,a_t)`: a 3,264-dimensional frozen dynamics context plus the 12-dimensional executed first action. Normalization is the exact Phase-0 pooled adaptation-only mean and standard deviation; distance is Euclidean. Commands are grouping/provenance fields only.
+
+The primary is an exploratory three-independent-pool-repeat +8 kg diagnostic. Each repeat's common pool is its technically compatible historical NARROW and BROAD target collection concatenated; no target mass, controller, friction, terrain, checkpoint, or observation/action semantic is mixed. Historical source strategy is not the causal treatment and is audited.
+
+`N_primary=500` windows is frozen before adaptation outcomes. It is below the smallest repeat pool (1,553 valid windows) and is feasible for every command and each of MATCHED, DISTANT, UNIFORM, and RANDOM. Each command gets its own MATCHED and DISTANT selection based only on all frozen held-out x locations at that command. UNIFORM and RANDOM are command-independent per pool repeat. Overlap between independently defined subsets is reported rather than hidden; no arm receives extra windows or updates.
+
+For candidate pool point x, `d_eval(x)` is mean Euclidean distance to its five nearest held-out x locations. MATCHED selects the 500 smallest valid d_eval values; DISTANT selects the 500 largest. UNIFORM uses deterministic farthest-point sampling in normalized x, initialized with smallest `(source_dataset, start_idx)` lexical identity. RANDOM uses the predeclared seed in `SEEDS.md`. No held-out next latent, error, reward, return, or label enters selection.
+
+Every adaptation starts at source M0 step 367004, changes dynamics parameters only, and executes K=1000 updates under the canonical project adaptation code. Evaluation is canonical held-out 25-step latent dynamics MSE, separately for vx 0.2/0.5/0.8/1.0. The primary contrast is MATCHED versus DISTANT; RANDOM and UNIFORM are secondary composition comparisons. Three historical repeats are exploratory only; a positive result requires two new independent pool repeats before `SUPPORT_REQUIREMENT_SUPPORTED` can be assigned.

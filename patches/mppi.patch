@@ -1,0 +1,67 @@
+diff --git a/simdist/control/mppi.py b/simdist/control/mppi.py
+index 2477b55..7b8dff5 100644
+--- a/simdist/control/mppi.py
++++ b/simdist/control/mppi.py
+@@ -174,3 +174,62 @@ class MppiController(ControllerBase):
+         value = y["values"][:, -1] * self.final_discount
+         returns = rewards + value
+         return returns
++
++    @functools.partial(nnx.jit, static_argnames=["self"])
++    def score_snapshot(
++        self,
++        mppi_state: MppiState,
++        base_policy_actions: jnp.ndarray,
++        model_inputs: types.WorldModelSchema.Inputs,
++    ) -> tuple[jnp.ndarray, jnp.ndarray, jnp.ndarray, jnp.ndarray]:
++        """Recompute the final MPPI iteration for observational score logging.
++
++        This method is intentionally pure with respect to controller state: it
++        receives the pre-`run_control` state, consumes no controller RNG, and
++        does not change the action selected by `_mppi_step`.  Given identical
++        inputs it reconstructs the exact final-iteration candidate tensor and
++        its already-defined reward/value score components.  It is called only
++        by an explicit diagnostic logger, never by the normal controller.
++        """
++        key = self._to_key(mppi_state.key_data)
++        key, key_base_act = jax.random.split(key)
++        base_act_noise = (
++            jax.random.normal(key_base_act, (self.num_base_trajs, self.T, self.act_dim))
++            * self.ctrl_cfg["base_act_std"]
++        )
++        noised_base_policy_actions = base_policy_actions + base_act_noise
++        mean = jnp.roll(mppi_state.mean, shift=self.shift, axis=0)
++        mean = mean.at[self.shift :].set(0.0)
++        std = jnp.ones((self.T, self.act_dim)) * self.ctrl_cfg["init_std"]
++        final_acts = final_rewards = final_values = final_returns = None
++        for _ in range(self.ctrl_cfg["iterations"]):
++            key, key_act = jax.random.split(key)
++            act_noise = (
++                jax.random.normal(key_act, (self.ctrl_cfg["num_samples"], self.T, self.act_dim))
++                * std
++            )
++            noised_acts = mean + act_noise
++            acts = jnp.concatenate([noised_acts, noised_base_policy_actions], axis=0)
++            x = repeat_along_batch_dim(model_inputs, acts.shape[0])
++            x["fut_acts"] = acts
++            y = self.model.inference(x)
++            returns = self._calc_returns(y)
++            _, elite_idxs = jax.lax.top_k(returns, self.ctrl_cfg["num_elites"])
++            elite_returns = jnp.take(returns, elite_idxs, axis=0)
++            elite_acts = jnp.take(acts, elite_idxs, axis=0)
++            max_rew = jnp.max(elite_returns)
++            score = jnp.exp(self.ctrl_cfg["temperature"] * (elite_returns - max_rew))
++            updated_mean = jnp.sum(score[:, None, None] * elite_acts, axis=0) / jnp.sum(score)
++            updated_std = jnp.sqrt(
++                jnp.sum(score[:, None, None] * (elite_acts - updated_mean) ** 2, axis=0)
++                / jnp.sum(score)
++            )
++            final_acts, final_rewards, final_values, final_returns = (
++                acts,
++                y["rewards"],
++                y["values"],
++                returns,
++            )
++            mean = self.ctrl_cfg["momentum"] * mean + (1 - self.ctrl_cfg["momentum"]) * updated_mean
++            std = jnp.clip(updated_std, min=self.ctrl_cfg["min_std"])
++        return final_acts, final_rewards, final_values, final_returns

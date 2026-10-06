@@ -1,0 +1,9 @@
+{
+  "snapshots": 371,
+  "branches": 25228,
+  "full25_branches": 24424,
+  "max_pred_reward_reconstruction_error": 4.521306928850777e-07,
+  "max_actual_reward_reconstruction_error": 0.0,
+  "max_actual_head_reconstruction_error": 6.661338147750939e-16,
+  "max_open_loop_planned_vs_executed_prefix_error": 0.0
+}

@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "a183dabd0f40812bcd16936c8011b7aea4f0a8a2163f7beb8933ff78595bf37d",
+  "initialization": "A",
+  "status": "FROZEN_PRE_VALIDATION0",
+  "first_training_utc": "2026-09-29T07:46:16.098972+00:00",
+  "first_rollout_utc": null,
+  "git_commit": "5e5fb7be76fe05bc56684e11c4aae605fd4db852",
+  "first_rollout_timestamp_status": "Exact first smoke-control-step timestamp was not recorded; execution starts and completion timestamps retained, no false precision"
+}

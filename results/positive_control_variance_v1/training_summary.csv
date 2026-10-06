@@ -1,0 +1,11 @@
+chain,stage,updates,selected_update,train_windows,heldout_windows,heldout_loss,raw_summary
+flat/chain1,10k,1320,1320,4252,643,0.02227300210257711,artifact://positive_control_variance_v1/flat/chain1/training/10k/summary.json
+flat/chain1,30k,5210,5200,16688,3326,0.009425718172649913,artifact://positive_control_variance_v1/flat/chain1/training/30k/summary.json
+flat/chain2,10k,1480,1480,4757,477,0.0198622021660115,artifact://positive_control_variance_v1/flat/chain2/training/10k/summary.json
+flat/chain2,30k,5650,5650,18085,3055,0.010943502501726345,artifact://positive_control_variance_v1/flat/chain2/training/30k/summary.json
+mass8/new_DP2,10k,2240,2200,7184,1566,0.02335831999188791,artifact://positive_control_variance_v1/mass8/new_DP2/training/10k/summary.json
+mass8/new_DP2,30k,3800,3300,22554,4699,0.018612358662723753,artifact://positive_control_variance_v1/mass8/new_DP2/training/30k/summary.json
+mass8/new_chain3,10k,2300,2100,7370,1269,0.04782244221984729,artifact://positive_control_variance_v1/mass8/new_chain3/training/10k/summary.json
+mass8/new_chain3,30k,3200,2700,22365,4252,0.03379517899141038,artifact://positive_control_variance_v1/mass8/new_chain3/training/30k/summary.json
+mass8/new_chain4,10k,2150,2000,6884,1116,0.038987042809632944,artifact://positive_control_variance_v1/mass8/new_chain4/training/10k/summary.json
+mass8/new_chain4,30k,2400,1900,22367,4199,0.02341344662717756,artifact://positive_control_variance_v1/mass8/new_chain4/training/30k/summary.json

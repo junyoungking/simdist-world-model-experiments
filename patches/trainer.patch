@@ -1,0 +1,206 @@
+diff --git a/simdist/modeling/trainer.py b/simdist/modeling/trainer.py
+index 940c4f5..fe890bc 100644
+--- a/simdist/modeling/trainer.py
++++ b/simdist/modeling/trainer.py
+@@ -1,7 +1,11 @@
+ import datetime
++import copy
++import csv
++import json
+ import os
+ import yaml
+ import time
++import numpy as np
+ 
+ import wandb
+ import torch
+@@ -21,6 +25,39 @@ def train(cfg: dict):
+     run_name = f"{date_time}" if cfg["run_name"] is None else cfg["run_name"]
+     finetuning = "finetune" in cfg and cfg["finetune"]
+     train_steps = 0
++    # This is deliberately independent of a checkpoint's global train_steps.
++    # It counts the exact optimizer.update calls in this invocation.
++    actual_optimizer_updates = 0
++
++    # Optional, explicitly opt-in instrumentation.  It observes the exact
++    # objective returned by train_step; it never participates in gradients or
++    # optimizer state.  Keeping this in the released Trainer lets every phase
++    # reuse one schema while logging-off remains the original execution path.
++    instrumentation = cfg.get("instrumentation", {})
++    log_enabled = bool(instrumentation.get("enabled", False))
++    log_writer = None
++    log_csv = None
++    log_csv_file = None
++    heldout_dataset = None
++    heldout_cfg = None
++    log_eval_interval = None
++    if log_enabled:
++        from torch.utils.tensorboard import SummaryWriter
++        log_root = os.path.abspath(instrumentation["run_dir"])
++        os.makedirs(os.path.join(log_root, "tensorboard"), exist_ok=False)
++        os.makedirs(os.path.join(log_root, "raw"), exist_ok=True)
++        log_writer = SummaryWriter(os.path.join(log_root, "tensorboard"))
++        log_csv_file = open(os.path.join(log_root, "raw", "adaptation_curve.csv"), "x", newline="")
++        log_csv = csv.DictWriter(log_csv_file, fieldnames=["phase", "step", "dynamics_loss", "latent_dynamics", "reward", "value", "action"])
++        log_csv.writeheader()
++        metadata = dict(instrumentation.get("metadata", {}))
++        metadata.update({"timestamp_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
++                         "trainer": "simdist.modeling.trainer.train",
++                         "train_dataset_identifier": cfg["data"]["dataset_name"],
++                         "eval_interval": instrumentation.get("eval_interval")})
++        with open(os.path.join(log_root, "metadata.json"), "x") as f:
++            json.dump(metadata, f, indent=2, allow_nan=False)
++            f.write("\n")
+ 
+     max_steps = None
+     if "max_steps" in cfg["training"] and cfg["training"]["max_steps"] is not None:
+@@ -64,6 +101,9 @@ def train(cfg: dict):
+                 dataset.eval()
+ 
+     # create dataloaders
++    loader_common = {}
++    if cfg["data"]["num_train_workers"] > 0:
++        loader_common["prefetch_factor"] = cfg["data"]["prefetch_factor"]
+     train_set = DataLoader(
+         train_dataset,
+         batch_size=cfg["training"]["batch_size"],
+@@ -72,10 +112,13 @@ def train(cfg: dict):
+         num_workers=cfg["data"]["num_train_workers"],
+         worker_init_fn=worker_init_fn,
+         # collate_fn=collate_to_numpy_safe,
+-        prefetch_factor=cfg["data"]["prefetch_factor"],
+         persistent_workers=False,
+         generator=generator,
++        **loader_common,
+     )
++    test_loader_common = {}
++    if cfg["data"]["num_test_workers"] > 0:
++        test_loader_common["prefetch_factor"] = cfg["data"]["prefetch_factor"]
+     test_set = DataLoader(
+         test_dataset,
+         batch_size=cfg["training"]["batch_size"],
+@@ -83,11 +126,35 @@ def train(cfg: dict):
+         num_workers=cfg["data"]["num_test_workers"],
+         worker_init_fn=worker_init_fn,
+         # collate_fn=collate_to_numpy_safe,
+-        prefetch_factor=cfg["data"]["prefetch_factor"],
+         persistent_workers=False,
+         generator=generator,
++        **test_loader_common,
+     )
+ 
++    # This is a separately named, fixed held-out dataset -- never the random
++    # train/test split used internally by the Trainer.
++    if log_enabled and instrumentation.get("heldout_dataset_name"):
++        heldout_cfg = copy.deepcopy(cfg)
++        heldout_cfg["data"] = dict(heldout_cfg["data"])
++        heldout_cfg["data"]["dataset_name"] = instrumentation["heldout_dataset_name"]
++        original_dataset_root = paths._PATHS.get("ALL_DATASETS")
++        original_real_root = paths._PATHS.get("REAL_DATASETS")
++        try:
++            if instrumentation.get("heldout_dataset_root"):
++                root = os.path.abspath(instrumentation["heldout_dataset_root"])
++                paths._PATHS["ALL_DATASETS"] = root
++                paths._PATHS["REAL_DATASETS"] = root
++            heldout_dataset = get_dataset(heldout_cfg)
++            heldout_dataset.eval()
++        finally:
++            if original_dataset_root is not None:
++                paths._PATHS["ALL_DATASETS"] = original_dataset_root
++            if original_real_root is not None:
++                paths._PATHS["REAL_DATASETS"] = original_real_root
++        log_eval_interval = int(instrumentation.get("eval_interval", cfg["training"]["eval_interval"]))
++        if log_eval_interval <= 0:
++            raise ValueError("instrumentation.eval_interval must be positive")
++
+     # get the model
+     ckpt_dir = None
+     if (
+@@ -180,7 +247,7 @@ def train(cfg: dict):
+         (loss, losses), grads = grad_fn(model, x, y, False)
+         metrics.update(loss=loss, **losses)
+         optimizer.update(grads)
+-        return loss
++        return loss, losses
+ 
+     @nnx.jit
+     def eval_step(
+@@ -193,6 +260,40 @@ def train(cfg: dict):
+         metrics.update(loss=loss, **losses)
+         return loss
+ 
++    @nnx.jit
++    def heldout_eval_step(model, x: types.ModelInputs, y: types.ModelOutputs):
++        # deterministic=True is the NNX/JAX equivalent of evaluation/no-grad:
++        # this function computes only loss values and has no grad/optimizer arg.
++        return loss_fn(model, x, y, True)
++
++    def write_scalars(prefix, values, step):
++        values = {k: float(v) for k, v in values.items()}
++        dynamics_tag = ("adaptation/eval/heldout_dynamics_loss"
++                        if prefix == "adaptation/eval" else f"{prefix}/dynamics_loss")
++        log_writer.add_scalar(dynamics_tag, values["loss"], step)
++        for key, value in values.items():
++            if key != "loss":
++                log_writer.add_scalar(f"{prefix}/{key}", value, step)
++        log_csv.writerow({"phase": prefix.split("/")[-1], "step": step,
++                          "dynamics_loss": values["loss"],
++                          **{k: values.get(k, "") for k in ["latent_dynamics", "reward", "value", "action"]}})
++        log_csv_file.flush()
++
++    def evaluate_fixed_heldout():
++        total_loss, count = 0.0, 0
++        totals = {k: 0.0 for k in loss_fn.loss_terms}
++        # The fixed dataset stays in eval mode and model state is only read.
++        for start in range(0, len(heldout_dataset), cfg["training"]["batch_size"]):
++            items = [heldout_dataset[i] for i in range(start, min(start + cfg["training"]["batch_size"], len(heldout_dataset)))]
++            batch = model_utils.dataset_batch_to_jax({
++                "model_in": {k: np.stack([item["model_in"][k] for item in items]) for k in items[0]["model_in"]},
++                "labels": {k: np.stack([item["labels"][k] for item in items]) for k in items[0]["labels"]},
++            })
++            loss, components = heldout_eval_step(model, batch["model_in"], batch["labels"])
++            n = len(items); total_loss += float(loss) * n; count += n
++            for key, value in components.items(): totals[key] += float(value) * n
++        return {"loss": total_loss / count, **{k: value / count for k, value in totals.items()}}
++
+     print("Starting training")
+     num_epochs = cfg["training"]["num_epochs"]
+     metrics_dict = {}
+@@ -208,11 +309,16 @@ def train(cfg: dict):
+             if batch is None:
+                 continue
+             batch = model_utils.dataset_batch_to_jax(batch)
+-            loss = train_step(
++            loss, train_components = train_step(
+                 model, optimizer, metrics, batch["model_in"], batch["labels"]
+             )
+             pbar_train.set_description(f"Training (Loss: {float(loss):.4f})")
+             train_steps += 1
++            actual_optimizer_updates += 1
++            if log_enabled:
++                write_scalars("adaptation/train", {"loss": loss, **train_components}, train_steps)
++                if heldout_dataset is not None and train_steps % log_eval_interval == 0:
++                    write_scalars("adaptation/eval", evaluate_fixed_heldout(), train_steps)
+ 
+             is_last_step = i == len(train_set) - 1 and epoch == num_epochs - 1
+             steps_done = max_steps is not None and train_steps >= max_steps
+@@ -273,3 +379,19 @@ def train(cfg: dict):
+ 
+         epoch_time = time.time() - epoch_start_time
+         print(f"Epoch {epoch + 1}/{num_epochs} completed in {epoch_time:.2f} seconds.")
++
++    if log_enabled:
++        # A final fixed-heldout point is needed even if max_steps is not an
++        # exact multiple of the requested interval.
++        if heldout_dataset is not None and train_steps % log_eval_interval:
++            write_scalars("adaptation/eval", evaluate_fixed_heldout(), train_steps)
++        log_writer.flush()
++        log_writer.close()
++        log_csv_file.close()
++        if heldout_dataset is not None:
++            for f in heldout_dataset._files.values():
++                f.close()
++        with open(os.path.join(log_root, "raw", "trainer_completion.json"), "x") as f:
++            json.dump({"actual_optimizer_updates": actual_optimizer_updates,
++                       "final_global_train_step": train_steps}, f, indent=2)
++            f.write("\n")

@@ -1,0 +1,2735 @@
+{
+  "copied_files": 151,
+  "files": [
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "go2_probe_common.py"
+      ],
+      "destination": "experiments/go2_probe_common.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "5068ea747ba584e80e3fbf20e8e2f7f5c9ee6fc6bb4e007cdf3ca3887427a0ac",
+      "copied_sha256": "5068ea747ba584e80e3fbf20e8e2f7f5c9ee6fc6bb4e007cdf3ca3887427a0ac",
+      "source_bytes": 3714,
+      "public_sha256": "75ca1609a39ad26d239b860ac3d045ef01af6a1dd3be3d04b0e78127aba30fdc",
+      "public_bytes": 4028,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "eval_s1_v2_batch.py"
+      ],
+      "destination": "experiments/eval_s1_v2_batch.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "d33a32f6593b55edca9800992f55767ee0be310b223429bd5fcd1c0ebf427fd4",
+      "copied_sha256": "d33a32f6593b55edca9800992f55767ee0be310b223429bd5fcd1c0ebf427fd4",
+      "source_bytes": 11452,
+      "public_sha256": "a1809e321e3873545fd046af33af24757ea846eefe3f2fdb41f746232ffd76e8",
+      "public_bytes": 10791,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "collect.py"
+      ],
+      "destination": "experiments/adaptation_curve_v1/collect.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "fbdde51f76305a8b354a4f12b6224b3659f69de6573f2bee1a85b6a6af5639fc",
+      "copied_sha256": "fbdde51f76305a8b354a4f12b6224b3659f69de6573f2bee1a85b6a6af5639fc",
+      "source_bytes": 8315,
+      "public_sha256": "e2fc6fc8e37a41ad6e8dfda5945317f7a763f23f9319fdd148fdff06fa2a35f5",
+      "public_bytes": 8496,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "curve_data.py"
+      ],
+      "destination": "experiments/adaptation_curve_v1/curve_data.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "d64dc1a2e9a730e91633507d45254246ae6e4ff25a5f78b456cc6356b48330c1",
+      "copied_sha256": "d64dc1a2e9a730e91633507d45254246ae6e4ff25a5f78b456cc6356b48330c1",
+      "source_bytes": 4457,
+      "public_sha256": "2540d1353c1027da3514cd36da362b28546367dba450d9a09696c3b463e96080",
+      "public_bytes": 4082,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "eval_batch.py"
+      ],
+      "destination": "experiments/adaptation_curve_v1/eval_batch.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "7b4cfb650908213bddce4097f139b3918abd6486df534b85c3c82b45553e0771",
+      "copied_sha256": "7b4cfb650908213bddce4097f139b3918abd6486df534b85c3c82b45553e0771",
+      "source_bytes": 11830,
+      "public_sha256": "384eba8dbb2f123c8b7b480bb2b36b2597cb94e0de44e19f4051762f13875681",
+      "public_bytes": 11095,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "train_stage.py"
+      ],
+      "destination": "experiments/adaptation_curve_v1/train_stage.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "f913a3db6fb92c0da672e753898f0667dc997f12888167aff0fff7a7ded33737",
+      "copied_sha256": "f913a3db6fb92c0da672e753898f0667dc997f12888167aff0fff7a7ded33737",
+      "source_bytes": 9847,
+      "public_sha256": "1698488303eb79db11f7c9289739e6146b36b3ee506c0bdbc83f263f9850eeed",
+      "public_bytes": 9717,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "evaluate_losses.py"
+      ],
+      "destination": "analysis/adaptation_curve_v1/evaluate_losses.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "7d28da3ecd237669d02b40602b2f09dde8fc0c4e74ad3ff90b259107d6cac035",
+      "copied_sha256": "7d28da3ecd237669d02b40602b2f09dde8fc0c4e74ad3ff90b259107d6cac035",
+      "source_bytes": 3034,
+      "public_sha256": "7f063b0790607e1fbbcfaa7d2a689f828ad83fe79a08aace84a79de8b04bd42e",
+      "public_bytes": 3410,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "aggregate.py"
+      ],
+      "destination": "analysis/adaptation_curve_v1/aggregate.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "71e341913b6ff63ada6ac3ebc58e2afeea5b18ca388d1432553fd34c13743834",
+      "copied_sha256": "71e341913b6ff63ada6ac3ebc58e2afeea5b18ca388d1432553fd34c13743834",
+      "source_bytes": 3809,
+      "public_sha256": "0fc3cebbf53c775e6daef26ca0273b0a29d27ea84277d77541766c78ba3862ac",
+      "public_bytes": 4018,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "run_evaluations.sh"
+      ],
+      "destination": "experiments/adaptation_curve_v1/run_evaluations.sh",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "694a29baecdda47f53730edae3779749f3d0854b979143253a5a5885a880f431",
+      "copied_sha256": "694a29baecdda47f53730edae3779749f3d0854b979143253a5a5885a880f431",
+      "source_bytes": 1350,
+      "public_sha256": "9f036369368b4ddf5bab482e2b7b31528076c053db9d3a934a0628e384ef45cf",
+      "public_bytes": 1856,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "eval_probe_batch.py"
+      ],
+      "destination": "experiments/score_probe_v1/eval_probe_batch.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "ca0055782bdf05a5cb651156e065f46b6b32af67c991a124ec5ccb2df16f8749",
+      "copied_sha256": "ca0055782bdf05a5cb651156e065f46b6b32af67c991a124ec5ccb2df16f8749",
+      "source_bytes": 15446,
+      "public_sha256": "6937eaf708ec3de54569cf8aa33dc869ef7ff40428427b61e5ab3d1b6dddc6c1",
+      "public_bytes": 14121,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "independent_loss.py"
+      ],
+      "destination": "analysis/score_probe_v1/independent_loss.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "cbf4733a7018d54d5837ad4c19590fa3a57d11941deac9c8e4caa984b3e11e9a",
+      "copied_sha256": "cbf4733a7018d54d5837ad4c19590fa3a57d11941deac9c8e4caa984b3e11e9a",
+      "source_bytes": 6253,
+      "public_sha256": "823f084fcb256f0e0054551f2bc8e8739e6b66368a3b216f74c00020738957a6",
+      "public_bytes": 6263,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "aggregate_a.py"
+      ],
+      "destination": "analysis/score_probe_v1/aggregate_a.py",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "e541ddd515db815987e6eefa3d523ffac99f0d1889e60a1e2a01dbaed504ec9a",
+      "copied_sha256": "e541ddd515db815987e6eefa3d523ffac99f0d1889e60a1e2a01dbaed504ec9a",
+      "source_bytes": 4269,
+      "public_sha256": "36a56c8e6ce98af02a16e3c433ef5daaadb0a3aed89d2c243ad158ae3e9707f2",
+      "public_bytes": 4275,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "run_a.sh"
+      ],
+      "destination": "experiments/score_probe_v1/run_a.sh",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "ad8aba6e0d8afea4c9ac5da315fd67a94dcf3e25566086e275ce689de03e9350",
+      "copied_sha256": "ad8aba6e0d8afea4c9ac5da315fd67a94dcf3e25566086e275ce689de03e9350",
+      "source_bytes": 971,
+      "public_sha256": "0be43822f331bb026f4cd24dc9ae4d6c3d0074964298a48b022ba6ce028d4066",
+      "public_bytes": 1435,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "run_c.sh"
+      ],
+      "destination": "experiments/score_probe_v1/run_c.sh",
+      "role": "source",
+      "story": "1",
+      "source_sha256": "6e07f045a3973ff0808992525331ba3f015fdbfee0036416fa3a7e7f5020054e",
+      "copied_sha256": "6e07f045a3973ff0808992525331ba3f015fdbfee0036416fa3a7e7f5020054e",
+      "source_bytes": 971,
+      "public_sha256": "e190f06d764e99eb68677cb114c83287af76167b324d79a8ff83be55f07cfe2e",
+      "public_bytes": 1426,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "run_candidates.py"
+      ],
+      "destination": "experiments/candidate_rank_v1/run_candidates.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "ebdda0e99725137ed2863a14cb1d5ee4583ec0c00d83bf08e9219be4aa939512",
+      "copied_sha256": "ebdda0e99725137ed2863a14cb1d5ee4583ec0c00d83bf08e9219be4aa939512",
+      "source_bytes": 24832,
+      "public_sha256": "004a41b78117ea03b38ac72280841acea1e4a4443b903ce647f41a6ab3be1877",
+      "public_bytes": 23071,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "state.py"
+      ],
+      "destination": "experiments/candidate_rank_v1/state.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "d63a147d07fe0072e203614d020ed34f3d9eee96dab709e6ced70e429a06150c",
+      "copied_sha256": "d63a147d07fe0072e203614d020ed34f3d9eee96dab709e6ced70e429a06150c",
+      "source_bytes": 5035,
+      "public_sha256": "b68df4ae8e0031a17879026ff39698b3a91eb3c669dc8c1ec1b76c9b20206388",
+      "public_bytes": 5106,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "model_heads.py"
+      ],
+      "destination": "experiments/candidate_rank_v1/model_heads.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "9443e33afb39e4e151319bfcd24bb01c1720b46e945ebd747d84424c0768b659",
+      "copied_sha256": "9443e33afb39e4e151319bfcd24bb01c1720b46e945ebd747d84424c0768b659",
+      "source_bytes": 2733,
+      "public_sha256": "79aacfe11ea407254770b4de98505dbaacbe29b0488eae2a17148911cf844ba5",
+      "public_bytes": 2982,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "analyze.py"
+      ],
+      "destination": "analysis/candidate_rank_v1/analyze.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "2f103a8d722ccfb04470bb61de7fbf192ef24916a46ad6e1e41695835092bbab",
+      "copied_sha256": "2f103a8d722ccfb04470bb61de7fbf192ef24916a46ad6e1e41695835092bbab",
+      "source_bytes": 12578,
+      "public_sha256": "be36a5dfec7a5a6b5e989e5d6c858b6b87e867723f8be0c77c984d737c3011fd",
+      "public_bytes": 11225,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "audit_raw.py"
+      ],
+      "destination": "analysis/candidate_rank_v1/audit_raw.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "500057106e82193b065686036993fa1cf89866569bb962229b038ca59c400107",
+      "copied_sha256": "500057106e82193b065686036993fa1cf89866569bb962229b038ca59c400107",
+      "source_bytes": 4623,
+      "public_sha256": "ed347fb6b51533db93652b72c647fe5f39d2ecc4d0ba26bee878b515461d5eee",
+      "public_bytes": 4718,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "recover_planned_actions.py"
+      ],
+      "destination": "experiments/candidate_rank_v1/recover_planned_actions.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "1a4d6668e3938feb4f7f9370bd8fb392bbcb637924f0ffd56362f4296f51343b",
+      "copied_sha256": "1a4d6668e3938feb4f7f9370bd8fb392bbcb637924f0ffd56362f4296f51343b",
+      "source_bytes": 6501,
+      "public_sha256": "04cf4691b591039c35f6063b2dc10c153495b962adfba2c60cc59761816265f0",
+      "public_bytes": 6484,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "reanalyze_decomposition.py"
+      ],
+      "destination": "analysis/candidate_rank_v1/reanalyze_decomposition.py",
+      "role": "source",
+      "story": "2",
+      "source_sha256": "5c55a9f7e7769a51c8b872e1a3b585cdde87978b8c29f7248fdb0bb47148ef85",
+      "copied_sha256": "5c55a9f7e7769a51c8b872e1a3b585cdde87978b8c29f7248fdb0bb47148ef85",
+      "source_bytes": 17452,
+      "public_sha256": "c5ae4f636ad5bdb0d687c886afbc4534dbb59a8409fbbda27bb970ef7f5fea91",
+      "public_bytes": 15929,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "train_seed_split.py"
+      ],
+      "destination": "experiments/extended_adaptation_v1/train_seed_split.py",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "73bed736c2f9d67b6133916457122410c6146b06f270d5c9a02cba264091f3fd",
+      "copied_sha256": "73bed736c2f9d67b6133916457122410c6146b06f270d5c9a02cba264091f3fd",
+      "source_bytes": 10451,
+      "public_sha256": "058ffd07cb3f7173aebe7d943e4d6733142c48c98721c0ca92684ae48e31d9e1",
+      "public_bytes": 10334,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "explicit_data.py"
+      ],
+      "destination": "experiments/extended_adaptation_v1/explicit_data.py",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "0fbfc091b418d474b4d7b9738d55a05246255df0ea4c2198ca1aff9f6462c04b",
+      "copied_sha256": "0fbfc091b418d474b4d7b9738d55a05246255df0ea4c2198ca1aff9f6462c04b",
+      "source_bytes": 3707,
+      "public_sha256": "b0b58626578f854b529f2a2840c68f596c4530f9a0995619b48731716563c8e7",
+      "public_bytes": 3651,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "evaluate_independent.py"
+      ],
+      "destination": "analysis/extended_adaptation_v1/evaluate_independent.py",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "809d9471302bca2c83c92a68c1c809b5c032033a6c1e743c47206b14763f8353",
+      "copied_sha256": "809d9471302bca2c83c92a68c1c809b5c032033a6c1e743c47206b14763f8353",
+      "source_bytes": 6162,
+      "public_sha256": "da27587abb3a362001812f03fb6cf7c4f080e1862f55f0fdf85b9e95b53c7049",
+      "public_bytes": 6182,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "aggregate_a.py"
+      ],
+      "destination": "analysis/extended_adaptation_v1/aggregate_a.py",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "be9b30264f1d292cbce8d3bebcd13da76e999da76d31c479a800e26332cf7a68",
+      "copied_sha256": "be9b30264f1d292cbce8d3bebcd13da76e999da76d31c479a800e26332cf7a68",
+      "source_bytes": 4422,
+      "public_sha256": "6a2b6327e5cb2219c08e153d129b51498910874d372afb2f6786bc974e02a6a7",
+      "public_bytes": 4744,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "aggregate_training.py"
+      ],
+      "destination": "analysis/extended_adaptation_v1/aggregate_training.py",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "c1ba454a04df39e713ea26a512263bb36cacfb4b1a814a1289f37db2e2b14b92",
+      "copied_sha256": "c1ba454a04df39e713ea26a512263bb36cacfb4b1a814a1289f37db2e2b14b92",
+      "source_bytes": 4602,
+      "public_sha256": "43550a6202a2b8d9b95a4e6156abf03e15b7cba1b0a23ce41079af4040333f12",
+      "public_bytes": 4310,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "collect_expert.py"
+      ],
+      "destination": "experiments/extended_adaptation_v1/collect_expert.py",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "a246db66013faacfe643ec6cf48801ea4229c6dce8e363018695f7a57753da1a",
+      "copied_sha256": "a246db66013faacfe643ec6cf48801ea4229c6dce8e363018695f7a57753da1a",
+      "source_bytes": 6754,
+      "public_sha256": "85b82c25aa5904b852303b67ecccedcdc5e75246d3a65b505d5f346380c4e6d5",
+      "public_bytes": 6760,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "collect_interval.sh"
+      ],
+      "destination": "experiments/extended_adaptation_v1/collect_interval.sh",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "11b885fd7f4f687c92b20959bc28747cd6e05a6811f12f1ca1e5fe97936472a1",
+      "copied_sha256": "11b885fd7f4f687c92b20959bc28747cd6e05a6811f12f1ca1e5fe97936472a1",
+      "source_bytes": 984,
+      "public_sha256": "c088e43c83d7efe39e0410a0c8e271a26148bd70e50121c28112c408850cfc00",
+      "public_bytes": 1453,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "train_interval.sh"
+      ],
+      "destination": "experiments/extended_adaptation_v1/train_interval.sh",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "bc9a61f3339d43403add9b4a9b1e40ab466d571e10882bfb2c7c1f80961588ed",
+      "copied_sha256": "bc9a61f3339d43403add9b4a9b1e40ab466d571e10882bfb2c7c1f80961588ed",
+      "source_bytes": 1515,
+      "public_sha256": "444f71895fbc5f2b7e2820f2b8dac1739ade639f5f415505f55e422791771ec6",
+      "public_bytes": 1920,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "eval_stage.sh"
+      ],
+      "destination": "experiments/extended_adaptation_v1/eval_stage.sh",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "7e860018a20a056eb02e40a4891a9182990dc44a2db5e3e4dd8589bb81390cf5",
+      "copied_sha256": "7e860018a20a056eb02e40a4891a9182990dc44a2db5e3e4dd8589bb81390cf5",
+      "source_bytes": 576,
+      "public_sha256": "6306df697804a16b35f27e12e636b3d46937fbf0cc9753ad7ee52bde251eaf52",
+      "public_bytes": 1073,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "collect_expert_oracle.sh"
+      ],
+      "destination": "experiments/extended_adaptation_v1/collect_expert_oracle.sh",
+      "role": "source",
+      "story": "1,3,4",
+      "source_sha256": "3dd824071bf5e1c2c48787020372ad5a4f987814f0c886f90047c21ed0bde23a",
+      "copied_sha256": "3dd824071bf5e1c2c48787020372ad5a4f987814f0c886f90047c21ed0bde23a",
+      "source_bytes": 640,
+      "public_sha256": "101d049dea34506d050ac9cc1fcc87162522e1c91f79639e160f1f3ed5955cb5",
+      "public_bytes": 1135,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "eval_gap_batch.py"
+      ],
+      "destination": "experiments/followup_v1/eval_gap_batch.py",
+      "role": "source",
+      "story": "3,4",
+      "source_sha256": "2eb72de7db4755db78962e1b8d26d07f5d985708d87b502df6f5119524d13e09",
+      "copied_sha256": "2eb72de7db4755db78962e1b8d26d07f5d985708d87b502df6f5119524d13e09",
+      "source_bytes": 15026,
+      "public_sha256": "6079f8ff4756b9e9455a484bcc6851292cfbc58b46f5f517f8974ed8af8d8e5b",
+      "public_bytes": 14170,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "train_oracle_snapshots.py"
+      ],
+      "destination": "experiments/followup_v1/train_oracle_snapshots.py",
+      "role": "source",
+      "story": "3,4",
+      "source_sha256": "e9e3641ac5a314a0befbe8da6d1100893e78e4f98686898bfb667c032fa2eca6",
+      "copied_sha256": "e9e3641ac5a314a0befbe8da6d1100893e78e4f98686898bfb667c032fa2eca6",
+      "source_bytes": 6770,
+      "public_sha256": "7c98cc4e0fea6c7883047e5103e1b4c052d47b4c3e378413360e92820db8fdb0",
+      "public_bytes": 6872,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "aggregate_chain.py"
+      ],
+      "destination": "analysis/followup_v1/aggregate_chain.py",
+      "role": "source",
+      "story": "3,4",
+      "source_sha256": "db1aa235703cd54c3b54803a1c98a73b7b6c2e6b22696d6c376cd9656fe26ffb",
+      "copied_sha256": "db1aa235703cd54c3b54803a1c98a73b7b6c2e6b22696d6c376cd9656fe26ffb",
+      "source_bytes": 3234,
+      "public_sha256": "0bd6f111c610dd4bd69f0a7b963e1e87f08aaa37d573d02a3d78d1f772e31662",
+      "public_bytes": 3610,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "collect_chain.sh"
+      ],
+      "destination": "experiments/followup_v1/collect_chain.sh",
+      "role": "source",
+      "story": "3,4",
+      "source_sha256": "9a419fdac446a0b722f1c2a1b4419154d158d19bd244a65b77c54f29ba6b6768",
+      "copied_sha256": "9a419fdac446a0b722f1c2a1b4419154d158d19bd244a65b77c54f29ba6b6768",
+      "source_bytes": 1102,
+      "public_sha256": "f334b932b3d3c447b8fb75af75b4521b0daa8b4125be41f405b7ffd05e963d45",
+      "public_bytes": 1577,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "train_chain.sh"
+      ],
+      "destination": "experiments/followup_v1/train_chain.sh",
+      "role": "source",
+      "story": "3,4",
+      "source_sha256": "18c60c704e475e98153fc358a22168c5530686fedf9a8f2b760e30e3bb987211",
+      "copied_sha256": "18c60c704e475e98153fc358a22168c5530686fedf9a8f2b760e30e3bb987211",
+      "source_bytes": 1318,
+      "public_sha256": "93ebc42c9286141192e6c53ce9c37b9630ec8accc9580b94bcc3ad9a9ed64efe",
+      "public_bytes": 1805,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "eval_chain.sh"
+      ],
+      "destination": "experiments/followup_v1/eval_chain.sh",
+      "role": "source",
+      "story": "3,4",
+      "source_sha256": "df5244bf2e5c8a4d076d4f828f7fc4e5817419979525f1bba2973b55ff8ad01d",
+      "copied_sha256": "df5244bf2e5c8a4d076d4f828f7fc4e5817419979525f1bba2973b55ff8ad01d",
+      "source_bytes": 442,
+      "public_sha256": "20fef193a0339f0a8ef018421e35086088cef2fb5733f4fdc826b413c04e905f",
+      "public_bytes": 937,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "train_policy_50.py"
+      ],
+      "destination": "experiments/module_combo_v1/train_policy_50.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "96b0b75663c787cf2db2bd774d04f5fffc68261f0d5b0cade30e6561edb19b29",
+      "copied_sha256": "96b0b75663c787cf2db2bd774d04f5fffc68261f0d5b0cade30e6561edb19b29",
+      "source_bytes": 6991,
+      "public_sha256": "a2323953e6381f25b9f727a22f927f78e538e87ec0f3f7f4901c91a6b63bc0fb",
+      "public_bytes": 7098,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "compose_policy_checkpoint.py"
+      ],
+      "destination": "experiments/module_combo_v1/compose_policy_checkpoint.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "7c0497300b0e84b3e8d13b6739fa5f8d8141abf9fa0bcde69fe14d9c3dbc41ac",
+      "copied_sha256": "7c0497300b0e84b3e8d13b6739fa5f8d8141abf9fa0bcde69fe14d9c3dbc41ac",
+      "source_bytes": 1701,
+      "public_sha256": "2cf7c7978b641e4fa6f7243bf4f276d2b46304ba1a2966d7d37d68667ba99bc6",
+      "public_bytes": 2089,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "collect_dynamics.py"
+      ],
+      "destination": "experiments/module_combo_v1/collect_dynamics.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "d18e87d8e97163cf3efd335e7d920c7af021325094399b73d4c6ae50a0e82f5d",
+      "copied_sha256": "d18e87d8e97163cf3efd335e7d920c7af021325094399b73d4c6ae50a0e82f5d",
+      "source_bytes": 8456,
+      "public_sha256": "0a8c8c8e9b7fbc1adc6d0a958c7781e820762457b355417c09e5ebc35566203b",
+      "public_bytes": 8637,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "collect_expert.py"
+      ],
+      "destination": "experiments/module_combo_v1/collect_expert.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "839a4a8194c3c5505035ee37cce3c042cff08d183280b8e2185aa9577d25085d",
+      "copied_sha256": "839a4a8194c3c5505035ee37cce3c042cff08d183280b8e2185aa9577d25085d",
+      "source_bytes": 6886,
+      "public_sha256": "49b1b5ad5389adb1ce87677f8d1f0aa2b03eb147fdb4461372f0d0d131f25d1f",
+      "public_bytes": 6892,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "gap_config.py"
+      ],
+      "destination": "experiments/module_combo_v1/gap_config.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "3dda76c3917a4cc6efcd3fbaf99f8cd7254ec066e50daec27f1f1e0aa122039d",
+      "copied_sha256": "3dda76c3917a4cc6efcd3fbaf99f8cd7254ec066e50daec27f1f1e0aa122039d",
+      "source_bytes": 2656,
+      "public_sha256": "77b6f24a4822f1c3f789df38abb31dfb23b90413f000cc970cd0f8ac6c8e2d10",
+      "public_bytes": 2979,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "evaluate_latent_datasets.py"
+      ],
+      "destination": "experiments/module_combo_v1/evaluate_latent_datasets.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "c3183b48103f6d8239aeddb3909f374e999e209ba2305c4d610ec5e559bf2b70",
+      "copied_sha256": "c3183b48103f6d8239aeddb3909f374e999e209ba2305c4d610ec5e559bf2b70",
+      "source_bytes": 5665,
+      "public_sha256": "59febd7499f0df251d24e3e3df0734cab40973570432b21b19f496f6a77aaac4",
+      "public_bytes": 5760,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "evaluate_losses.py"
+      ],
+      "destination": "analysis/module_combo_v1/evaluate_losses.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "54e2fb87ea8492c070d9f532b17a49e60a8db854a34b9c5a65cecec6df8e044e",
+      "copied_sha256": "54e2fb87ea8492c070d9f532b17a49e60a8db854a34b9c5a65cecec6df8e044e",
+      "source_bytes": 6476,
+      "public_sha256": "40f10052f43901b8fd97b922d5d6243fe504ab0a7070d4a53ca580574c686f9e",
+      "public_bytes": 6469,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "aggregate.py"
+      ],
+      "destination": "analysis/module_combo_v1/aggregate.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "3b4d0f2caa91e753209fb26a37515cbfdab9418e9d5ac36d6407da346d218014",
+      "copied_sha256": "3b4d0f2caa91e753209fb26a37515cbfdab9418e9d5ac36d6407da346d218014",
+      "source_bytes": 9587,
+      "public_sha256": "7d9ab4fe1147de54858a6c270e44767f08635b7c19270cf0a3d10142f948dfe3",
+      "public_bytes": 9073,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "aggregate_followup_repro.py"
+      ],
+      "destination": "analysis/module_combo_v1/aggregate_followup_repro.py",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "69ecabfcdccb9986a1113aa5b78e5c26b0bb628017baf4fcfaacf9163eafe67f",
+      "copied_sha256": "69ecabfcdccb9986a1113aa5b78e5c26b0bb628017baf4fcfaacf9163eafe67f",
+      "source_bytes": 12560,
+      "public_sha256": "a32236609cfff0a8e3d6e8561a79bde3e08cec281b541b78fad1dfef48a0691f",
+      "public_bytes": 12010,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "run_mass8.sh"
+      ],
+      "destination": "experiments/module_combo_v1/run_mass8.sh",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "7f7778424517c82d869f0000a170e4d2737127fb488f8197dc2eee824d9a6024",
+      "copied_sha256": "7f7778424517c82d869f0000a170e4d2737127fb488f8197dc2eee824d9a6024",
+      "source_bytes": 1821,
+      "public_sha256": "fd9657719f9f0dab2cc2061dd311168fca98a5d2d7c30e4c8ef341b152619378",
+      "public_bytes": 2319,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "run_gap.sh"
+      ],
+      "destination": "experiments/module_combo_v1/run_gap.sh",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "575c4ee5df0703e204bd35794125376674fb19cab534d9c1fa9204c2b1765609",
+      "copied_sha256": "575c4ee5df0703e204bd35794125376674fb19cab534d9c1fa9204c2b1765609",
+      "source_bytes": 4927,
+      "public_sha256": "ed22d2de3055d3b9e66163f80f2d257332b9bd3a57768b275332e35671212f4f",
+      "public_bytes": 5531,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "run_followup_repro.sh"
+      ],
+      "destination": "experiments/module_combo_v1/run_followup_repro.sh",
+      "role": "source",
+      "story": "4,3",
+      "source_sha256": "b02812ecb0c2aa3abc73733474b2e9dab2fbdb1aaba5208f2df68ad30789b71d",
+      "copied_sha256": "b02812ecb0c2aa3abc73733474b2e9dab2fbdb1aaba5208f2df68ad30789b71d",
+      "source_bytes": 7506,
+      "public_sha256": "2faf40fd3cb732178ff13759273a4290530817beae3389b910672aca27fd7c79",
+      "public_bytes": 8246,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "run.py"
+      ],
+      "destination": "experiments/positive_control_variance_v1/run.py",
+      "role": "source",
+      "story": "3",
+      "source_sha256": "a9ba0e9bfb0199e2ba35c3d341310f0965afc0411ec48a09b661b7c962bfe820",
+      "copied_sha256": "a9ba0e9bfb0199e2ba35c3d341310f0965afc0411ec48a09b661b7c962bfe820",
+      "source_bytes": 9364,
+      "public_sha256": "c837b81aa3129db51fd8ded102483ff476cb970a07dcf944ec308a281e9d8b7c",
+      "public_bytes": 9274,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "collect.py"
+      ],
+      "destination": "experiments/positive_control_variance_v1/collect.py",
+      "role": "source",
+      "story": "3",
+      "source_sha256": "556501ad6bbd799bc31700ba1997516078a633db2f02be37ec7a559feaf7696e",
+      "copied_sha256": "556501ad6bbd799bc31700ba1997516078a633db2f02be37ec7a559feaf7696e",
+      "source_bytes": 8896,
+      "public_sha256": "cd17fe65a0ff6866b8fc7d34a1ed749efd30c9783d7b1ce41770e4429963a140",
+      "public_bytes": 9057,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "condition_config.py"
+      ],
+      "destination": "experiments/positive_control_variance_v1/condition_config.py",
+      "role": "source",
+      "story": "3",
+      "source_sha256": "73a81175972bd74873960b276517813fc4736b00623fe6bc11d7fc7bc31029ef",
+      "copied_sha256": "73a81175972bd74873960b276517813fc4736b00623fe6bc11d7fc7bc31029ef",
+      "source_bytes": 3104,
+      "public_sha256": "ca1181a651bedb540b19185e3993d854c2a3945a49409305c727ded2c5149b9a",
+      "public_bytes": 3431,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "eval_batch.py"
+      ],
+      "destination": "experiments/positive_control_variance_v1/eval_batch.py",
+      "role": "source",
+      "story": "3",
+      "source_sha256": "b0e805e8a582ecec5efe004c56bdc3fa0cbc06f8928d7e9f3627598c0d7fe24a",
+      "copied_sha256": "b0e805e8a582ecec5efe004c56bdc3fa0cbc06f8928d7e9f3627598c0d7fe24a",
+      "source_bytes": 12478,
+      "public_sha256": "acfb893e4c6387c88ec5475bb2c5d1b06807ca904e690014db77e869f7ffb63b",
+      "public_bytes": 11681,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "aggregate.py"
+      ],
+      "destination": "analysis/positive_control_variance_v1/aggregate.py",
+      "role": "source",
+      "story": "3",
+      "source_sha256": "ac3717cf412556c67d2bf0f393ab832d95312d53d109686b48a7fe20dd74d082",
+      "copied_sha256": "ac3717cf412556c67d2bf0f393ab832d95312d53d109686b48a7fe20dd74d082",
+      "source_bytes": 21517,
+      "public_sha256": "2e6908c0347c1aadb9aa2dfa1eaa23398838902299d513b6f24493b8a24d9bad",
+      "public_bytes": 20335,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "common.py"
+      ],
+      "destination": "experiments/simdist_c/common.py",
+      "role": "source",
+      "story": "5,6",
+      "source_sha256": "b8b7e75b67d5ac99c1c38b911a06ce4cd9805d566cbc8ef229f9969d2484c260",
+      "copied_sha256": "b8b7e75b67d5ac99c1c38b911a06ce4cd9805d566cbc8ef229f9969d2484c260",
+      "source_bytes": 2421,
+      "public_sha256": "0901fa83096aa0978df2501a830f60868375e889db0aba329595753d1bd49e0e",
+      "public_bytes": 2752,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "collect.py"
+      ],
+      "destination": "experiments/simdist_c/collect.py",
+      "role": "source",
+      "story": "5,6",
+      "source_sha256": "6f62a5871679de9d913896eceb2ebc32762c6580cafbedace60ea38919f0a0a5",
+      "copied_sha256": "6f62a5871679de9d913896eceb2ebc32762c6580cafbedace60ea38919f0a0a5",
+      "source_bytes": 27228,
+      "public_sha256": "920bf6b82a34f663997b69b2470a987dbc55d06c125a41accdcb4e40898453a6",
+      "public_bytes": 24415,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "process.py"
+      ],
+      "destination": "experiments/simdist_c/process.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "1ff6b86742895d7694f74184a83c887a2cd03bb4767aaa2f43fbf0d94fe23639",
+      "copied_sha256": "1ff6b86742895d7694f74184a83c887a2cd03bb4767aaa2f43fbf0d94fe23639",
+      "source_bytes": 3420,
+      "public_sha256": "0b938ef7dff3eabce3ba105036ff5dd702dee61d6af29cad8135511faf331a99",
+      "public_bytes": 3380,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "adapt.py"
+      ],
+      "destination": "experiments/simdist_c/adapt.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "5d61acbdb95973305cb5dfac56b18e493c188bc1a8481402e9e20c6b475e7468",
+      "copied_sha256": "5d61acbdb95973305cb5dfac56b18e493c188bc1a8481402e9e20c6b475e7468",
+      "source_bytes": 9049,
+      "public_sha256": "52b724b6cc0bf1e52a20fafc8034c47ee63df56764589252035bcc3b59caf1ea",
+      "public_bytes": 9126,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "evaluate.py"
+      ],
+      "destination": "experiments/simdist_c/evaluate.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "0e01f5f325769bbcdf59a26cb87b68efda0fad82a52e90826f5fbbd9c85c0ec5",
+      "copied_sha256": "0e01f5f325769bbcdf59a26cb87b68efda0fad82a52e90826f5fbbd9c85c0ec5",
+      "source_bytes": 5432,
+      "public_sha256": "26561317b1bcde201dc4ba49954682d44d8438f65c1239afb39ec8deddcb3bdf",
+      "public_bytes": 5789,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t1_data_amount_control.py"
+      ],
+      "destination": "experiments/simdist_c/t1_data_amount_control.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "77089b5e940e200cab8cf318fec1940c378bc8ee0ac465fd7836068e1090bdff",
+      "copied_sha256": "77089b5e940e200cab8cf318fec1940c378bc8ee0ac465fd7836068e1090bdff",
+      "source_bytes": 29564,
+      "public_sha256": "11417bc3e4e1e3a06a74bd50bbfda1a02dad7ea40c0c058e00267134cd64ccf8",
+      "public_bytes": 28528,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t3_causal_build_subsets.py"
+      ],
+      "destination": "experiments/simdist_c/t3_causal_build_subsets.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "3c14e05b6f581c629160e9622f704eb211868efe94db10ab3959aa16c08eae65",
+      "copied_sha256": "3c14e05b6f581c629160e9622f704eb211868efe94db10ab3959aa16c08eae65",
+      "source_bytes": 8137,
+      "public_sha256": "b69f3991615a319f5796aa7772974c8b261d0961a26f3ddb0aa56574fdb5404e",
+      "public_bytes": 10050,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t3_causal_execute.py"
+      ],
+      "destination": "experiments/simdist_c/t3_causal_execute.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "cde5a0c42c4c55e6a6913260bc55108b280e5cd81cfdb0c28aea97bef9a12f91",
+      "copied_sha256": "cde5a0c42c4c55e6a6913260bc55108b280e5cd81cfdb0c28aea97bef9a12f91",
+      "source_bytes": 7455,
+      "public_sha256": "9c22b01954c15246103bc77a35e892550835625b6b60d8feaaf209b16703779b",
+      "public_bytes": 8929,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t3_causal_finalize.py"
+      ],
+      "destination": "experiments/simdist_c/t3_causal_finalize.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "77603b33ffa10f3f502a1bac44b666e596b654d7af4dc146ff65b7d7f3d13d9c",
+      "copied_sha256": "77603b33ffa10f3f502a1bac44b666e596b654d7af4dc146ff65b7d7f3d13d9c",
+      "source_bytes": 6060,
+      "public_sha256": "9272dfc9ed12429662292f6ff7bcb3206c1b1ad51766313d1fc8b7484f45351c",
+      "public_bytes": 7555,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t3_fresh_replication.py"
+      ],
+      "destination": "experiments/simdist_c/t3_fresh_replication.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "2afa0b428ce83a7046223c8d18b0fff00d44039841122680ed9172c8d0ef6aca",
+      "copied_sha256": "2afa0b428ce83a7046223c8d18b0fff00d44039841122680ed9172c8d0ef6aca",
+      "source_bytes": 9616,
+      "public_sha256": "a6928722c0dcf9957c163ccc611281f0cb2dc08d2a50f9d3b4444778598feade",
+      "public_bytes": 11951,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t3_fresh_finalize.py"
+      ],
+      "destination": "experiments/simdist_c/t3_fresh_finalize.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "d817c98428243e409b4efca266574292d5e530c726e5ed8c23f5a0bb8ce1513a",
+      "copied_sha256": "d817c98428243e409b4efca266574292d5e530c726e5ed8c23f5a0bb8ce1513a",
+      "source_bytes": 27136,
+      "public_sha256": "3d235ebd167d99e61a95701610608e8676601b209b8e8e03c97bf1cbc5fa4fc7",
+      "public_bytes": 26194,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "experiments",
+        "simdist_c",
+        "t2_v2_common_control.py"
+      ],
+      "destination": "experiments/simdist_c/t2_v2_common_control.py",
+      "role": "source",
+      "story": "5",
+      "source_sha256": "9392bc0dfa960b0da54632be25d983e2ef7f3cb82d330e2db8ed8058e275d9a5",
+      "copied_sha256": "9392bc0dfa960b0da54632be25d983e2ef7f3cb82d330e2db8ed8058e275d9a5",
+      "source_bytes": 10733,
+      "public_sha256": "4a35ecc4b7421c8d0cfb63e29c07ce814f77008575483c90b73f6c1b25585e11",
+      "public_bytes": 12681,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "train_target.py"
+      ],
+      "destination": "experiments/privileged_ppo/train_target.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "b5a47210214de61d0fc652f089f3d48b3835aac641fcd23b1e53193ecda1e301",
+      "copied_sha256": "b5a47210214de61d0fc652f089f3d48b3835aac641fcd23b1e53193ecda1e301",
+      "source_bytes": 16659,
+      "public_sha256": "e0428cc26a34904c84ec88ed6914b8da8e2cee2a4b2a3d8e8a457cbf328c2d08",
+      "public_bytes": 16490,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "evaluate_ppo.py"
+      ],
+      "destination": "experiments/privileged_ppo/evaluate_ppo.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "3da241c6909c709509bac96e2b41bc1d9b1b442cb3702922425a54fbc0c36a72",
+      "copied_sha256": "3da241c6909c709509bac96e2b41bc1d9b1b442cb3702922425a54fbc0c36a72",
+      "source_bytes": 8691,
+      "public_sha256": "cff4ccf61cd1c9cf20e58ec16987d1a7a18948f18e88cecd12feef465f950b6a",
+      "public_bytes": 8599,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "evaluate_mppi.py"
+      ],
+      "destination": "experiments/privileged_ppo/evaluate_mppi.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "ec939cb43c19421dc4656ae5b307305e598de55f58a901b134e4c348b949dd72",
+      "copied_sha256": "ec939cb43c19421dc4656ae5b307305e598de55f58a901b134e4c348b949dd72",
+      "source_bytes": 27701,
+      "public_sha256": "2524bba89b24438ff934521afe9a036cc271d907fc0abcd2e45ec0cb6d3ac8a3",
+      "public_bytes": 24800,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "target_env.py"
+      ],
+      "destination": "experiments/privileged_ppo/target_env.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "475c54fbe49d9d6154a54c6986846c9eea8cf72caa7cb0d28463336a8572712d",
+      "copied_sha256": "475c54fbe49d9d6154a54c6986846c9eea8cf72caa7cb0d28463336a8572712d",
+      "source_bytes": 7777,
+      "public_sha256": "67e16c45f89b861abf35deb6c73a58b7e47a138d20bb0b2c0cc0045f344db292",
+      "public_bytes": 7908,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "recovery_support.py"
+      ],
+      "destination": "experiments/privileged_ppo/recovery_support.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "a158ae72f181e75ab8c8239967d967654bae5cb41705ccc901ec075eb0626a0b",
+      "copied_sha256": "a158ae72f181e75ab8c8239967d967654bae5cb41705ccc901ec075eb0626a0b",
+      "source_bytes": 2560,
+      "public_sha256": "76a787efa0df73b30370da8e9f801776a226e1c3631648edbe8446539a6b247e",
+      "public_bytes": 2882,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "orchestrate.py"
+      ],
+      "destination": "experiments/privileged_ppo/orchestrate.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "95b8c4bfe909eaaa96a098a555e5124c1c9b4d78d5f5aeab8500d4a17661ceda",
+      "copied_sha256": "95b8c4bfe909eaaa96a098a555e5124c1c9b4d78d5f5aeab8500d4a17661ceda",
+      "source_bytes": 4984,
+      "public_sha256": "95b60774b4abe9a589015dcab6e3d477b222e630f41e0ae3a34e8d1599e36e88",
+      "public_bytes": 5709,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "summarize.py"
+      ],
+      "destination": "analysis/privileged_ppo/summarize.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "c338d50440f1724d621accb6ec62d1b9ae594f66cf84a4616f64c8649b922285",
+      "copied_sha256": "c338d50440f1724d621accb6ec62d1b9ae594f66cf84a4616f64c8649b922285",
+      "source_bytes": 34783,
+      "public_sha256": "b878101fb656f16626d6ea06b80b30c2e50533561175653afaeac92873e74953",
+      "public_bytes": 35098,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "code",
+        "final_verify.py"
+      ],
+      "destination": "analysis/privileged_ppo/final_verify.py",
+      "role": "source",
+      "story": "6",
+      "source_sha256": "5237c36b46c9c5fffd317239e5877267e8bde13784374ce4e27fe3af55fdf61a",
+      "copied_sha256": "5237c36b46c9c5fffd317239e5877267e8bde13784374ce4e27fe3af55fdf61a",
+      "source_bytes": 6244,
+      "public_sha256": "550b1076b127d83085d26e7a2df103c4f5f182058e4644a8a683b744366cee6a",
+      "public_bytes": 7208,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "results",
+        "aggregate",
+        "condition_summary.csv"
+      ],
+      "destination": "results/adaptation_curve_v1/aggregate/condition_summary.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "2f99feff09d7b932c9beaf3226d4a26ea011ecb80fc6a241d8b2ab72f92490a1",
+      "copied_sha256": "2f99feff09d7b932c9beaf3226d4a26ea011ecb80fc6a241d8b2ab72f92490a1",
+      "source_bytes": 2692,
+      "public_sha256": "c4205eb579f42a1687e6af3d9029dbdd38b8175eef269bcee2b3a01aa05add3c",
+      "public_bytes": 2683,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "results",
+        "aggregate",
+        "seed_results.csv"
+      ],
+      "destination": "results/adaptation_curve_v1/aggregate/seed_results.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "ade30b4131bbd6fb1008f9791550a0d484b6c2139677bd19f30ca2ce5b3d5604",
+      "copied_sha256": "ade30b4131bbd6fb1008f9791550a0d484b6c2139677bd19f30ca2ce5b3d5604",
+      "source_bytes": 41416,
+      "public_sha256": "c667f9d78a4a57928d1637c1a442a5133750cf7bad74c92386a8cc053516dd06",
+      "public_bytes": 34135,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "adaptation_curve_v1",
+        "results",
+        "aggregate",
+        "heldout_losses.csv"
+      ],
+      "destination": "results/adaptation_curve_v1/aggregate/heldout_losses.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "e647842b745fa0535efdda9c71904e3ea1a4a8ecc46a6c0621fdfbfdd43da4a7",
+      "copied_sha256": "e647842b745fa0535efdda9c71904e3ea1a4a8ecc46a6c0621fdfbfdd43da4a7",
+      "source_bytes": 6383,
+      "public_sha256": "88acfe8fe75c942f344b679006a5546376c76f080a1fbfd434d35c4768717666",
+      "public_bytes": 4550,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "results",
+        "analysis",
+        "a_conditions.csv"
+      ],
+      "destination": "results/score_probe_v1/analysis/a_conditions.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "6f222fb13285f287c142a748660a0d13d3e8848489e4339d5c8ee1d94b3dcd54",
+      "copied_sha256": "6f222fb13285f287c142a748660a0d13d3e8848489e4339d5c8ee1d94b3dcd54",
+      "source_bytes": 769,
+      "public_sha256": "8ece913255dfec6600b5d4ad9eeac4acc3d1900c5aad712ed5a9d6b111df956b",
+      "public_bytes": 764,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "results",
+        "analysis",
+        "a_seed_results.csv"
+      ],
+      "destination": "results/score_probe_v1/analysis/a_seed_results.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "283c8073f56e84bf942da17f7c2c7789f2f769dca4b42202f8f12f2413a7e104",
+      "copied_sha256": "283c8073f56e84bf942da17f7c2c7789f2f769dca4b42202f8f12f2413a7e104",
+      "source_bytes": 85331,
+      "public_sha256": "21b167d64e666f0f32c8d88713898d91a6f7b5c53b399357b6a15fb9c9f9bc1a",
+      "public_bytes": 66650,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "results",
+        "analysis",
+        "c_loss_summary.csv"
+      ],
+      "destination": "results/score_probe_v1/analysis/c_loss_summary.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "75f8ab4e647f3944657d8de38b46195e3c6410720a453405c1d9cf804a4603cc",
+      "copied_sha256": "75f8ab4e647f3944657d8de38b46195e3c6410720a453405c1d9cf804a4603cc",
+      "source_bytes": 1848,
+      "public_sha256": "847b0e1367a568733e77fc0c525bce95be6f2a9b038545dd7795093556ff84f0",
+      "public_bytes": 1837,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "score_probe_v1",
+        "results",
+        "analysis",
+        "c_per_seed_losses.csv"
+      ],
+      "destination": "results/score_probe_v1/analysis/c_per_seed_losses.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "cb36b68a886d6bcde1bc9af458a8b93fd2498a72a19c06f61acd9988f33d2b68",
+      "copied_sha256": "cb36b68a886d6bcde1bc9af458a8b93fd2498a72a19c06f61acd9988f33d2b68",
+      "source_bytes": 30468,
+      "public_sha256": "a684bd9aa25ec4fa6617caae80c714d3f3a3d1f3a4f5e32292e0315689b60565",
+      "public_bytes": 21287,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "analysis",
+        "ranking_summary.csv"
+      ],
+      "destination": "results/candidate_rank_v1/analysis/ranking_summary.csv",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "3506865df037186498d369af1e24f0e983545e2b6be1738863b54216d9ed0d34",
+      "copied_sha256": "3506865df037186498d369af1e24f0e983545e2b6be1738863b54216d9ed0d34",
+      "source_bytes": 5746,
+      "public_sha256": "2964198dd251cbb7164457cbc8e608949cf9c56299bffa513bddd2b5fbc6de0c",
+      "public_bytes": 5673,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "analysis",
+        "per_snapshot_metrics.csv"
+      ],
+      "destination": "results/candidate_rank_v1/analysis/per_snapshot_metrics.csv",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "91ef536f64d4229c76baa1674b1f8bb6699f9db4f2049e4c7ee706a1a35ccf57",
+      "copied_sha256": "91ef536f64d4229c76baa1674b1f8bb6699f9db4f2049e4c7ee706a1a35ccf57",
+      "source_bytes": 118890,
+      "public_sha256": "e9c361263a86c989fc978e737deccb4fd8b618bdf83a0c8e30c6caa4b38b174c",
+      "public_bytes": 118518,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "analysis",
+        "raw_audit.json"
+      ],
+      "destination": "results/candidate_rank_v1/analysis/raw_audit.json",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "07676042bd21d50f7a32a5136596ad2bddc01b79c0191272103ad6bf27924168",
+      "copied_sha256": "07676042bd21d50f7a32a5136596ad2bddc01b79c0191272103ad6bf27924168",
+      "source_bytes": 308,
+      "public_sha256": "07676042bd21d50f7a32a5136596ad2bddc01b79c0191272103ad6bf27924168",
+      "public_bytes": 308,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "decomposition_v1",
+        "expert_rank_summary.csv"
+      ],
+      "destination": "results/candidate_rank_v1/decomposition_v1/expert_rank_summary.csv",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "73e63c2441996f8d5c12596236eaa6b9816066ec9f1a15d9873ab3ef2f753131",
+      "copied_sha256": "73e63c2441996f8d5c12596236eaa6b9816066ec9f1a15d9873ab3ef2f753131",
+      "source_bytes": 1344,
+      "public_sha256": "440bcc786074d00cba454c96a6d0c8060159e40ef42b70f45c53a25ed706167f",
+      "public_bytes": 1334,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "decomposition_v1",
+        "expert_rank_snapshot.csv"
+      ],
+      "destination": "results/candidate_rank_v1/decomposition_v1/expert_rank_snapshot.csv",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "e302cfabd53677386c16ca39a072fde604fe08a5409399a7d2f4bd13c61f251f",
+      "copied_sha256": "e302cfabd53677386c16ca39a072fde604fe08a5409399a7d2f4bd13c61f251f",
+      "source_bytes": 16705,
+      "public_sha256": "f16c1f3ae9b9f2d7c6269bd3807e935314f393e930af1a0e1c16b355a254859e",
+      "public_bytes": 16468,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "decomposition_v1",
+        "decomposition_summary.csv"
+      ],
+      "destination": "results/candidate_rank_v1/decomposition_v1/decomposition_summary.csv",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "d9c346c44a5d03ae89f22a70f9a939cfd46a71af87033a5eba8ba6d4fbf2fedb",
+      "copied_sha256": "d9c346c44a5d03ae89f22a70f9a939cfd46a71af87033a5eba8ba6d4fbf2fedb",
+      "source_bytes": 11889,
+      "public_sha256": "ce1d2e41970a785afae819a27ad5c806ce12d23d4c0790b6e15c38aefceb99da",
+      "public_bytes": 11816,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "decomposition_v1",
+        "audit.json"
+      ],
+      "destination": "results/candidate_rank_v1/decomposition_v1/audit.json",
+      "role": "result",
+      "story": "2",
+      "source_sha256": "760252d1e1c5e1c2ff3355161574e588b33e1fb490cb9652ef018a7c0f11df23",
+      "copied_sha256": "760252d1e1c5e1c2ff3355161574e588b33e1fb490cb9652ef018a7c0f11df23",
+      "source_bytes": 413,
+      "public_sha256": "760252d1e1c5e1c2ff3355161574e588b33e1fb490cb9652ef018a7c0f11df23",
+      "public_bytes": 413,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "results",
+        "aggregate",
+        "training_stages.csv"
+      ],
+      "destination": "results/extended_adaptation_v1/aggregate/training_stages.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "4373dbf67a5d8cb1100730988f939d1e6ffa0cfb76ab097329b447cf0fb84b4c",
+      "copied_sha256": "4373dbf67a5d8cb1100730988f939d1e6ffa0cfb76ab097329b447cf0fb84b4c",
+      "source_bytes": 1711,
+      "public_sha256": "f8a4c7091225bb0d8397786d59f87344cb3f6d86760a0451869b7e5145114c29",
+      "public_bytes": 1293,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "results",
+        "aggregate",
+        "independent_loss_clean.csv"
+      ],
+      "destination": "results/extended_adaptation_v1/aggregate/independent_loss_clean.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "f5afb64378fcaba61eb0cb4e36764664137ef9b95f7fd4ad8b6547e160d7d0df",
+      "copied_sha256": "f5afb64378fcaba61eb0cb4e36764664137ef9b95f7fd4ad8b6547e160d7d0df",
+      "source_bytes": 1153,
+      "public_sha256": "ea513211279551dbecf0bf849a96277a1bef6bb5c684e1dd146de72856a5f8c1",
+      "public_bytes": 1146,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "results",
+        "aggregate",
+        "condition_summary.csv"
+      ],
+      "destination": "results/extended_adaptation_v1/aggregate/condition_summary.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "1d135a1443d62d9568b03b42b0847b35ea63157452753a67daa03abcf000e98d",
+      "copied_sha256": "1d135a1443d62d9568b03b42b0847b35ea63157452753a67daa03abcf000e98d",
+      "source_bytes": 1622,
+      "public_sha256": "00ea955553c56c17b29624538c2f7082953eca1e791057cbd44f654cf290dc34",
+      "public_bytes": 1615,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "extended_adaptation_v1",
+        "results",
+        "aggregate",
+        "seed_results.csv"
+      ],
+      "destination": "results/extended_adaptation_v1/aggregate/seed_results.csv",
+      "role": "result",
+      "story": "1",
+      "source_sha256": "6788b4659cf8d398b9b3a905f2244056fdf707ece9f0012719162d526afa3f89",
+      "copied_sha256": "6788b4659cf8d398b9b3a905f2244056fdf707ece9f0012719162d526afa3f89",
+      "source_bytes": 149541,
+      "public_sha256": "79d3c4f5eab64ece4d1810f982c0c3a13c087c299965e9a6cea4ee3de5d32207",
+      "public_bytes": 121400,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "results",
+        "chain",
+        "aggregate",
+        "condition_summary.csv"
+      ],
+      "destination": "results/followup_v1/chain/aggregate/condition_summary.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "9dcbe701bafe7dbd5dd74eb46ac79bad380fa05799c970921357926565f9bfd9",
+      "copied_sha256": "9dcbe701bafe7dbd5dd74eb46ac79bad380fa05799c970921357926565f9bfd9",
+      "source_bytes": 739,
+      "public_sha256": "f0fc58f0d4aff78f1faf632ef1c471f36265004b454bac84e4932291f6202356",
+      "public_bytes": 736,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "followup_v1",
+        "results",
+        "chain",
+        "aggregate",
+        "seed_results.csv"
+      ],
+      "destination": "results/followup_v1/chain/aggregate/seed_results.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "4dabf5c255ca8971cd1ae719e81068528b9545b2b27b6c030b316290ce33ad9b",
+      "copied_sha256": "4dabf5c255ca8971cd1ae719e81068528b9545b2b27b6c030b316290ce33ad9b",
+      "source_bytes": 47348,
+      "public_sha256": "3c92b351fd5663a00383593f2d1582166510a61e13ea5fd3f33eb03e15c0341b",
+      "public_bytes": 37947,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "results",
+        "mass8",
+        "aggregate",
+        "condition_summary.csv"
+      ],
+      "destination": "results/module_combo_v1/mass8/aggregate/condition_summary.csv",
+      "role": "result",
+      "story": "4",
+      "source_sha256": "4b0dab747dc84b04a229bc2a60aa8696e97705e6a7ad9a2adde85de4290766fe",
+      "copied_sha256": "4b0dab747dc84b04a229bc2a60aa8696e97705e6a7ad9a2adde85de4290766fe",
+      "source_bytes": 1158,
+      "public_sha256": "7ab0b952cf3a758f7dd5a9b9d9ab11975b77a88c999a5153c792bef5a53961d3",
+      "public_bytes": 1149,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "results",
+        "mass8",
+        "aggregate",
+        "seed_results.csv"
+      ],
+      "destination": "results/module_combo_v1/mass8/aggregate/seed_results.csv",
+      "role": "result",
+      "story": "4",
+      "source_sha256": "b676bb48ad6250828093d9b0bc71f8980a560c61da122050235eb777da0d01a6",
+      "copied_sha256": "b676bb48ad6250828093d9b0bc71f8980a560c61da122050235eb777da0d01a6",
+      "source_bytes": 170140,
+      "public_sha256": "e59d74779c7e97a6ab467124a8d096d67906310c181f272dca82c787454b30d4",
+      "public_bytes": 132659,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "results",
+        "mass8",
+        "aggregate",
+        "paired_summary.csv"
+      ],
+      "destination": "results/module_combo_v1/mass8/aggregate/paired_summary.csv",
+      "role": "result",
+      "story": "4",
+      "source_sha256": "ae0e75c5ab0ecbc91f567c74a031d729842ac50c4ce5bd6001c74f0de14bafe9",
+      "copied_sha256": "ae0e75c5ab0ecbc91f567c74a031d729842ac50c4ce5bd6001c74f0de14bafe9",
+      "source_bytes": 1187,
+      "public_sha256": "57dae6c5336e931a34b11abec14162c41679055434c0a072e9a538894ac5fce5",
+      "public_bytes": 1181,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "results",
+        "followup_repro",
+        "mass8_d_p",
+        "aggregate",
+        "condition_summary.csv"
+      ],
+      "destination": "results/module_combo_v1/followup_repro/mass8_d_p/aggregate/condition_summary.csv",
+      "role": "result",
+      "story": "4",
+      "source_sha256": "beb51e4ea370d8d34a3b418532bcaad110a3b2f82aad3595b68a273cbe9d81d0",
+      "copied_sha256": "beb51e4ea370d8d34a3b418532bcaad110a3b2f82aad3595b68a273cbe9d81d0",
+      "source_bytes": 762,
+      "public_sha256": "91aebc9cf656dd5666ce8666f800770fd8e5a7cdcdb0e95c37a1d36d12e0c410",
+      "public_bytes": 756,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "results",
+        "followup_repro",
+        "mass8_d_p",
+        "aggregate",
+        "seed_results.csv"
+      ],
+      "destination": "results/module_combo_v1/followup_repro/mass8_d_p/aggregate/seed_results.csv",
+      "role": "result",
+      "story": "4",
+      "source_sha256": "280ad0ba8ff91ec40e35a0e26e743e99ab741ca22ce88f600507d854d2724faf",
+      "copied_sha256": "280ad0ba8ff91ec40e35a0e26e743e99ab741ca22ce88f600507d854d2724faf",
+      "source_bytes": 112034,
+      "public_sha256": "11cfc8fec7f467f3f6dfe5e3a029fd5bcbaef4d9e39e4d9dc8d247ed419d77c1",
+      "public_bytes": 88533,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "results",
+        "mass8",
+        "aggregate",
+        "chain_comparison.csv"
+      ],
+      "destination": "results/positive_control_variance_v1/mass8/aggregate/chain_comparison.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "cdc538089ec6ae32730a36a5f3eec6bed91d3a743ee22acd24a90f7933ff2572",
+      "copied_sha256": "cdc538089ec6ae32730a36a5f3eec6bed91d3a743ee22acd24a90f7933ff2572",
+      "source_bytes": 1309,
+      "public_sha256": "1e8e1954417b4ab0365377ab79c1c872afe6242851b12d288226f421f4c8edec",
+      "public_bytes": 1302,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "results",
+        "mass8",
+        "aggregate",
+        "condition_summary.csv"
+      ],
+      "destination": "results/positive_control_variance_v1/mass8/aggregate/condition_summary.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "79d6574dd0453daf3c98911941cd8c4a9ce14b2a29e14581436cf7236bc3d1d2",
+      "copied_sha256": "79d6574dd0453daf3c98911941cd8c4a9ce14b2a29e14581436cf7236bc3d1d2",
+      "source_bytes": 1657,
+      "public_sha256": "1df24d292cc3b208adf008aa96a3759020ee58c49d4ef90f9c908e18940cca1f",
+      "public_bytes": 1649,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "results",
+        "mass8",
+        "aggregate",
+        "seed_results.csv"
+      ],
+      "destination": "results/positive_control_variance_v1/mass8/aggregate/seed_results.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "be488f54925ad4574fe2be90045590c24ce1920a579f93537f0e3bb23123d1bf",
+      "copied_sha256": "be488f54925ad4574fe2be90045590c24ce1920a579f93537f0e3bb23123d1bf",
+      "source_bytes": 177687,
+      "public_sha256": "1fe9b051f0dbe0cefb07363b8d08e91526373260f781c5cc7bd3dc371aab69ee",
+      "public_bytes": 144846,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "results",
+        "mass8",
+        "losses.csv"
+      ],
+      "destination": "results/positive_control_variance_v1/mass8/losses.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+      "copied_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+      "source_bytes": 22060,
+      "public_sha256": "f5361383dfeb5796e4f97e92d85d1841d871b9f8f9122a100a4c320f44b616d8",
+      "public_bytes": 15609,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "results",
+        "mass8",
+        "losses_summary.csv"
+      ],
+      "destination": "results/positive_control_variance_v1/mass8/losses_summary.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "d953bda1a0a657d891f599fefd11d2beb9a4398c72a216a9b1879445980c70f3",
+      "copied_sha256": "d953bda1a0a657d891f599fefd11d2beb9a4398c72a216a9b1879445980c70f3",
+      "source_bytes": 1709,
+      "public_sha256": "d997bdb900c72bea51b91dcf8687eb4a866eb45005ce9d79f8fc978e832e8174",
+      "public_bytes": 1694,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "results",
+        "training_summary.csv"
+      ],
+      "destination": "results/positive_control_variance_v1/training_summary.csv",
+      "role": "result",
+      "story": "3",
+      "source_sha256": "ae17e27a7dfc1ffe19c5e3470072668a04f92f7f3fe09cc890603cdd2ec46e2d",
+      "copied_sha256": "ae17e27a7dfc1ffe19c5e3470072668a04f92f7f3fe09cc890603cdd2ec46e2d",
+      "source_bytes": 1956,
+      "public_sha256": "7d878a835ec707a86b839d6e17e565ae8837594f2be95522c50d4e33802ea27f",
+      "public_bytes": 1485,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "03_results",
+        "DATA_AMOUNT_CONTROL_RAW.csv"
+      ],
+      "destination": "results/t1/DATA_AMOUNT_CONTROL_RAW.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "be562b773768cbbadce9fa991d83e21eb50c9cc5d4bd1ca0bcd449933930c45c",
+      "copied_sha256": "be562b773768cbbadce9fa991d83e21eb50c9cc5d4bd1ca0bcd449933930c45c",
+      "source_bytes": 1318,
+      "public_sha256": "358250afaacc1cc1772172f46edc4b88f58e427ce08849136ab9db2833f08f7d",
+      "public_bytes": 1312,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "03_results",
+        "DATA_AMOUNT_CONTROL_SUMMARY.csv"
+      ],
+      "destination": "results/t1/DATA_AMOUNT_CONTROL_SUMMARY.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "5b4de2fa0510892c1db1bffb8afbb09cae432a65ad8672c4d335691df9abcdbe",
+      "copied_sha256": "5b4de2fa0510892c1db1bffb8afbb09cae432a65ad8672c4d335691df9abcdbe",
+      "source_bytes": 406,
+      "public_sha256": "88d58f7fe652e14d1e5f4d4c7ef6e4c093485298a7e3734dbe6b800db9f4ccaa",
+      "public_bytes": 404,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "01_manifests",
+        "LEAKAGE_AUDIT.csv"
+      ],
+      "destination": "results/t1/LEAKAGE_AUDIT.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "84746d0a18d884aef08638e2cbbb33802bb7e735e192b4e0294fd46a11e6df44",
+      "copied_sha256": "84746d0a18d884aef08638e2cbbb33802bb7e735e192b4e0294fd46a11e6df44",
+      "source_bytes": 395,
+      "public_sha256": "d485fbcefd20f190faddb0699acfc425f1bf0f49ca2f5659ab26c0501b7083d2",
+      "public_bytes": 389,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "02_runs",
+        "RUN_MANIFEST.csv"
+      ],
+      "destination": "results/t1/RUN_MANIFEST.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "85d9b491962736b91ff8242298ebf8ecd4863f709af78d212a7558d5b80a7d2f",
+      "copied_sha256": "85d9b491962736b91ff8242298ebf8ecd4863f709af78d212a7558d5b80a7d2f",
+      "source_bytes": 7669,
+      "public_sha256": "2780dd0d7eb11426c45db61aec54c3e4fbad9527c99b1a92a42145b636626f6a",
+      "public_bytes": 4258,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "00_protocol",
+        "FROZEN_PROTOCOL.md"
+      ],
+      "destination": "docs/t1/FROZEN_PROTOCOL.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "cbf0b6a7ab196f9e5f7176a5731b3b6a64daee10d6bf5769eab3365d16073f68",
+      "copied_sha256": "cbf0b6a7ab196f9e5f7176a5731b3b6a64daee10d6bf5769eab3365d16073f68",
+      "source_bytes": 1248,
+      "public_sha256": "cbf0b6a7ab196f9e5f7176a5731b3b6a64daee10d6bf5769eab3365d16073f68",
+      "public_bytes": 1248,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "00_protocol",
+        "preregistered_protocol.json"
+      ],
+      "destination": "docs/t1/preregistered_protocol.json",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "0c9382e03c75d6ec1ff9e3d9ffba41f662543247c1e3259e4842d197ebdb6969",
+      "copied_sha256": "0c9382e03c75d6ec1ff9e3d9ffba41f662543247c1e3259e4842d197ebdb6969",
+      "source_bytes": 3557,
+      "public_sha256": "f6a8f5794f8551bad1fb2a167665e227c7ed61bce512916adae7c6cf7af2c9fd",
+      "public_bytes": 3517,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "00_protocol",
+        "PROVENANCE.json"
+      ],
+      "destination": "docs/t1/PROVENANCE.json",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "354f2bcb7f50b4e3bf5ad7c149c5e3598a2f54fc560da55c48789928d4890988",
+      "copied_sha256": "354f2bcb7f50b4e3bf5ad7c149c5e3598a2f54fc560da55c48789928d4890988",
+      "source_bytes": 6394,
+      "public_sha256": "354f2bcb7f50b4e3bf5ad7c149c5e3598a2f54fc560da55c48789928d4890988",
+      "public_bytes": 6394,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "10_t1_data_amount_control",
+        "05_report",
+        "T1_DATA_AMOUNT_CONTROL_REPORT.md"
+      ],
+      "destination": "docs/t1/T1_DATA_AMOUNT_CONTROL_REPORT.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "96b13bd6c67f58f4461e1d260351419c1795477fa8ee51cd71fd080f1ff9bce4",
+      "copied_sha256": "96b13bd6c67f58f4461e1d260351419c1795477fa8ee51cd71fd080f1ff9bce4",
+      "source_bytes": 3276,
+      "public_sha256": "96b13bd6c67f58f4461e1d260351419c1795477fa8ee51cd71fd080f1ff9bce4",
+      "public_bytes": 3276,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "adaptation",
+        "SUPPORT_ADAPTATION_RAW.csv"
+      ],
+      "destination": "results/t3/SUPPORT_ADAPTATION_RAW.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "187e5360a2d76aca1aade5b5c5cc9581b3da7c34c7bbf2fdbc20fc13951971dd",
+      "copied_sha256": "187e5360a2d76aca1aade5b5c5cc9581b3da7c34c7bbf2fdbc20fc13951971dd",
+      "source_bytes": 84002,
+      "public_sha256": "a7b749c099dfc26562f71d0910dcd58b6b517f93cd9525e0397e42cfe8ad8529",
+      "public_bytes": 63841,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "T3_PRIMARY_CAUSAL_CONTRASTS.csv"
+      ],
+      "destination": "results/t3/T3_PRIMARY_CAUSAL_CONTRASTS.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "56d412c26a9481d6bce30cf601d1d9fe0d3cca1e93a03dcb5fe114ceb1f2ff1c",
+      "copied_sha256": "56d412c26a9481d6bce30cf601d1d9fe0d3cca1e93a03dcb5fe114ceb1f2ff1c",
+      "source_bytes": 3160,
+      "public_sha256": "3fa874f50f7bcd610341df301f0385e60d50e146d7cb138f51dc8ab8423adc54",
+      "public_bytes": 3147,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_ADAPTATION_RAW.csv"
+      ],
+      "destination": "results/t3/FRESH_ADAPTATION_RAW.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "2158f44e653b7f5d4eb9d7bb6403b531827239cb59b0618d57403398f6a85123",
+      "copied_sha256": "2158f44e653b7f5d4eb9d7bb6403b531827239cb59b0618d57403398f6a85123",
+      "source_bytes": 71069,
+      "public_sha256": "3e984270831b1e839cef77e1c24d066ac7a4d455c17675d592a099b73b6a33a0",
+      "public_bytes": 57628,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_REPLICATION_CONTRASTS.csv"
+      ],
+      "destination": "results/t3/FRESH_REPLICATION_CONTRASTS.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "bb0ec4795164470f8a026cb44e3b61cf642471b659a24e1bc385bde260eefef4",
+      "copied_sha256": "bb0ec4795164470f8a026cb44e3b61cf642471b659a24e1bc385bde260eefef4",
+      "source_bytes": 2324,
+      "public_sha256": "c061b1e2fb0a5373dae842777d7e41eb7d9a85d8a0afdd2e48f3d9a2dfb1303b",
+      "public_bytes": 2303,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_REPLICATION_SUMMARY.csv"
+      ],
+      "destination": "results/t3/FRESH_REPLICATION_SUMMARY.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "921a76b9f6382438791f474ccfd585361a789713c51b3d13a00af8857a4f5741",
+      "copied_sha256": "921a76b9f6382438791f474ccfd585361a789713c51b3d13a00af8857a4f5741",
+      "source_bytes": 1860,
+      "public_sha256": "30d7531b06292f6a93328669d3cbce95aaf56b534c3ca42a3dfb74b8a8e11aa1",
+      "public_bytes": 1855,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_REPLICATION_AUDIT.csv"
+      ],
+      "destination": "results/t3/FRESH_REPLICATION_AUDIT.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "87636844234d30bb085d6ddb85cf9340100d4ea284be7e4c777a6cf1aaabb724",
+      "copied_sha256": "87636844234d30bb085d6ddb85cf9340100d4ea284be7e4c777a6cf1aaabb724",
+      "source_bytes": 13232,
+      "public_sha256": "0ca31004cb52aa8d3b638b0ac818835a74771865c3093cc9c9b7d33e21b93dcd",
+      "public_bytes": 11011,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_ADAPTATION_RUN_MANIFEST.csv"
+      ],
+      "destination": "results/t3/FRESH_ADAPTATION_RUN_MANIFEST.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "e4a6d25c58f55be3b9b063819147aa558e4e1f841f7869456a57b9d68f7836e2",
+      "copied_sha256": "e4a6d25c58f55be3b9b063819147aa558e4e1f841f7869456a57b9d68f7836e2",
+      "source_bytes": 6629,
+      "public_sha256": "edcfea0693ae0518fed1f365bc34144c5d9319e87c1be55324f49540dd9c9b4b",
+      "public_bytes": 5508,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "00_protocol",
+        "FROZEN_SUPPORT_PROTOCOL.md"
+      ],
+      "destination": "docs/t3/FROZEN_SUPPORT_PROTOCOL.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "8bcfad0e9e76d43cb379022e32560e7ac3693b1b1829f9b5ed864ff4c7af755b",
+      "copied_sha256": "8bcfad0e9e76d43cb379022e32560e7ac3693b1b1829f9b5ed864ff4c7af755b",
+      "source_bytes": 2245,
+      "public_sha256": "8bcfad0e9e76d43cb379022e32560e7ac3693b1b1829f9b5ed864ff4c7af755b",
+      "public_bytes": 2245,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_REPLICATION_PROTOCOL.md"
+      ],
+      "destination": "docs/t3/FRESH_REPLICATION_PROTOCOL.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "9d6d61897a5bc28fad00739bc235fa9f090b52bc7c7eb838da8e1beacccbfef2",
+      "copied_sha256": "9d6d61897a5bc28fad00739bc235fa9f090b52bc7c7eb838da8e1beacccbfef2",
+      "source_bytes": 411,
+      "public_sha256": "9d6d61897a5bc28fad00739bc235fa9f090b52bc7c7eb838da8e1beacccbfef2",
+      "public_bytes": 411,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "11_t3_support_causal",
+        "fresh_replication",
+        "FRESH_REPLICATION_SUMMARY.md"
+      ],
+      "destination": "docs/t3/FRESH_REPLICATION_SUMMARY.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "91ccc93377cc77b49ba87e9d4492a70560d6526089c013a32afe138c71b879cb",
+      "copied_sha256": "91ccc93377cc77b49ba87e9d4492a70560d6526089c013a32afe138c71b879cb",
+      "source_bytes": 1672,
+      "public_sha256": "91ccc93377cc77b49ba87e9d4492a70560d6526089c013a32afe138c71b879cb",
+      "public_bytes": 1672,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "12_t2_v2_common_control_pairwise",
+        "sync",
+        "T2V2_SYNC_GATE.csv"
+      ],
+      "destination": "results/t2/T2V2_SYNC_GATE.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "f9a918412d021d509c8ac5b9131b7149a541c4f0c4a4261b337538dc81c3d8f1",
+      "copied_sha256": "f9a918412d021d509c8ac5b9131b7149a541c4f0c4a4261b337538dc81c3d8f1",
+      "source_bytes": 2042,
+      "public_sha256": "0114a7a67f8b01a60c5b88a99adc720e36bddaee8e32ff5b3715b48286428ca8",
+      "public_bytes": 2029,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "12_t2_v2_common_control_pairwise",
+        "sync",
+        "T2V2_PREFIX_ACTION_HASHES.csv"
+      ],
+      "destination": "results/t2/T2V2_PREFIX_ACTION_HASHES.csv",
+      "role": "result",
+      "story": "5",
+      "source_sha256": "e5c071d47f65b4f2e8908b72030a13ad5a835dd4387442650ad3e1d95c4428e0",
+      "copied_sha256": "e5c071d47f65b4f2e8908b72030a13ad5a835dd4387442650ad3e1d95c4428e0",
+      "source_bytes": 583,
+      "public_sha256": "26ddf82cb49f444558e668443c16d4aacf551e751f12f76006722ea5a120f1f8",
+      "public_bytes": 578,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "12_t2_v2_common_control_pairwise",
+        "protocol",
+        "T2V2_PROTOCOL.md"
+      ],
+      "destination": "docs/t2/T2V2_PROTOCOL.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "bf9e45a25bada0fc7cc62bb04974b1c5ad4ae64dddcaacfdfb521d9fd984f91f",
+      "copied_sha256": "bf9e45a25bada0fc7cc62bb04974b1c5ad4ae64dddcaacfdfb521d9fd984f91f",
+      "source_bytes": 999,
+      "public_sha256": "bf9e45a25bada0fc7cc62bb04974b1c5ad4ae64dddcaacfdfb521d9fd984f91f",
+      "public_bytes": 999,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "12_t2_v2_common_control_pairwise",
+        "protocol",
+        "T2V2_SYNC_TOLERANCES.md"
+      ],
+      "destination": "docs/t2/T2V2_SYNC_TOLERANCES.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "2e69cfc88756732909cab3421177de9603e6cd0e07e3ed4e674a7d17797f63c0",
+      "copied_sha256": "2e69cfc88756732909cab3421177de9603e6cd0e07e3ed4e674a7d17797f63c0",
+      "source_bytes": 322,
+      "public_sha256": "2e69cfc88756732909cab3421177de9603e6cd0e07e3ed4e674a7d17797f63c0",
+      "public_bytes": 322,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_LEGACY_SOURCE_ROOT",
+      "source_path_parts": [
+        "12_t2_v2_common_control_pairwise",
+        "report",
+        "T2V2_PAIRWISE_CAUSAL_REPORT.md"
+      ],
+      "destination": "docs/t2/T2V2_PAIRWISE_CAUSAL_REPORT.md",
+      "role": "doc",
+      "story": "5",
+      "source_sha256": "7f8e7dd9685e58013052158c7b2f5d741847274f2d30ad31e48bfe30ce2ad156",
+      "copied_sha256": "7f8e7dd9685e58013052158c7b2f5d741847274f2d30ad31e48bfe30ce2ad156",
+      "source_bytes": 1039,
+      "public_sha256": "7f8e7dd9685e58013052158c7b2f5d741847274f2d30ad31e48bfe30ce2ad156",
+      "public_bytes": 1039,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "07_summary",
+        "MODEL_SEED_SUMMARY.csv"
+      ],
+      "destination": "results/privileged_ppo/MODEL_SEED_SUMMARY.csv",
+      "role": "result",
+      "story": "6",
+      "source_sha256": "6216c39422dcfb8cb6a4e0f1aa8600e745133f26e131826dc64e50308cf04e27",
+      "copied_sha256": "6216c39422dcfb8cb6a4e0f1aa8600e745133f26e131826dc64e50308cf04e27",
+      "source_bytes": 1533,
+      "public_sha256": "2af2076eb14b55eadad7d27cec4a76aa3e26a8c8d72267cde60e29ca2ae17e8e",
+      "public_bytes": 1523,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "07_summary",
+        "PAIRED_DELTA_SUMMARY.csv"
+      ],
+      "destination": "results/privileged_ppo/PAIRED_DELTA_SUMMARY.csv",
+      "role": "result",
+      "story": "6",
+      "source_sha256": "3afc399f8b5d79533e3525dbf47449c2a209d2a8b9ba4c2f341b83f3f7df8d89",
+      "copied_sha256": "3afc399f8b5d79533e3525dbf47449c2a209d2a8b9ba4c2f341b83f3f7df8d89",
+      "source_bytes": 1597,
+      "public_sha256": "41bad0ac6877daaaa8f98e7f2975a2808440400cc01ef2d159aa88f40212353f",
+      "public_bytes": 1580,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "05_mass8_primary",
+        "MASS8_PRIMARY_EVAL_RAW.csv"
+      ],
+      "destination": "results/privileged_ppo/MASS8_PRIMARY_EVAL_RAW.csv",
+      "role": "result",
+      "story": "6",
+      "source_sha256": "9c3a80c3eaffe87d6028109454f04607a6a407b88e6ff17eea7fa4becb8ee78f",
+      "copied_sha256": "9c3a80c3eaffe87d6028109454f04607a6a407b88e6ff17eea7fa4becb8ee78f",
+      "source_bytes": 55519,
+      "public_sha256": "b610c0d27adb8745b8c229e0961ec32f555310adf16a48a6effcbc9ea137056c",
+      "public_bytes": 46148,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "07_summary",
+        "PPO_TRAINING_CURVES.csv"
+      ],
+      "destination": "results/privileged_ppo/PPO_TRAINING_CURVES.csv",
+      "role": "result",
+      "story": "6",
+      "source_sha256": "fda80594d1e502497f17bd3711b10fc15ec2dd0ce4aca78a7e81404fbe57bf25",
+      "copied_sha256": "fda80594d1e502497f17bd3711b10fc15ec2dd0ce4aca78a7e81404fbe57bf25",
+      "source_bytes": 231671,
+      "public_sha256": "75246a7712dad2dd15cf2775179f12f7e0ecc9be57eb6680b7534d115a6abcb0",
+      "public_bytes": 188200,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "07_summary",
+        "PPO_TRAIN_DIAGNOSTICS.csv"
+      ],
+      "destination": "results/privileged_ppo/PPO_TRAIN_DIAGNOSTICS.csv",
+      "role": "result",
+      "story": "6",
+      "source_sha256": "b27b1b54af3842e9d43ddb0e86e63545cbae2fb08995fdde012c4870cb6b6edc",
+      "copied_sha256": "b27b1b54af3842e9d43ddb0e86e63545cbae2fb08995fdde012c4870cb6b6edc",
+      "source_bytes": 1869,
+      "public_sha256": "1de559a2eb281c1c1801e076e5b33668253b2c82948051d998e7d3118ef467fc",
+      "public_bytes": 1853,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "07_summary",
+        "PAIRED_RUNTIME_CONTRACT_AUDIT.csv"
+      ],
+      "destination": "results/privileged_ppo/PAIRED_RUNTIME_CONTRACT_AUDIT.csv",
+      "role": "result",
+      "story": "6",
+      "source_sha256": "cda705fe7136f3b4ba0e254c5307ee039b74e9527ab26e606cf6860db280ec45",
+      "copied_sha256": "cda705fe7136f3b4ba0e254c5307ee039b74e9527ab26e606cf6860db280ec45",
+      "source_bytes": 873,
+      "public_sha256": "76857ec2791a4365f55f46a37e8bd24b99222d6d984f8b609019ae5f6d2e154b",
+      "public_bytes": 852,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "07_summary",
+        "PERFORMANCE_GAP_PLOT.png"
+      ],
+      "destination": "figures/PERFORMANCE_GAP_PLOT.png",
+      "role": "figure",
+      "story": "6",
+      "source_sha256": "f14c5a019442f54ca8aaa1a976c61ff51e934527c486f2a7e313823c3ac25fbd",
+      "copied_sha256": "f14c5a019442f54ca8aaa1a976c61ff51e934527c486f2a7e313823c3ac25fbd",
+      "source_bytes": 132023,
+      "public_sha256": "f14c5a019442f54ca8aaa1a976c61ff51e934527c486f2a7e313823c3ac25fbd",
+      "public_bytes": 132023,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "00_protocol",
+        "PROTOCOL.md"
+      ],
+      "destination": "docs/privileged_ppo/PROTOCOL.md",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "a183dabd0f40812bcd16936c8011b7aea4f0a8a2163f7beb8933ff78595bf37d",
+      "copied_sha256": "a183dabd0f40812bcd16936c8011b7aea4f0a8a2163f7beb8933ff78595bf37d",
+      "source_bytes": 7178,
+      "public_sha256": "a183dabd0f40812bcd16936c8011b7aea4f0a8a2163f7beb8933ff78595bf37d",
+      "public_bytes": 7178,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "00_protocol",
+        "HISTORICAL_ENV_CONTRACT.json"
+      ],
+      "destination": "docs/privileged_ppo/HISTORICAL_ENV_CONTRACT.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "bc5acbbfa5d6a22fac523ccb120b735d6e3d6f1390365017c2adf4373e19044d",
+      "copied_sha256": "bc5acbbfa5d6a22fac523ccb120b735d6e3d6f1390365017c2adf4373e19044d",
+      "source_bytes": 35641,
+      "public_sha256": "bc5acbbfa5d6a22fac523ccb120b735d6e3d6f1390365017c2adf4373e19044d",
+      "public_bytes": 35641,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "00_protocol",
+        "SEEDS.json"
+      ],
+      "destination": "docs/privileged_ppo/SEEDS.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "840d24cc386f7ba80b16d3997b777af130bfeffa9e993f7a2b27f72131ae5e9b",
+      "copied_sha256": "840d24cc386f7ba80b16d3997b777af130bfeffa9e993f7a2b27f72131ae5e9b",
+      "source_bytes": 1069,
+      "public_sha256": "840d24cc386f7ba80b16d3997b777af130bfeffa9e993f7a2b27f72131ae5e9b",
+      "public_bytes": 1069,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "00_protocol",
+        "CHECKPOINT_HASHES.json"
+      ],
+      "destination": "docs/privileged_ppo/CHECKPOINT_HASHES.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "63879453054976c5f09e865d67ed409cc0c133083c903e3d5437a07a692bf69c",
+      "copied_sha256": "63879453054976c5f09e865d67ed409cc0c133083c903e3d5437a07a692bf69c",
+      "source_bytes": 7803,
+      "public_sha256": "fade489aa3adf6a7628ad7c1bdb2984540532b5053c8687cbce1f00de5a8949c",
+      "public_bytes": 7673,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "00_protocol",
+        "PROTOCOL_HASHES.json"
+      ],
+      "destination": "docs/privileged_ppo/PROTOCOL_HASHES.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "38f60e192b0545e534d20c9c422fd2a8811449a61776234fd8f371eb8d7b2f73",
+      "copied_sha256": "38f60e192b0545e534d20c9c422fd2a8811449a61776234fd8f371eb8d7b2f73",
+      "source_bytes": 474,
+      "public_sha256": "38f60e192b0545e534d20c9c422fd2a8811449a61776234fd8f371eb8d7b2f73",
+      "public_bytes": 474,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "09_provenance",
+        "EXECUTION_CODE_HASHES.json"
+      ],
+      "destination": "docs/privileged_ppo/EXECUTION_CODE_HASHES.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "6e9159fcf0fac03463aa96a0bee5dda8b682bd61a70299d6d59cefeec4e75bbc",
+      "copied_sha256": "6e9159fcf0fac03463aa96a0bee5dda8b682bd61a70299d6d59cefeec4e75bbc",
+      "source_bytes": 1424,
+      "public_sha256": "a6e025083fec5a5b99ee099176b4f80ba8ad7e72ddd77693d45bfc305ad2f675",
+      "public_bytes": 1117,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "09_provenance",
+        "GIT_HEAD.txt"
+      ],
+      "destination": "docs/privileged_ppo/GIT_HEAD.txt",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "ee073e5a64ff20a6d3655de2946e41d1f464793396b141d483c9cdad32417a94",
+      "copied_sha256": "ee073e5a64ff20a6d3655de2946e41d1f464793396b141d483c9cdad32417a94",
+      "source_bytes": 41,
+      "public_sha256": "ee073e5a64ff20a6d3655de2946e41d1f464793396b141d483c9cdad32417a94",
+      "public_bytes": 41,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "09_provenance",
+        "FINAL_VERIFICATION.json"
+      ],
+      "destination": "docs/privileged_ppo/FINAL_VERIFICATION.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "2ba27242b36ef8b4df1188034afa078719a3b34d6284ad314a6f7bc9cc999f40",
+      "copied_sha256": "2ba27242b36ef8b4df1188034afa078719a3b34d6284ad314a6f7bc9cc999f40",
+      "source_bytes": 3026,
+      "public_sha256": "2ba27242b36ef8b4df1188034afa078719a3b34d6284ad314a6f7bc9cc999f40",
+      "public_bytes": 3026,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "09_provenance",
+        "RUN_MANIFEST.json"
+      ],
+      "destination": "docs/privileged_ppo/RUN_MANIFEST.json",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "3ce8e9d9d363e384367c206ab553addd3987f74c21969553fd171ab62a839899",
+      "copied_sha256": "3ce8e9d9d363e384367c206ab553addd3987f74c21969553fd171ab62a839899",
+      "source_bytes": 2342,
+      "public_sha256": "9d94e45b53e44f23d84cc836b01e7db8196758941f5fede7f6e22d3f88bca9c7",
+      "public_bytes": 2020,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "docs",
+        "simdist_c",
+        "mass8_privileged_ppo_convergence_20260929T072901Z",
+        "08_report",
+        "MASS8_GAP_COMPARISON.md"
+      ],
+      "destination": "docs/privileged_ppo/MASS8_GAP_COMPARISON.md",
+      "role": "doc",
+      "story": "6",
+      "source_sha256": "1badd2749d004fae9b9841e9e4885a1ef7a49ceb36156b1a311b5b989b86a566",
+      "copied_sha256": "1badd2749d004fae9b9841e9e4885a1ef7a49ceb36156b1a311b5b989b86a566",
+      "source_bytes": 28524,
+      "public_sha256": "e3fe7412093aaba92a14d576032ff68f94eeb71ea9e8b326f2822b62bdfc5a1a",
+      "public_bytes": 28124,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "candidate_rank_v1",
+        "results",
+        "decomposition_v1",
+        "README.md"
+      ],
+      "destination": "docs/candidate_decomposition.md",
+      "role": "doc",
+      "story": "2",
+      "source_sha256": "21731dc6b91d705817a62f27e0a003b40d2c3d55f72dcea10dd05da5e933f502",
+      "copied_sha256": "21731dc6b91d705817a62f27e0a003b40d2c3d55f72dcea10dd05da5e933f502",
+      "source_bytes": 3302,
+      "public_sha256": "00fa7b786ce222e8bcce46498547bc1a6d3243cc281e53702f7c30e02d913c14",
+      "public_bytes": 3303,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "commands.jsonl"
+      ],
+      "destination": "docs/chain_variance/commands.jsonl",
+      "role": "doc",
+      "story": "3",
+      "source_sha256": "7d9aa1ecf4efd3196635f0a2d917b6d373c474cb6073fade89be7a9513a5f4c1",
+      "copied_sha256": "7d9aa1ecf4efd3196635f0a2d917b6d373c474cb6073fade89be7a9513a5f4c1",
+      "source_bytes": 106261,
+      "public_sha256": "5b8db26b5ff008d970b892d720e492d9787bdb3c7ae62295b178196c5b5bc55b",
+      "public_bytes": 80173,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "COMPLETE.json"
+      ],
+      "destination": "docs/chain_variance/COMPLETE.json",
+      "role": "doc",
+      "story": "3",
+      "source_sha256": "3f435ec9e73c8ad6366fa458b65b20f3f86934792a1a341773b3f416b8b2096c",
+      "copied_sha256": "3f435ec9e73c8ad6366fa458b65b20f3f86934792a1a341773b3f416b8b2096c",
+      "source_bytes": 43,
+      "public_sha256": "3f435ec9e73c8ad6366fa458b65b20f3f86934792a1a341773b3f416b8b2096c",
+      "public_bytes": 43,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "positive_control_variance_v1",
+        "REPORT.md"
+      ],
+      "destination": "docs/chain_variance/REPORT.md",
+      "role": "doc",
+      "story": "3",
+      "source_sha256": "7eb73354ea97e05deb2ff07df7214c6eb0f1610689f4d8613d861d2601f4c61a",
+      "copied_sha256": "7eb73354ea97e05deb2ff07df7214c6eb0f1610689f4d8613d861d2601f4c61a",
+      "source_bytes": 9141,
+      "public_sha256": "2e7355581f1fe46d65385a5f3c9e1e70ebd0c782d869d3686f1402dc90ba4f93",
+      "public_bytes": 9193,
+      "sanitized": true
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "scratch",
+        "module_combo_v1",
+        "REPORT.md"
+      ],
+      "destination": "docs/module_composition/REPORT.md",
+      "role": "doc",
+      "story": "4",
+      "source_sha256": "00f79991763b295c07cbafca0f53af670756397e22f0b2ee40d2274fcdbbc875",
+      "copied_sha256": "00f79991763b295c07cbafca0f53af670756397e22f0b2ee40d2274fcdbbc875",
+      "source_bytes": 6197,
+      "public_sha256": "00f79991763b295c07cbafca0f53af670756397e22f0b2ee40d2274fcdbbc875",
+      "public_bytes": 6197,
+      "sanitized": false
+    },
+    {
+      "source_root_env": "SIMDIST_SOURCE_ROOT",
+      "source_path_parts": [
+        "LICENSE"
+      ],
+      "destination": "docs/licenses/SimDist_LICENSE.txt",
+      "role": "license",
+      "story": "all",
+      "source_sha256": "ec7065ca0a1b47ba53fff10f0ed71a10564afb047dc794207e6b93fb4d755d40",
+      "copied_sha256": "ec7065ca0a1b47ba53fff10f0ed71a10564afb047dc794207e6b93fb4d755d40",
+      "source_bytes": 1067,
+      "public_sha256": "ec7065ca0a1b47ba53fff10f0ed71a10564afb047dc794207e6b93fb4d755d40",
+      "public_bytes": 1067,
+      "sanitized": false
+    }
+  ],
+  "sanitized_files": 130,
+  "source_git_head": "c21f2ae314351832fba924674a7406a910de700a",
+  "simdist_base": "b63f76ba01457b4df0954f88985a3a73a206ec17",
+  "isaaclab_commit": "157c6b74ed4d9892c5e5ccc0d38d7835f27e98f9",
+  "isaaclab_version": "2.0.1",
+  "hash_contract": "source_sha256 and copied_sha256 identify original input bytes; public_sha256 identifies sanitized public bytes. Historical hashes inside original provenance documents retain their original meaning.",
+  "added_files": [
+    "README.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/BUILD_MANIFEST.json",
+    "docs/VALIDATION.json",
+    "portfolio_paths.py",
+    "tools/verify_portfolio.py",
+    ".gitignore"
+  ],
+  "patches": [
+    {
+      "destination": "patches/mppi.patch",
+      "base_commit": "b63f76ba01457b4df0954f88985a3a73a206ec17",
+      "base_file_sha256": "4234ef9ffd5b9d61c3bbf1bc863bdf47a6971fd9f57216200c8d1ed423d611f8",
+      "source_path_parts": [
+        "simdist",
+        "control",
+        "mppi.py"
+      ],
+      "source_sha256": "7a137aeb1c4312e9d75de444945345be0aeec11b639c550171d2089ded30007c",
+      "public_sha256": "8b9017f6c5386505505a479669338f74453d0b0fc7f04ade8cf0087753946813",
+      "apply_check": "PASS"
+    },
+    {
+      "destination": "patches/trainer.patch",
+      "base_commit": "b63f76ba01457b4df0954f88985a3a73a206ec17",
+      "base_file_sha256": "37159b9c92e2c9662f47490086476e46a72d757d9c71e7731528b7a0f3b66f7e",
+      "source_path_parts": [
+        "simdist",
+        "modeling",
+        "trainer.py"
+      ],
+      "source_sha256": "4e67221f43504f3d27289c115e89436ef723bf2e68b170fdc84256e887cb6dd9",
+      "public_sha256": "fbca77fc7a67e8dd442d2197cb011da2c250f09f0d051c9b1d6615d6a1115ee2",
+      "apply_check": "PASS"
+    }
+  ]
+}

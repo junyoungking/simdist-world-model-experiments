@@ -1,0 +1,89 @@
+{
+  "protocol": "T1 fixed-data-amount matched substitution",
+  "state": "FROZEN_BEFORE_NEW_OUTCOMES",
+  "scope": "one clean +4 kg -> +8 kg experiment; no control/T2/T3/E2/E3/E4",
+  "source_checkpoint": {
+    "path": "checkpoint://models/go2_2026-02-12",
+    "step": 367004,
+    "hashes": {
+      "367004/_CHECKPOINT_METADATA": "c257b22c7f9e7a9739291e67da81fa11e95b055501ad566c99af0feada925294",
+      "367004/default/_METADATA": "346eb47a3c6e59265c6c0cca4e772f1bdd908642d70c8e4737dd61f63c3ad7d4",
+      "367004/default/_sharding": "50915f84ede17d43efd4dcbcc6e7046ba6104afffaad60ae7f9082dc4694f7ad",
+      "367004/default/array_metadatas/process_0": "e28f7ec555f3649044ad907e10797f54e0101b99252bce5c1772c8e659a5569a",
+      "367004/default/d/bb1d47dbc42420eaec00bf46770018da": "514818de0b44b8c2f1d87e36eabf80f72fd82e77622043e60cb9f20f58005995",
+      "367004/default/manifest.ocdbt": "b30760b4826d0f7b07b063991650e5797b9667ab6c502fd1e98e85f4e1141068",
+      "367004/default/ocdbt.process_0/d/00414f806badecd90c455c935bc1ed16": "42234cbb0f2c26477fad4d61fcae7cd1f697624a06e853c77d15436cfd21eeb8",
+      "367004/default/ocdbt.process_0/d/158a82d045191961301a4583923a6f97": "a096c5f14b165b79dd274a80905e6545210389012d494aec79c0f8607ebe5f58",
+      "367004/default/ocdbt.process_0/d/3ed41cfa20cd291c000301a0fd04836f": "3a08c66466f81ab8856d00b8fe28c3e11939abe4fd71da0a4d547ee0d36c1182",
+      "367004/default/ocdbt.process_0/d/5c1e82f303acf109146adeaedb748a93": "7df0e7d49986a6bceee3f27d8006b74cac128c9c00751c6a711b229951ca16f3",
+      "367004/default/ocdbt.process_0/d/ad8506469496b5106aa86f5d9ad21ab2": "8a6d1090a8a9bd84e6baf0fd0d2a1fba0bffcdb18eccff6e419b2afe148ca0b7",
+      "367004/default/ocdbt.process_0/d/daf4b8ef65b7e1bde063d412c9451528": "3d59e0b2f0452c82fbb6665244ffdce5c6178e5bff735c83192959f5cf7916b5",
+      "367004/default/ocdbt.process_0/d/f4316263a18078d9a2a791af407692da": "e80ae79c97f7240167a222e2a6cb60d33655bd44ebdf5221a782967aec49bce3",
+      "367004/default/ocdbt.process_0/manifest.ocdbt": "21eb242efa4a6291954165f4d412d61e1762a03fe470158a8b1bb57697c7c02c",
+      "model_config.yaml": "415d458e3b004aa7299bde791c8088e0d710a0c2c57945a557dfe99bc8d1adf4"
+    }
+  },
+  "testbed": {
+    "friction": 0.8,
+    "added_mass_history_kg": 4.0,
+    "added_mass_current_kg": 8.0,
+    "kp": 25.0,
+    "kd": 0.5,
+    "H": 25,
+    "T": 25
+  },
+  "arms": {
+    "CURRENT_ONLY_1000": {
+      "B_core": 500,
+      "B_extra": 500,
+      "A_hist": 0
+    },
+    "MIXED_500_500": {
+      "B_core": 500,
+      "B_extra": 0,
+      "A_hist": 500
+    }
+  },
+  "adaptation": {
+    "f_only": true,
+    "frozen_modules": [
+      "E",
+      "C",
+      "R",
+      "V",
+      "pi"
+    ],
+    "K_relative_updates": 1000,
+    "batch_size": 32,
+    "training_data_ratio": 1.0,
+    "optimizer": "released fresh Adam with released warmup-cosine schedule",
+    "external_eval": "B_eval"
+  },
+  "selection": {
+    "outcome_independent": true,
+    "subset_seeds": {
+      "1": 19101,
+      "2": 19102,
+      "3": 19103,
+      "4": 19104,
+      "5": 19105
+    },
+    "supplement_collection_seeds": {
+      "1": 17101,
+      "2": 17102,
+      "3": 17103,
+      "4": 17104,
+      "5": 17105
+    },
+    "training_seeds": {
+      "1": 18101,
+      "2": 18102,
+      "3": 18103,
+      "4": 18104,
+      "5": 18105
+    },
+    "shared_B_core_required": true
+  },
+  "primary_contrast": "delta_comp = L_mixed - L_current_only; negative favors MIXED_500_500",
+  "statistic": "five repeat-level paired values; mean, median, sample SD, SE and 95% t CI"
+}

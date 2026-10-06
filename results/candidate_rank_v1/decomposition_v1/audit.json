@@ -1,0 +1,12 @@
+{
+  "snapshots": 371,
+  "complete_branches": 24424,
+  "max_pred_reward_vs_csv": 4.521306926630331e-07,
+  "max_head_reward_vs_csv": 0.0,
+  "max_env_reward_vs_csv": 4.440892098500626e-16,
+  "max_decomposition_identity": 2.220446049250313e-16,
+  "max_command_mae_vs_csv": 2.426328137017375e-08,
+  "max_value_identity": 0.0,
+  "max_observed_value_vs_csv": 0.0,
+  "max_predicted_total_vs_csv": 5.328294045980897e-07
+}
