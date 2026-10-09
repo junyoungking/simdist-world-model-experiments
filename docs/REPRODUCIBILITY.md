@@ -123,3 +123,29 @@ Checkpoint/optimizer/RNG recovery did not restore complete PhysX internal state.
 Run `python -B tools/verify_portfolio.py` to check syntax/compilation, selected file presence/hashes, local import targets, internal README links, selected CSV readability, PNG structure, and private-path/credential patterns. This validator does not import experiment modules, start IsaacSim, load checkpoints, or run experiments.
 
 [VALIDATION.json](VALIDATION.json) records the creation-time checks, including source-integrity and scientific-value preservation checks against the original files. `STATIC_PASS` means static checks passed. External package/runtime availability is a separately declared requirement; no substitute modules were created.
+
+## October9 raw evidence regeneration
+
+Use [the raw evidence builder](../analysis/build_portfolio_evidence_from_raw.py)
+with `SIMDIST_RAW_ROOT` pointing to the original scratch directory. This path
+is supplied at runtime and is not persisted as a personal absolute path.
+
+```bash
+python -B analysis/build_portfolio_evidence_from_raw.py --raw-root "$SIMDIST_RAW_ROOT" --out results/portfolio_evidence_20261009 --check
+python -B analysis/build_portfolio_evidence_from_raw.py --raw-root "$SIMDIST_RAW_ROOT" --out results/portfolio_evidence_20261009 --write
+```
+
+The six original CSV schemas remain compatible. Five measurement tables are
+raw-derived; the sixth records NOT_REPRODUCED with no p-value because the
+historical six-chain test's implementation/exact p is unavailable. Measurement
+validation does not certify that statistic. The original175/200-step MC
+protocols remain distinct. Section4 independent loss n10 and section7 target
+held-out loss n20 both use seed means; window-pooled values are separate.
+
+[Methods and input selection](../analysis/PORTFOLIO_RAW_PROVENANCE.md),
+[generated provenance](../results/portfolio_evidence_20261009/PROVENANCE.json)
+and [execution summary](../analysis/portfolio_raw_audit_20261009.json) record
+source bindings, checkpoint digests, coverage and repeatability. The full raw
+filename/hash inventories and preserved previous CSVs are local-only in
+ignored `analysis/.local_audit/`. Publish only the compact required provenance.
+Each unexpected per-file mismatch preserves that CSV and returns failure.

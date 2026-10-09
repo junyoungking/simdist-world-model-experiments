@@ -1,0 +1,5 @@
+environment,value_head_spearman_mc,privileged_critic_spearman_mc,evaluation_basis,source_report_section
+source,0.57,0.76,expert continuation after step25; MC horizon 175; discount0.99; pooled snapshots,raw-derived; PROVENANCE.json
+mass +8kg,0.57,0.77,expert continuation after step25; MC horizon 175; discount0.99; pooled snapshots,raw-derived; PROVENANCE.json
+friction 0.15,0.39,0.68,expert continuation after step25; MC horizon 200; discount0.99; pooled snapshots,raw-derived; PROVENANCE.json
+gain 0.7x,0.05,0.44,expert continuation after step25; MC horizon 200; discount0.99; pooled snapshots,raw-derived; PROVENANCE.json

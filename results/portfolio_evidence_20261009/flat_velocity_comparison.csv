@@ -1,0 +1,3 @@
+adaptation_speed_mps,evaluation_speed_mps,m0_failure_pct,adapted_failure_pct_list,n_eval,basis,source_report_section
+1.0,0.75,53.0,91.5;94.5,200,"flat friction 0.10, 1000-step episode",raw-derived; PROVENANCE.json
+0.75,0.75,53.0,58;62,200,"flat friction 0.10, 1000-step episode",raw-derived; PROVENANCE.json

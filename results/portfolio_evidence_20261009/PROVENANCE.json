@@ -1,0 +1,2226 @@
+{
+  "schema_version": 2,
+  "measurement_status": "REPRODUCED",
+  "original_six_chain_test_status": "NOT_REPRODUCED",
+  "original_p_value": null,
+  "substitute_test_performed": false,
+  "builder_sha256": "c114c638cec8767da022c3481872f3a89228e1ec1ab870b6224398c5b20643c7",
+  "detail_rows": {
+    "mass_chains_200seed.csv": [
+      {
+        "target": "mass8",
+        "model": "m0",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 129,
+        "failure_pct": 64.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:m0",
+          "checkpoint_step": 367004,
+          "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+        },
+        "source": "adaptation_curve_v1/results/evaluations/baseline_target | chain_variance_recheck_v1/results/evaluations/mass8_new_m0 | results/s1_v2/runs | score_probe_v1/results/evaluations/m0",
+        "source_sha256_set": "4bca6855f80aee789d88c9d5b93419273c7c5d05f82d1f588814c4ed429777b0",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 62,
+        "loss25": 0.06420318101691834,
+        "loss25_sd": 0.01868340477515837,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.06360571871159734,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:m0",
+        "checkpoint_step": 367004,
+        "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+      },
+      {
+        "target": "mass8",
+        "model": "old_chain1",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 87,
+        "failure_pct": 43.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:old_chain1",
+          "checkpoint_step": 380304,
+          "checkpoint_sha256_tree": "56ebc4433ed169cd61fcecf564b72c9fb4093166d23c13806919ae8fae21560c"
+        },
+        "source": "adaptation_curve_v1/results/evaluations/stage_30000 | multi_gap_200seed_extension_v1/results/evaluations/mass8_old_chain1 | score_probe_v1/results/evaluations/cp30000",
+        "source_sha256_set": "d4eea6f53fa32f7dc2324525cc826ccd4b3c57ba0114c6200d0a3cde69eaa453",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 40,
+        "loss25": 0.04421470120747118,
+        "loss25_sd": 0.0198847370639157,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.04370033428079332,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:old_chain1",
+        "checkpoint_step": 380304,
+        "checkpoint_sha256_tree": "56ebc4433ed169cd61fcecf564b72c9fb4093166d23c13806919ae8fae21560c"
+      },
+      {
+        "target": "mass8",
+        "model": "old_chain2",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 96,
+        "failure_pct": 48.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:old_chain2",
+          "checkpoint_step": 370604,
+          "checkpoint_sha256_tree": "d0d35f2f22e9069ec030d10f76c13f72b62f890ce8ecf72289968519a7667741"
+        },
+        "source": "followup_v1/results/chain/evaluation | multi_gap_200seed_extension_v1/results/evaluations/mass8_old_chain2",
+        "source_sha256_set": "fc8416d16d9b220f4202b46ef882c245d28e2e7e61251c94e651eeb615148166",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 49,
+        "loss25": 0.03749472611512582,
+        "loss25_sd": 0.013446126926999967,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.0371302431611641,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:old_chain2",
+        "checkpoint_step": 370604,
+        "checkpoint_sha256_tree": "d0d35f2f22e9069ec030d10f76c13f72b62f890ce8ecf72289968519a7667741"
+      },
+      {
+        "target": "mass8",
+        "model": "new_chain3",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 80,
+        "failure_pct": 40.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:new_chain3",
+          "checkpoint_step": 371804,
+          "checkpoint_sha256_tree": "821c9db89d56bc20b637744e939bbbd7a1afa957471d52d2a78ec450a7cbfa70"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/mass8_new_chain3 | positive_control_variance_v1/results/mass8/evaluations/new_chain3",
+        "source_sha256_set": "608aa359aeb377c79e43acf4e0e91c58762b06c8abaacebf3182be32575355e9",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 37,
+        "loss25": 0.03515109595600521,
+        "loss25_sd": 0.013500808461913484,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.03478416825308316,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:new_chain3",
+        "checkpoint_step": 371804,
+        "checkpoint_sha256_tree": "821c9db89d56bc20b637744e939bbbd7a1afa957471d52d2a78ec450a7cbfa70"
+      },
+      {
+        "target": "mass8",
+        "model": "new_chain4",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 117,
+        "failure_pct": 58.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:new_chain4",
+          "checkpoint_step": 370904,
+          "checkpoint_sha256_tree": "15b82b158ef81643a69e1dd0eb3707bf067fec2478b86ac61110211155bb9a60"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/mass8_new_chain4 | positive_control_variance_v1/results/mass8/evaluations/new_chain4",
+        "source_sha256_set": "2448b16d37fba0993510a1f9ae1ba58704fe14461e911f125fd646f6a341b6ae",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 52,
+        "loss25": 0.037929860003244845,
+        "loss25_sd": 0.014901408721670725,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.03748975756694534,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:new_chain4",
+        "checkpoint_step": 370904,
+        "checkpoint_sha256_tree": "15b82b158ef81643a69e1dd0eb3707bf067fec2478b86ac61110211155bb9a60"
+      },
+      {
+        "target": "mass8",
+        "model": "old_DP",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 117,
+        "failure_pct": 58.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:old_DP",
+          "checkpoint_step": 372634,
+          "checkpoint_sha256_tree": "c1483a488400cad69f4e25c23e800aa36a7b7ddf65b42bf221f1745d86c75943"
+        },
+        "source": "chain_variance_recheck_v1/results/evaluations/mass8_new_old_DP | module_combo_v1/results/followup_repro/mass8_d_p/evaluations/d_pnone_mppi",
+        "source_sha256_set": "d27f41e0599f6ff9e54591db9c67b4e9385c07f70ff81368a285761a57f79c08",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 62,
+        "loss25": 0.03809932063612837,
+        "loss25_sd": 0.010745180890761654,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.037613928413602574,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:old_DP",
+        "checkpoint_step": 372634,
+        "checkpoint_sha256_tree": "e2a5637d27a8bc02314ef531fb97d2739fffa952562538ebee6a6f704d335311"
+      },
+      {
+        "target": "mass8",
+        "model": "new_DP2",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 90,
+        "failure_pct": 45.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:new_DP2",
+          "checkpoint_step": 372554,
+          "checkpoint_sha256_tree": "c14a0b6efae5e41006cebb845df77635ecea7c2cbe0ac2adf515305d64d2e88f"
+        },
+        "source": "chain_variance_recheck_v1/results/evaluations/mass8_new_new_DP2 | positive_control_variance_v1/results/mass8/evaluations/new_DP2",
+        "source_sha256_set": "72cb36da5ad1692055ad0c2c1f975506561586e9b70623cea8f4789b6b24a947",
+        "seed_ranges": "23501-23600;24001-24100",
+        "failures_100_old": 37,
+        "loss25": 0.03844292931745951,
+        "loss25_sd": 0.011633750876779408,
+        "loss_n": 10,
+        "windows": 4073,
+        "loss25_window_pooled": 0.03812403795225905,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "positive_control_variance_v1/results/mass8/losses.csv",
+        "loss_sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+        "dataset": "independent_m0",
+        "loss_seed_ranges": "49301-49310",
+        "checkpoint_id": "loss:independent_m0:positive_control_variance_v1:new_DP2",
+        "checkpoint_step": 372554,
+        "checkpoint_sha256_tree": "b75f277ddad8471cea3542a7e5f162fe305dc431dcc3615d981359eb28ef03dc"
+      }
+    ],
+    "chain_equality_test.csv": [
+      {
+        "test": "same 200-seed failure proportion across six adapted mass chains",
+        "scope": "four P0-collected and two policy-modified-collected chains",
+        "approx_p_value": "",
+        "evidence_status": "NOT_REPRODUCED",
+        "source_report_section": "original method/statistic/exact p unavailable",
+        "n_eval": 200,
+        "n_training_chains": 6,
+        "paired_seed_ranges": "23501-23600;24001-24100",
+        "failure_counts_by_chain": "{\"new_DP2\": 90, \"new_chain3\": 80, \"new_chain4\": 117, \"old_DP\": 117, \"old_chain1\": 87, \"old_chain2\": 96}",
+        "basis": "shared evaluation seeds across six distinct adaptation chains; not 1200 independent observations",
+        "source_sha256_set": "1cdb00dc8d8bed3db18f28c50c65ac55eda47b25e7cd3c9e5902ac1832d55c93"
+      }
+    ],
+    "value_mc_rank.csv": [
+      {
+        "target": "source",
+        "model": "m0",
+        "rho_head_mc": 0.5660075556627281,
+        "rho_critic_mc": 0.7641065830721003,
+        "n_eval": 144,
+        "n_selected": 145,
+        "n_excluded_incomplete25": 1,
+        "mc_horizon": 175,
+        "mc_observed_min": 175,
+        "mc_observed_max": 175,
+        "discount": 0.99,
+        "basis": "expert branch head/critic at step25 versus subsequent discounted env return; pooled snapshots",
+        "source": "candidate_rank_v1/results/full/m0_mass0",
+        "source_sha256_set": "5c534fe2af30ac43d00faea2025be891dd3049ecc70e7f7a83e1aa0142f19216"
+      },
+      {
+        "target": "mass8",
+        "model": "m0",
+        "rho_head_mc": 0.5651035834266518,
+        "rho_critic_mc": 0.7737122060470325,
+        "n_eval": 95,
+        "n_selected": 97,
+        "n_excluded_incomplete25": 2,
+        "mc_horizon": 175,
+        "mc_observed_min": 175,
+        "mc_observed_max": 175,
+        "discount": 0.99,
+        "basis": "expert branch head/critic at step25 versus subsequent discounted env return; pooled snapshots",
+        "source": "candidate_rank_v1/results/full/m0_mass8",
+        "source_sha256_set": "dd38101c263bc3ef6289535969000f338f8dcb7af31c0e5f573cbd344eaba25d"
+      },
+      {
+        "target": "friction015",
+        "model": "m0",
+        "rho_head_mc": 0.39019212786673485,
+        "rho_critic_mc": 0.6791300743254318,
+        "n_eval": 146,
+        "n_selected": 150,
+        "n_excluded_incomplete25": 4,
+        "mc_horizon": 200,
+        "mc_observed_min": 200,
+        "mc_observed_max": 200,
+        "discount": 0.99,
+        "basis": "expert branch head/critic at step25 versus subsequent discounted env return; pooled snapshots",
+        "source": "gap_diagnosis_v1/results/branches/friction_m0",
+        "source_sha256_set": "0b091b27a8c88562e5ea67150ce710a917966dc1c41f8e72d4ec07eb7a98be01"
+      },
+      {
+        "target": "gain070",
+        "model": "m0",
+        "rho_head_mc": 0.05388404899168109,
+        "rho_critic_mc": 0.4366825589917566,
+        "n_eval": 147,
+        "n_selected": 150,
+        "n_excluded_incomplete25": 3,
+        "mc_horizon": 200,
+        "mc_observed_min": 200,
+        "mc_observed_max": 200,
+        "discount": 0.99,
+        "basis": "expert branch head/critic at step25 versus subsequent discounted env return; pooled snapshots",
+        "source": "gap_diagnosis_v1/results/branches/gain_m0",
+        "source_sha256_set": "df148e2e77b11baeb4a38e18741d407d00d4601dc641f2acb599bb0053f16a4d"
+      }
+    ],
+    "common_state_dynamics_error.csv": [
+      {
+        "target": "mass8",
+        "m0_mean": 0.1518929450417764,
+        "adapted_min": 0.09959710850080963,
+        "adapted_max": 0.11147491301633579,
+        "n_eval": 183,
+        "n_selected": 192,
+        "n_seed": 20,
+        "train_command_mps": 1.0,
+        "eval_command_mps": 1.0,
+        "model_coverage": "{\"m0\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:m0\",\"checkpoint_sha256_tree\":\"e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08\",\"checkpoint_step\":367004},\"mean\":0.1518929450417764,\"n_eval\":183,\"n_selected\":192},\"new_DP2\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:new_DP2\",\"checkpoint_sha256_tree\":\"c14a0b6efae5e41006cebb845df77635ecea7c2cbe0ac2adf515305d64d2e88f\",\"checkpoint_step\":372554},\"mean\":0.09959710850080963,\"n_eval\":183,\"n_selected\":192},\"new_chain3\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:new_chain3\",\"checkpoint_sha256_tree\":\"821c9db89d56bc20b637744e939bbbd7a1afa957471d52d2a78ec450a7cbfa70\",\"checkpoint_step\":371804},\"mean\":0.10867601807446998,\"n_eval\":184,\"n_selected\":192},\"new_chain4\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:new_chain4\",\"checkpoint_sha256_tree\":\"15b82b158ef81643a69e1dd0eb3707bf067fec2478b86ac61110211155bb9a60\",\"checkpoint_step\":370904},\"mean\":0.11147491301633579,\"n_eval\":183,\"n_selected\":192},\"old_DP\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:old_DP\",\"checkpoint_sha256_tree\":\"c1483a488400cad69f4e25c23e800aa36a7b7ddf65b42bf221f1745d86c75943\",\"checkpoint_step\":372634},\"mean\":0.10398167955788826,\"n_eval\":183,\"n_selected\":192},\"old_chain1\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:old_chain1\",\"checkpoint_sha256_tree\":\"56ebc4433ed169cd61fcecf564b72c9fb4093166d23c13806919ae8fae21560c\",\"checkpoint_step\":380304},\"mean\":0.10350005085482232,\"n_eval\":183,\"n_selected\":192},\"old_chain2\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:mass8:old_chain2\",\"checkpoint_sha256_tree\":\"d0d35f2f22e9069ec030d10f76c13f72b62f890ce8ecf72289968519a7667741\",\"checkpoint_step\":370604},\"mean\":0.10681145751765961,\"n_eval\":183,\"n_selected\":192}}",
+        "basis": "identical selected states; checkpoint-specific mean_plan; state mean conditional on model-specific nonterminated25 completion",
+        "source": "common_state_gap_v1/results/open/mass8",
+        "source_sha256_set": "bdd4730b4cd08d68a4b09eced516226d33aa9dae59a024cf36c75ae600583b7a"
+      },
+      {
+        "target": "friction015",
+        "m0_mean": 0.308401652936502,
+        "adapted_min": 0.25540800762180954,
+        "adapted_max": 0.27111119760553976,
+        "n_eval": 156,
+        "n_selected": 183,
+        "n_seed": 20,
+        "train_command_mps": 1.0,
+        "eval_command_mps": 1.0,
+        "model_coverage": "{\"friction_60k\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:friction015:friction_60k\",\"checkpoint_sha256_tree\":\"66587cfa8a0774d48f18837939ee76cc03ba140acc87461e5246ae25d089a4b1\",\"checkpoint_step\":373604},\"mean\":0.2636685467178526,\"n_eval\":163,\"n_selected\":183},\"friction_90k\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:friction015:friction_90k\",\"checkpoint_sha256_tree\":\"80a4e2a4151fc93cad88bbc5954ef10aedd3f54575b7e85675379cb240a2e74d\",\"checkpoint_step\":374004},\"mean\":0.26396874921676533,\"n_eval\":160,\"n_selected\":183},\"friction_chain1\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:friction015:friction_chain1\",\"checkpoint_sha256_tree\":\"6fb389667d0b7b87c50c8fe2d76577f91afc4625b5251be4862d630e8e8f4868\",\"checkpoint_step\":371614},\"mean\":0.25540800762180954,\"n_eval\":155,\"n_selected\":183},\"friction_chain2\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:friction015:friction_chain2\",\"checkpoint_sha256_tree\":\"c3e93b8fd9e3c926c89a10635cf10739fbcb9846389118db6f09eae6082aa7b7\",\"checkpoint_step\":371504},\"mean\":0.27111119760553976,\"n_eval\":162,\"n_selected\":183},\"m0\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:friction015:m0\",\"checkpoint_sha256_tree\":\"e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08\",\"checkpoint_step\":367004},\"mean\":0.308401652936502,\"n_eval\":156,\"n_selected\":183}}",
+        "basis": "identical selected states; checkpoint-specific mean_plan; state mean conditional on model-specific nonterminated25 completion",
+        "source": "common_state_gap_v1/results/open/friction015",
+        "source_sha256_set": "43eb66b44ccf562183c497c84d352246ab28df6671ba05b0cf86a65f3ba87a17"
+      },
+      {
+        "target": "gain070",
+        "m0_mean": 0.1708755713414125,
+        "adapted_min": 0.14426732221731595,
+        "adapted_max": 0.1463261944989635,
+        "n_eval": 192,
+        "n_selected": 195,
+        "n_seed": 20,
+        "train_command_mps": 1.0,
+        "eval_command_mps": 1.0,
+        "model_coverage": "{\"gain_chain1\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:gain070:gain_chain1\",\"checkpoint_sha256_tree\":\"f09a933fcaf4e9b4d47d96678a442af072a752f8d03b866264062737cfaad91c\",\"checkpoint_step\":371664},\"mean\":0.14426732221731595,\"n_eval\":194,\"n_selected\":195},\"gain_chain2\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:gain070:gain_chain2\",\"checkpoint_sha256_tree\":\"c1322bd4759f283d684fdf20c1743fad6eb14e81bb12bf690663c916ce380589\",\"checkpoint_step\":372504},\"mean\":0.1463261944989635,\"n_eval\":194,\"n_selected\":195},\"m0\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:gain070:m0\",\"checkpoint_sha256_tree\":\"e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08\",\"checkpoint_step\":367004},\"mean\":0.1708755713414125,\"n_eval\":192,\"n_selected\":195}}",
+        "basis": "identical selected states; checkpoint-specific mean_plan; state mean conditional on model-specific nonterminated25 completion",
+        "source": "common_state_gap_v1/results/open/gain070",
+        "source_sha256_set": "2c63bba5b14db7eda3c7fb50ad20abe4d1de48d0ea2b5dbd8d9a92b34867aeff"
+      },
+      {
+        "target": "flat",
+        "m0_mean": 0.344589290383855,
+        "adapted_min": 0.2297937662758108,
+        "adapted_max": 0.256034559475776,
+        "n_eval": 153,
+        "n_selected": 188,
+        "n_seed": 20,
+        "train_command_mps": 1.0,
+        "eval_command_mps": 0.75,
+        "model_coverage": "{\"flat_chain1\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:flat:flat_chain1\",\"checkpoint_sha256_tree\":\"5e3a2a380a19c8a6182afe4b848d8f4fc49fef325b4a61b239035eb64efe641a\",\"checkpoint_step\":373524},\"mean\":0.2297937662758108,\"n_eval\":159,\"n_selected\":188},\"flat_chain2\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:flat:flat_chain2\",\"checkpoint_sha256_tree\":\"b41c7f3ec00abe5723ba824c507d399c21eb5d151b510f6e35aff8d1443e4f5d\",\"checkpoint_step\":374134},\"mean\":0.256034559475776,\"n_eval\":159,\"n_selected\":188},\"m0\":{\"checkpoint\":{\"checkpoint_id\":\"evaluation:flat:m0\",\"checkpoint_sha256_tree\":\"e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08\",\"checkpoint_step\":367004},\"mean\":0.344589290383855,\"n_eval\":153,\"n_selected\":188}}",
+        "basis": "identical selected states; checkpoint-specific mean_plan; state mean conditional on model-specific nonterminated25 completion",
+        "source": "common_state_gap_v1/results/open/flat",
+        "source_sha256_set": "6c265ad0776b403cec111beff1e28d58d359fafbfafe4d2eb19d90f84c66c2b7"
+      }
+    ],
+    "target_failure_summary.csv": [
+      {
+        "target": "mass8",
+        "model": "m0",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 125,
+        "failure_pct": 62.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:m0",
+          "checkpoint_step": 367004,
+          "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+        },
+        "source": "adaptation_curve_v1/results/evaluations/baseline_target | chain_variance_recheck_v1/results/evaluations/mass8_new_m0 | results/s1_v2/runs | score_probe_v1/results/evaluations/m0",
+        "source_sha256_set": "4bca6855f80aee789d88c9d5b93419273c7c5d05f82d1f588814c4ed429777b0",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.05946491134338905,
+        "loss25_sd": 0.011245335738247934,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/m0/seed_*/summary.json",
+        "loss_sha256": "979f8384a72c6214249323e401505ba837a548f81cbe4267b690acd588e683fa",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.0589547397357019,
+        "checkpoint_id": "evaluation:mass8:m0",
+        "checkpoint_step": 367004,
+        "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08",
+        "loss_reduction_pct": 0.0,
+        "train_command_mps": ""
+      },
+      {
+        "target": "mass8",
+        "model": "old_chain1",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 83,
+        "failure_pct": 41.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:old_chain1",
+          "checkpoint_step": 380304,
+          "checkpoint_sha256_tree": "56ebc4433ed169cd61fcecf564b72c9fb4093166d23c13806919ae8fae21560c"
+        },
+        "source": "adaptation_curve_v1/results/evaluations/stage_30000 | multi_gap_200seed_extension_v1/results/evaluations/mass8_old_chain1 | score_probe_v1/results/evaluations/cp30000",
+        "source_sha256_set": "d4eea6f53fa32f7dc2324525cc826ccd4b3c57ba0114c6200d0a3cde69eaa453",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.04025832357560119,
+        "loss25_sd": 0.0071319448980713416,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/old_chain1/seed_*/summary.json",
+        "loss_sha256": "c34593141d64a0bf58b5935f4547a5ccc939d02d9fc192621f3fcbb4f850f6d6",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.039885150139729084,
+        "checkpoint_id": "evaluation:mass8:old_chain1",
+        "checkpoint_step": 380304,
+        "checkpoint_sha256_tree": "56ebc4433ed169cd61fcecf564b72c9fb4093166d23c13806919ae8fae21560c",
+        "loss_reduction_pct": 32.29902699572953,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "mass8",
+        "model": "old_chain2",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 93,
+        "failure_pct": 46.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:old_chain2",
+          "checkpoint_step": 370604,
+          "checkpoint_sha256_tree": "d0d35f2f22e9069ec030d10f76c13f72b62f890ce8ecf72289968519a7667741"
+        },
+        "source": "followup_v1/results/chain/evaluation | multi_gap_200seed_extension_v1/results/evaluations/mass8_old_chain2",
+        "source_sha256_set": "fc8416d16d9b220f4202b46ef882c245d28e2e7e61251c94e651eeb615148166",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.03325096215186214,
+        "loss25_sd": 0.005295038186237666,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/old_chain2/seed_*/summary.json",
+        "loss_sha256": "bd76cca7e5d87265ad06ce3864653e819d8404e182608a93755ad4ba2f53abbb",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03296626227501227,
+        "checkpoint_id": "evaluation:mass8:old_chain2",
+        "checkpoint_step": 370604,
+        "checkpoint_sha256_tree": "d0d35f2f22e9069ec030d10f76c13f72b62f890ce8ecf72289968519a7667741",
+        "loss_reduction_pct": 44.0830543581416,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "mass8",
+        "model": "new_chain3",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 76,
+        "failure_pct": 38.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:new_chain3",
+          "checkpoint_step": 371804,
+          "checkpoint_sha256_tree": "821c9db89d56bc20b637744e939bbbd7a1afa957471d52d2a78ec450a7cbfa70"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/mass8_new_chain3 | positive_control_variance_v1/results/mass8/evaluations/new_chain3",
+        "source_sha256_set": "608aa359aeb377c79e43acf4e0e91c58762b06c8abaacebf3182be32575355e9",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.0318993545111451,
+        "loss25_sd": 0.006209439751421172,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/new_chain3/seed_*/summary.json",
+        "loss_sha256": "d4e0b52f8aac20dd02a205d7ca856fe00477872430802bc9b9b97d9319c0157e",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03153783560136837,
+        "checkpoint_id": "evaluation:mass8:new_chain3",
+        "checkpoint_step": 371804,
+        "checkpoint_sha256_tree": "821c9db89d56bc20b637744e939bbbd7a1afa957471d52d2a78ec450a7cbfa70",
+        "loss_reduction_pct": 46.356004254445956,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "mass8",
+        "model": "new_chain4",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 116,
+        "failure_pct": 58.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:new_chain4",
+          "checkpoint_step": 370904,
+          "checkpoint_sha256_tree": "15b82b158ef81643a69e1dd0eb3707bf067fec2478b86ac61110211155bb9a60"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/mass8_new_chain4 | positive_control_variance_v1/results/mass8/evaluations/new_chain4",
+        "source_sha256_set": "2448b16d37fba0993510a1f9ae1ba58704fe14461e911f125fd646f6a341b6ae",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.03235655822777556,
+        "loss25_sd": 0.0066085591808806125,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/new_chain4/seed_*/summary.json",
+        "loss_sha256": "f31e764b7270f47841503baa44392ae8d1447062b5bd469e170aa05f75b09799",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03199244650311996,
+        "checkpoint_id": "evaluation:mass8:new_chain4",
+        "checkpoint_step": 370904,
+        "checkpoint_sha256_tree": "15b82b158ef81643a69e1dd0eb3707bf067fec2478b86ac61110211155bb9a60",
+        "loss_reduction_pct": 45.58714122866885,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "mass8",
+        "model": "old_DP",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 114,
+        "failure_pct": 57.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:old_DP",
+          "checkpoint_step": 372634,
+          "checkpoint_sha256_tree": "c1483a488400cad69f4e25c23e800aa36a7b7ddf65b42bf221f1745d86c75943"
+        },
+        "source": "chain_variance_recheck_v1/results/evaluations/mass8_new_old_DP | module_combo_v1/results/followup_repro/mass8_d_p/evaluations/d_pnone_mppi",
+        "source_sha256_set": "d27f41e0599f6ff9e54591db9c67b4e9385c07f70ff81368a285761a57f79c08",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.035212191718350314,
+        "loss25_sd": 0.006380030941638423,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/old_DP/seed_*/summary.json",
+        "loss_sha256": "a6093a204e8c9ccfd94c4955798fd80ff9993b997a1ae954b4658cb81bfbba04",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.034853946658354264,
+        "checkpoint_id": "evaluation:mass8:old_DP",
+        "checkpoint_step": 372634,
+        "checkpoint_sha256_tree": "c1483a488400cad69f4e25c23e800aa36a7b7ddf65b42bf221f1745d86c75943",
+        "loss_reduction_pct": 40.7849252225195,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "mass8",
+        "model": "new_DP2",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 87,
+        "failure_pct": 43.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:mass8:new_DP2",
+          "checkpoint_step": 372554,
+          "checkpoint_sha256_tree": "c14a0b6efae5e41006cebb845df77635ecea7c2cbe0ac2adf515305d64d2e88f"
+        },
+        "source": "chain_variance_recheck_v1/results/evaluations/mass8_new_new_DP2 | positive_control_variance_v1/results/mass8/evaluations/new_DP2",
+        "source_sha256_set": "72cb36da5ad1692055ad0c2c1f975506561586e9b70623cea8f4789b6b24a947",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.0349993771617698,
+        "loss25_sd": 0.005825372553932724,
+        "loss_n": 20,
+        "windows": 8548,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/mass8/new_DP2/seed_*/summary.json",
+        "loss_sha256": "a74dab4716f4180aa4c58cda6e79af48e2d7aa41e57629699b92e7df055da826",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.034683502763241725,
+        "checkpoint_id": "evaluation:mass8:new_DP2",
+        "checkpoint_step": 372554,
+        "checkpoint_sha256_tree": "c14a0b6efae5e41006cebb845df77635ecea7c2cbe0ac2adf515305d64d2e88f",
+        "loss_reduction_pct": 41.14280779860135,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "friction015",
+        "model": "m0",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 163,
+        "failure_pct": 81.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:friction015:m0",
+          "checkpoint_step": 367004,
+          "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+        },
+        "source": "module_combo_v1/results/followup_repro/friction015/second_chain/evaluations/m0_extension | module_combo_v1/results/friction015/evaluations/n0p0_mppi | multi_gap_200seed_extension_v1/results/evaluations/friction015_m0",
+        "source_sha256_set": "0a22f0a26750fe2fda9eaf7cc3ef0e252545c26e1ff19b1549f3f814efc1bb7a",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.07010705416904213,
+        "loss25_sd": 0.010237213586033347,
+        "loss_n": 20,
+        "windows": 8042,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/friction015/m0/seed_*/summary.json",
+        "loss_sha256": "dbc5816458da8ca27200db3c805d19b9068aa7c0171bb594f2a23406706df499",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.06944060931931852,
+        "checkpoint_id": "evaluation:friction015:m0",
+        "checkpoint_step": 367004,
+        "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08",
+        "loss_reduction_pct": 0.0,
+        "train_command_mps": ""
+      },
+      {
+        "target": "friction015",
+        "model": "friction_chain1",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 175,
+        "failure_pct": 87.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:friction015:friction_chain1",
+          "checkpoint_step": 371614,
+          "checkpoint_sha256_tree": "6fb389667d0b7b87c50c8fe2d76577f91afc4625b5251be4862d630e8e8f4868"
+        },
+        "source": "module_combo_v1/results/followup_repro/friction015/second_chain/evaluations/chain1_30k_extension | module_combo_v1/results/friction015/evaluations/d30p0_mppi | multi_gap_200seed_extension_v1/results/evaluations/friction015_friction_chain1",
+        "source_sha256_set": "210e42f2187d6844ca26c71fe83bbf5c68da645891b63a36b0d5684bbb189c8e",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.03918876741089052,
+        "loss25_sd": 0.00649992475034429,
+        "loss_n": 20,
+        "windows": 8042,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/friction015/friction_chain1/seed_*/summary.json",
+        "loss_sha256": "c8169cf6f3874b4f486b150616117ac38137c5062022bf8ae483aa7a5c942ace",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03882955161809923,
+        "checkpoint_id": "evaluation:friction015:friction_chain1",
+        "checkpoint_step": 371614,
+        "checkpoint_sha256_tree": "6fb389667d0b7b87c50c8fe2d76577f91afc4625b5251be4862d630e8e8f4868",
+        "loss_reduction_pct": 44.1015346096292,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "friction015",
+        "model": "friction_chain2",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 148,
+        "failure_pct": 74.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:friction015:friction_chain2",
+          "checkpoint_step": 371504,
+          "checkpoint_sha256_tree": "c3e93b8fd9e3c926c89a10635cf10739fbcb9846389118db6f09eae6082aa7b7"
+        },
+        "source": "module_combo_v1/results/followup_repro/friction015/second_chain/evaluations/chain2_30k | multi_gap_200seed_extension_v1/results/evaluations/friction015_friction_chain2",
+        "source_sha256_set": "ea61c342f60aa4c49f5e2006da183c6f5ff2cbd6a2b44cc812bb92daaac2525f",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.04052204764144736,
+        "loss25_sd": 0.006761754348266312,
+        "loss_n": 20,
+        "windows": 8042,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/friction015/friction_chain2/seed_*/summary.json",
+        "loss_sha256": "52b6901d1d8339ca1b9958b1395523bc611ed9639c83d4738ebd9c76366e3025",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.04011694790651381,
+        "checkpoint_id": "evaluation:friction015:friction_chain2",
+        "checkpoint_step": 371504,
+        "checkpoint_sha256_tree": "c3e93b8fd9e3c926c89a10635cf10739fbcb9846389118db6f09eae6082aa7b7",
+        "loss_reduction_pct": 42.19975704051036,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "friction015",
+        "model": "friction_60k",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 149,
+        "failure_pct": 74.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:friction015:friction_60k",
+          "checkpoint_step": 373604,
+          "checkpoint_sha256_tree": "66587cfa8a0774d48f18837939ee76cc03ba140acc87461e5246ae25d089a4b1"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/friction015_60k",
+        "source_sha256_set": "c01708802f8f69a7169ae79348da7399372054922a7b6a9bd2c480136cb4b9b5",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.03861276462261326,
+        "loss25_sd": 0.006023060861785477,
+        "loss_n": 20,
+        "windows": 8042,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/friction015/friction_60k/seed_*/summary.json",
+        "loss_sha256": "3560aeb6ff0534d6e755c8f831d3bea0a535ad76c48f5ac46c9b7e8d0987e527",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03827394273382693,
+        "checkpoint_id": "evaluation:friction015:friction_60k",
+        "checkpoint_step": 373604,
+        "checkpoint_sha256_tree": "66587cfa8a0774d48f18837939ee76cc03ba140acc87461e5246ae25d089a4b1",
+        "loss_reduction_pct": 44.92313921861535,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "friction015",
+        "model": "friction_90k",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 158,
+        "failure_pct": 79.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:friction015:friction_90k",
+          "checkpoint_step": 374004,
+          "checkpoint_sha256_tree": "80a4e2a4151fc93cad88bbc5954ef10aedd3f54575b7e85675379cb240a2e74d"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/friction015_90k",
+        "source_sha256_set": "b8bdeb20777ec0feae62bd3f30b2d83cfcfa158dbf165c27386171ac599ae9ca",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.038131649546355506,
+        "loss25_sd": 0.006074696768231121,
+        "loss_n": 20,
+        "windows": 8042,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/friction015/friction_90k/seed_*/summary.json",
+        "loss_sha256": "909ff1e410f3bb6333c8f675f81c24766a7fa04d6d4079cf5ccc204903a749e0",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03778631539300346,
+        "checkpoint_id": "evaluation:friction015:friction_90k",
+        "checkpoint_step": 374004,
+        "checkpoint_sha256_tree": "80a4e2a4151fc93cad88bbc5954ef10aedd3f54575b7e85675379cb240a2e74d",
+        "loss_reduction_pct": 45.60939694540228,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "gain070",
+        "model": "m0",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 116,
+        "failure_pct": 58.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:gain070:m0",
+          "checkpoint_step": 367004,
+          "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+        },
+        "source": "module_combo_v1/results/followup_repro/gain070/second_chain/evaluations/m0_extension | module_combo_v1/results/gain070/evaluations/n0p0_mppi | multi_gap_200seed_extension_v1/results/evaluations/gain070_m0",
+        "source_sha256_set": "da4261b14362de4c5a8e150288d847a77034d1e8341a2278c4434f69c2565cb5",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.05670375349880048,
+        "loss25_sd": 0.011972124235780352,
+        "loss_n": 20,
+        "windows": 8700,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/gain070/m0/seed_*/summary.json",
+        "loss_sha256": "042d9f1f3bd2c83c20a4d3f928091c253c591e00e7569c0d86be29cb6c106f08",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.056066446306890456,
+        "checkpoint_id": "evaluation:gain070:m0",
+        "checkpoint_step": 367004,
+        "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08",
+        "loss_reduction_pct": 0.0,
+        "train_command_mps": ""
+      },
+      {
+        "target": "gain070",
+        "model": "gain_chain1",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 86,
+        "failure_pct": 43.0,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:gain070:gain_chain1",
+          "checkpoint_step": 371664,
+          "checkpoint_sha256_tree": "f09a933fcaf4e9b4d47d96678a442af072a752f8d03b866264062737cfaad91c"
+        },
+        "source": "module_combo_v1/results/followup_repro/gain070/second_chain/evaluations/chain1_30k_extension | module_combo_v1/results/gain070/evaluations/d30p0_mppi | multi_gap_200seed_extension_v1/results/evaluations/gain070_gain_chain1",
+        "source_sha256_set": "d88ab865a5911737d8c9aaa9b9003337c70c9c0fcf7b1336c3106b656a8072c6",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.032124055324741344,
+        "loss25_sd": 0.00828893982991956,
+        "loss_n": 20,
+        "windows": 8700,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/gain070/gain_chain1/seed_*/summary.json",
+        "loss_sha256": "bbe8e5f3fb997e422c5c344feada20cce9398fd514a6fc46be5d97b5153e865a",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.03173469400630151,
+        "checkpoint_id": "evaluation:gain070:gain_chain1",
+        "checkpoint_step": 371664,
+        "checkpoint_sha256_tree": "f09a933fcaf4e9b4d47d96678a442af072a752f8d03b866264062737cfaad91c",
+        "loss_reduction_pct": 43.347568119241174,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "gain070",
+        "model": "gain_chain2",
+        "basis": "pre-action displacement >7.425m first-exit",
+        "n_eval": 200,
+        "failures": 129,
+        "failure_pct": 64.5,
+        "eval_command_mps": 1.0,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:gain070:gain_chain2",
+          "checkpoint_step": 372504,
+          "checkpoint_sha256_tree": "c1322bd4759f283d684fdf20c1743fad6eb14e81bb12bf690663c916ce380589"
+        },
+        "source": "module_combo_v1/results/followup_repro/gain070/second_chain/evaluations/chain2_30k | multi_gap_200seed_extension_v1/results/evaluations/gain070_gain_chain2",
+        "source_sha256_set": "fef158d3175993b47d1bccfb924e97467570a08ee1551722814861b9c9643e55",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.03118361404531872,
+        "loss25_sd": 0.008157711758019125,
+        "loss_n": 20,
+        "windows": 8700,
+        "loss_basis": "arithmetic mean of 20 common-state collection seed MSEs",
+        "loss_source": "common_state_gap_v1/results/loss/gain070/gain_chain2/seed_*/summary.json",
+        "loss_sha256": "3084732a2d4eabff4a5755df3269f82ef8081321631dae55362c524d52e23aa1",
+        "dataset": "common100",
+        "loss_seed_ranges": "186001-186020",
+        "loss25_window_pooled": 0.030814330442835332,
+        "checkpoint_id": "evaluation:gain070:gain_chain2",
+        "checkpoint_step": 372504,
+        "checkpoint_sha256_tree": "c1322bd4759f283d684fdf20c1743fad6eb14e81bb12bf690663c916ce380589",
+        "loss_reduction_pct": 45.00608492173559,
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "flat",
+        "model": "m0",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 106,
+        "failure_pct": 53.0,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:m0",
+          "checkpoint_step": 367004,
+          "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/flat075_m0",
+        "source_sha256_set": "37f9e67a8f9d8fde43551217c651a595df17dfc65105dfcb2a6d60bd30e552b8",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.04227462559888169,
+        "loss25_sd": 0.012956019469409113,
+        "loss_n": 20,
+        "windows": 8350,
+        "loss25_window_pooled": 0.04168342483057055,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "flat_velocity_matched_v1/results/losses.csv",
+        "loss_sha256": "ed08783b55fefa783aa84f8b2dbf52c6a61e31c9770a55ce4686b9f859cc74c2",
+        "dataset": "common075",
+        "loss_seed_ranges": "186001-186020",
+        "checkpoint_id": "loss:common075:flat_velocity_matched_v1:m0",
+        "checkpoint_step": 367004,
+        "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08",
+        "loss_reduction_pct": 0.0,
+        "train_command_mps": ""
+      },
+      {
+        "target": "flat",
+        "model": "flat075_chain1",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 124,
+        "failure_pct": 62.0,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:flat075_chain1",
+          "checkpoint_step": 375604,
+          "checkpoint_sha256_tree": "b0b4d25cbe7c1b05c4c85d1a0429dcebb0adfd30e5c507f41eb7c61546573cb7"
+        },
+        "source": "flat_velocity_matched_v1/results/evaluations/v075/flat075_chain1",
+        "source_sha256_set": "4b9feee6a87fb35aa7b5c97015e1cacd3ea3c1642c3548a6c899b0e276a707c6",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.006166251385207509,
+        "loss25_sd": 0.002815017801930031,
+        "loss_n": 20,
+        "windows": 8350,
+        "loss25_window_pooled": 0.006052267560791112,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "flat_velocity_matched_v1/results/losses.csv",
+        "loss_sha256": "ed08783b55fefa783aa84f8b2dbf52c6a61e31c9770a55ce4686b9f859cc74c2",
+        "dataset": "common075",
+        "loss_seed_ranges": "186001-186020",
+        "checkpoint_id": "loss:common075:flat_velocity_matched_v1:flat075_chain1",
+        "checkpoint_step": 375604,
+        "checkpoint_sha256_tree": "b0b4d25cbe7c1b05c4c85d1a0429dcebb0adfd30e5c507f41eb7c61546573cb7",
+        "loss_reduction_pct": 85.41382378234326,
+        "train_command_mps": 0.75
+      },
+      {
+        "target": "flat",
+        "model": "flat075_chain2",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 116,
+        "failure_pct": 58.0,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:flat075_chain2",
+          "checkpoint_step": 376174,
+          "checkpoint_sha256_tree": "67e0290afa182b15769a319a463010b59190550817670aba42982082031295b0"
+        },
+        "source": "flat_velocity_matched_v1/results/evaluations/v075/flat075_chain2",
+        "source_sha256_set": "a95c2f72ce40451ee074a2d41872836c062b10a98800bd7cd0e43329a01ba2d3",
+        "seed_ranges": "23501-23600;24001-24100",
+        "loss25": 0.0065696632121098305,
+        "loss25_sd": 0.0031870079223951455,
+        "loss_n": 20,
+        "windows": 8350,
+        "loss25_window_pooled": 0.006441510343857243,
+        "loss_basis": "arithmetic mean of independent seed MSEs",
+        "loss_source": "flat_velocity_matched_v1/results/losses.csv",
+        "loss_sha256": "ed08783b55fefa783aa84f8b2dbf52c6a61e31c9770a55ce4686b9f859cc74c2",
+        "dataset": "common075",
+        "loss_seed_ranges": "186001-186020",
+        "checkpoint_id": "loss:common075:flat_velocity_matched_v1:flat075_chain2",
+        "checkpoint_step": 376174,
+        "checkpoint_sha256_tree": "67e0290afa182b15769a319a463010b59190550817670aba42982082031295b0",
+        "loss_reduction_pct": 84.4595590876537,
+        "train_command_mps": 0.75
+      }
+    ],
+    "flat_velocity_comparison.csv": [
+      {
+        "target": "flat",
+        "model": "m0",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 106,
+        "failure_pct": 53.0,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:m0",
+          "checkpoint_step": 367004,
+          "checkpoint_sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/flat075_m0",
+        "source_sha256_set": "37f9e67a8f9d8fde43551217c651a595df17dfc65105dfcb2a6d60bd30e552b8",
+        "seed_ranges": "23501-23600;24001-24100",
+        "train_command_mps": ""
+      },
+      {
+        "target": "flat",
+        "model": "flat_chain1",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 183,
+        "failure_pct": 91.5,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:flat_chain1",
+          "checkpoint_step": 373524,
+          "checkpoint_sha256_tree": "5e3a2a380a19c8a6182afe4b848d8f4fc49fef325b4a61b239035eb64efe641a"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/flat075_flat_chain1",
+        "source_sha256_set": "6b1e5dd8a130b75d44b24da3147557adbbecf5f8e9a9595c6237466b79334835",
+        "seed_ranges": "23501-23600;24001-24100",
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "flat",
+        "model": "flat_chain2",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 189,
+        "failure_pct": 94.5,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:flat_chain2",
+          "checkpoint_step": 374134,
+          "checkpoint_sha256_tree": "b41c7f3ec00abe5723ba824c507d399c21eb5d151b510f6e35aff8d1443e4f5d"
+        },
+        "source": "multi_gap_200seed_extension_v1/results/evaluations/flat075_flat_chain2",
+        "source_sha256_set": "e6f3d6bebf096825dce42d7ed8c33d241059b149a18bbb79ea3e15845a36c089",
+        "seed_ranges": "23501-23600;24001-24100",
+        "train_command_mps": 1.0
+      },
+      {
+        "target": "flat",
+        "model": "flat075_chain1",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 124,
+        "failure_pct": 62.0,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:flat075_chain1",
+          "checkpoint_step": 375604,
+          "checkpoint_sha256_tree": "b0b4d25cbe7c1b05c4c85d1a0429dcebb0adfd30e5c507f41eb7c61546573cb7"
+        },
+        "source": "flat_velocity_matched_v1/results/evaluations/v075/flat075_chain1",
+        "source_sha256_set": "4b9feee6a87fb35aa7b5c97015e1cacd3ea3c1642c3548a6c899b0e276a707c6",
+        "seed_ranges": "23501-23600;24001-24100",
+        "train_command_mps": 0.75
+      },
+      {
+        "target": "flat",
+        "model": "flat075_chain2",
+        "basis": "full episode termination or warmup failure; max1000",
+        "n_eval": 200,
+        "failures": 116,
+        "failure_pct": 58.0,
+        "eval_command_mps": 0.75,
+        "evaluation_checkpoint": {
+          "checkpoint_id": "evaluation:flat:flat075_chain2",
+          "checkpoint_step": 376174,
+          "checkpoint_sha256_tree": "67e0290afa182b15769a319a463010b59190550817670aba42982082031295b0"
+        },
+        "source": "flat_velocity_matched_v1/results/evaluations/v075/flat075_chain2",
+        "source_sha256_set": "a95c2f72ce40451ee074a2d41872836c062b10a98800bd7cd0e43329a01ba2d3",
+        "seed_ranges": "23501-23600;24001-24100",
+        "train_command_mps": 0.75
+      }
+    ]
+  },
+  "readme_comparisons": [
+    {
+      "claim": "m0:loss25",
+      "readme": 0.0642,
+      "raw": 0.06420318101691834,
+      "pass": true
+    },
+    {
+      "claim": "m0:failures100",
+      "readme": 62.0,
+      "raw": 62,
+      "pass": true
+    },
+    {
+      "claim": "m0:failure_pct",
+      "readme": 64.5,
+      "raw": 64.5,
+      "pass": true
+    },
+    {
+      "claim": "old_chain1:loss25",
+      "readme": 0.0442,
+      "raw": 0.04421470120747118,
+      "pass": true
+    },
+    {
+      "claim": "old_chain1:failures100",
+      "readme": 40.0,
+      "raw": 40,
+      "pass": true
+    },
+    {
+      "claim": "old_chain1:failure_pct",
+      "readme": 43.5,
+      "raw": 43.5,
+      "pass": true
+    },
+    {
+      "claim": "old_chain2:loss25",
+      "readme": 0.0375,
+      "raw": 0.03749472611512582,
+      "pass": true
+    },
+    {
+      "claim": "old_chain2:failures100",
+      "readme": 49.0,
+      "raw": 49,
+      "pass": true
+    },
+    {
+      "claim": "old_chain2:failure_pct",
+      "readme": 48.0,
+      "raw": 48.0,
+      "pass": true
+    },
+    {
+      "claim": "new_chain3:loss25",
+      "readme": 0.0352,
+      "raw": 0.03515109595600521,
+      "pass": true
+    },
+    {
+      "claim": "new_chain3:failures100",
+      "readme": 37.0,
+      "raw": 37,
+      "pass": true
+    },
+    {
+      "claim": "new_chain3:failure_pct",
+      "readme": 40.0,
+      "raw": 40.0,
+      "pass": true
+    },
+    {
+      "claim": "new_chain4:loss25",
+      "readme": 0.0379,
+      "raw": 0.037929860003244845,
+      "pass": true
+    },
+    {
+      "claim": "new_chain4:failures100",
+      "readme": 52.0,
+      "raw": 52,
+      "pass": true
+    },
+    {
+      "claim": "new_chain4:failure_pct",
+      "readme": 58.5,
+      "raw": 58.5,
+      "pass": true
+    },
+    {
+      "claim": "source:rho_head_mc",
+      "readme": 0.57,
+      "raw": 0.5660075556627281,
+      "pass": true
+    },
+    {
+      "claim": "source:rho_critic_mc",
+      "readme": 0.76,
+      "raw": 0.7641065830721003,
+      "pass": true
+    },
+    {
+      "claim": "mass8:rho_head_mc",
+      "readme": 0.57,
+      "raw": 0.5651035834266518,
+      "pass": true
+    },
+    {
+      "claim": "mass8:rho_critic_mc",
+      "readme": 0.77,
+      "raw": 0.7737122060470325,
+      "pass": true
+    },
+    {
+      "claim": "friction015:rho_head_mc",
+      "readme": 0.39,
+      "raw": 0.39019212786673485,
+      "pass": true
+    },
+    {
+      "claim": "friction015:rho_critic_mc",
+      "readme": 0.68,
+      "raw": 0.6791300743254318,
+      "pass": true
+    },
+    {
+      "claim": "gain070:rho_head_mc",
+      "readme": 0.05,
+      "raw": 0.05388404899168109,
+      "pass": true
+    },
+    {
+      "claim": "gain070:rho_critic_mc",
+      "readme": 0.44,
+      "raw": 0.4366825589917566,
+      "pass": true
+    },
+    {
+      "claim": "mass8:m0_mean",
+      "readme": 0.152,
+      "raw": 0.1518929450417764,
+      "pass": true
+    },
+    {
+      "claim": "mass8:adapted_min",
+      "readme": 0.1,
+      "raw": 0.09959710850080963,
+      "pass": true
+    },
+    {
+      "claim": "mass8:adapted_max",
+      "readme": 0.111,
+      "raw": 0.11147491301633579,
+      "pass": true
+    },
+    {
+      "claim": "friction015:m0_mean",
+      "readme": 0.308,
+      "raw": 0.308401652936502,
+      "pass": true
+    },
+    {
+      "claim": "friction015:adapted_min",
+      "readme": 0.255,
+      "raw": 0.25540800762180954,
+      "pass": true
+    },
+    {
+      "claim": "friction015:adapted_max",
+      "readme": 0.271,
+      "raw": 0.27111119760553976,
+      "pass": true
+    },
+    {
+      "claim": "gain070:m0_mean",
+      "readme": 0.171,
+      "raw": 0.1708755713414125,
+      "pass": true
+    },
+    {
+      "claim": "gain070:adapted_min",
+      "readme": 0.144,
+      "raw": 0.14426732221731595,
+      "pass": true
+    },
+    {
+      "claim": "gain070:adapted_max",
+      "readme": 0.146,
+      "raw": 0.1463261944989635,
+      "pass": true
+    },
+    {
+      "claim": "flat:m0_mean",
+      "readme": 0.345,
+      "raw": 0.344589290383855,
+      "pass": true
+    },
+    {
+      "claim": "flat:adapted_min",
+      "readme": 0.23,
+      "raw": 0.2297937662758108,
+      "pass": true
+    },
+    {
+      "claim": "flat:adapted_max",
+      "readme": 0.256,
+      "raw": 0.256034559475776,
+      "pass": true
+    },
+    {
+      "claim": "mass8:baseline_failure",
+      "readme": 62.5,
+      "raw": 62.5,
+      "pass": true
+    },
+    {
+      "claim": "friction015:baseline_failure",
+      "readme": 81.5,
+      "raw": 81.5,
+      "pass": true
+    },
+    {
+      "claim": "gain070:baseline_failure",
+      "readme": 58.0,
+      "raw": 58.0,
+      "pass": true
+    },
+    {
+      "claim": "flat:baseline_failure",
+      "readme": 53.0,
+      "raw": 53.0,
+      "pass": true
+    }
+  ],
+  "input_file_count": 20665,
+  "direct_sources": [
+    {
+      "path": "common_state_gap_v1/manifest.json",
+      "sha256": "75d307d4c7352ce4db648c56ef62dce2c45814f6fdb7f6ff95801a8d8683c140",
+      "size_bytes": 14835,
+      "basis": "checkpoint/condition binding only; aggregate numbers ignored"
+    },
+    {
+      "path": "common_state_gap_v1/worker.py",
+      "sha256": "e371949209aa7bf9e21c4f9f9f4690f821aff93dd8a99cacc65b5f8588ed3465",
+      "size_bytes": 19924,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "eval_s1_v2.py",
+      "sha256": "bcf60a4ef52a3b40ac8794e39a3d10ad2019766107ea1ec5052b29058da88db7",
+      "size_bytes": 10049,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "flat_velocity_matched_v1/analyze.py",
+      "sha256": "93d9fb12627cc2f5313d429d225ad97d2112622c92696ce8f383a5de4566d3d1",
+      "size_bytes": 16292,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "flat_velocity_matched_v1/manifest.json",
+      "sha256": "af1ddfcd2ddcd9dccdf006cafceafd84d915244d060a06ae16ec2c846fde1ea1",
+      "size_bytes": 5589,
+      "basis": "checkpoint/dataset/condition bindings only"
+    },
+    {
+      "path": "flat_velocity_matched_v1/results/losses.csv",
+      "sha256": "ed08783b55fefa783aa84f8b2dbf52c6a61e31c9770a55ce4686b9f859cc74c2",
+      "size_bytes": 46385,
+      "basis": "per-rollout held-out prediction MSE; not a report aggregate"
+    },
+    {
+      "path": "gap_diagnosis_v1/analyze.py",
+      "sha256": "dbcf68911851c367699c9208020c504a708484f8157cb9e3abb0aa5b228232a4",
+      "size_bytes": 16725,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "go2_probe_common.py",
+      "sha256": "5068ea747ba584e80e3fbf20e8e2f7f5c9ee6fc6bb4e007cdf3ca3887427a0ac",
+      "size_bytes": 3714,
+      "basis": "historically pinned producer configuration"
+    },
+    {
+      "path": "module_combo_v1/evaluate_latent_datasets.py",
+      "sha256": "c3183b48103f6d8239aeddb3909f374e999e209ba2305c4d610ec5e559bf2b70",
+      "size_bytes": 5665,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "module_combo_v1/gap_config.py",
+      "sha256": "3dda76c3917a4cc6efcd3fbaf99f8cd7254ec066e50daec27f1f1e0aa122039d",
+      "size_bytes": 2656,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "multi_gap_200seed_extension_v1/settings.py",
+      "sha256": "978f6871db95cb04368a47db40b3982423be7f8b664b62964c26cc56139365a2",
+      "size_bytes": 2681,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "positive_control_variance_v1/results/mass8/losses.csv",
+      "sha256": "408d816bf69bad4b68b58e0fdfc2bfb1e13133e86f6e2d10bb092d347287cde2",
+      "size_bytes": 22060,
+      "basis": "per-rollout held-out prediction MSE; not a report aggregate"
+    },
+    {
+      "path": "positive_control_variance_v1/run.py",
+      "sha256": "a9ba0e9bfb0199e2ba35c3d341310f0965afc0411ec48a09b661b7c962bfe820",
+      "size_bytes": 9364,
+      "basis": "producer/method provenance only; code never executed"
+    },
+    {
+      "path": "tile_failure_data_reanalysis_v1/analyze.py",
+      "sha256": "9b0c970f7d028050b34e566ecf6d1834e6b96f1e5fb56b12ba8c37bee800571a",
+      "size_bytes": 19036,
+      "basis": "producer/method provenance only; code never executed"
+    }
+  ],
+  "input_families": [
+    {
+      "family": "adaptation_curve_v1",
+      "files": 90,
+      "sha256_set": "e3ed96a19c0dc55a30d9881474ff134efb8bad8d282f5dc34fdceae1d6c1ae57"
+    },
+    {
+      "family": "candidate_rank_v1",
+      "files": 484,
+      "sha256_set": "1d1cbf294e515170ea41d7acb7afbb27bac8363c0e1c232975ce631766876e3b"
+    },
+    {
+      "family": "chain_variance_recheck_v1",
+      "files": 900,
+      "sha256_set": "073aa0b1b9efec7b577faf0f734a0608767bd3e77676dca9ab2694c137d27679"
+    },
+    {
+      "family": "common_state_gap_v1",
+      "files": 7558,
+      "sha256_set": "020de4f024e5d99a3e6ece2a5844bd33ab17f62b524af8b37705670b6c079bbd"
+    },
+    {
+      "family": "eval_s1_v2.py",
+      "files": 1,
+      "sha256_set": "487b5aa07c6d4e753353c41f6bf855c95e34db0acf9bda9d6f6caab85b137dbc"
+    },
+    {
+      "family": "flat_velocity_matched_v1",
+      "files": 1203,
+      "sha256_set": "2327d590e7200ce840ef4e8c03204c80d33f5afa5b1683a4b00c0c174fa22d53"
+    },
+    {
+      "family": "followup_v1",
+      "files": 300,
+      "sha256_set": "b85fb78ab78e704dc2ef5fbcffbc02da3b78d9eceec4d59ffdddb2218653ac54"
+    },
+    {
+      "family": "gap_diagnosis_v1",
+      "files": 601,
+      "sha256_set": "f94788b8fff04c8f4733936582be1c927cbee1b64c6e5ec1cf1109d44f0f9ff8"
+    },
+    {
+      "family": "go2_probe_common.py",
+      "files": 1,
+      "sha256_set": "bdc4ba15c9d47d945dfcd7855baf400c39e8da0d84e3030fb1c0ba8508913afd"
+    },
+    {
+      "family": "module_combo_v1",
+      "files": 2102,
+      "sha256_set": "2808e755e317f20259a986c7ab1f7a4a634b6d48b21dc5f55299f5fb2ad5d62b"
+    },
+    {
+      "family": "multi_gap_200seed_extension_v1",
+      "files": 6001,
+      "sha256_set": "c9344ac62f470fee2c501adc26e35ab2815f5bac6d33616b119a0e14392fa60a"
+    },
+    {
+      "family": "positive_control_variance_v1",
+      "files": 913,
+      "sha256_set": "af8eecd3255ca47775eebe2a9242f4d124ab70a53fe2e77a9e60687ef1659ee2"
+    },
+    {
+      "family": "results",
+      "files": 30,
+      "sha256_set": "2b49cf77acf980fc9fa046a56171e1089f43e4ac3d4385c9c5d78c0e68788e05"
+    },
+    {
+      "family": "score_probe_v1",
+      "files": 480,
+      "sha256_set": "924af846de4dda76292bca7682bcb492abc35e61a71603387d36f6e579aa8b43"
+    },
+    {
+      "family": "tile_failure_data_reanalysis_v1",
+      "files": 1,
+      "sha256_set": "857d422a7a750cd1cb86da74cdb7d472047466d612bb0ae9d0756ac77a61e7ae"
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        "evaluation:flat:flat075_chain1",
+        "loss:common075:flat_velocity_matched_v1:flat075_chain1"
+      ],
+      "step": 375604,
+      "sha256_tree": "b0b4d25cbe7c1b05c4c85d1a0429dcebb0adfd30e5c507f41eb7c61546573cb7"
+    },
+    {
+      "ids": [
+        "evaluation:flat:flat075_chain2",
+        "loss:common075:flat_velocity_matched_v1:flat075_chain2"
+      ],
+      "step": 376174,
+      "sha256_tree": "67e0290afa182b15769a319a463010b59190550817670aba42982082031295b0"
+    },
+    {
+      "ids": [
+        "evaluation:flat:flat_chain1"
+      ],
+      "step": 373524,
+      "sha256_tree": "5e3a2a380a19c8a6182afe4b848d8f4fc49fef325b4a61b239035eb64efe641a"
+    },
+    {
+      "ids": [
+        "evaluation:flat:flat_chain2"
+      ],
+      "step": 374134,
+      "sha256_tree": "b41c7f3ec00abe5723ba824c507d399c21eb5d151b510f6e35aff8d1443e4f5d"
+    },
+    {
+      "ids": [
+        "evaluation:friction015:friction_60k"
+      ],
+      "step": 373604,
+      "sha256_tree": "66587cfa8a0774d48f18837939ee76cc03ba140acc87461e5246ae25d089a4b1"
+    },
+    {
+      "ids": [
+        "evaluation:friction015:friction_90k"
+      ],
+      "step": 374004,
+      "sha256_tree": "80a4e2a4151fc93cad88bbc5954ef10aedd3f54575b7e85675379cb240a2e74d"
+    },
+    {
+      "ids": [
+        "evaluation:friction015:friction_chain1"
+      ],
+      "step": 371614,
+      "sha256_tree": "6fb389667d0b7b87c50c8fe2d76577f91afc4625b5251be4862d630e8e8f4868"
+    },
+    {
+      "ids": [
+        "evaluation:friction015:friction_chain2"
+      ],
+      "step": 371504,
+      "sha256_tree": "c3e93b8fd9e3c926c89a10635cf10739fbcb9846389118db6f09eae6082aa7b7"
+    },
+    {
+      "ids": [
+        "evaluation:gain070:gain_chain1"
+      ],
+      "step": 371664,
+      "sha256_tree": "f09a933fcaf4e9b4d47d96678a442af072a752f8d03b866264062737cfaad91c"
+    },
+    {
+      "ids": [
+        "evaluation:gain070:gain_chain2"
+      ],
+      "step": 372504,
+      "sha256_tree": "c1322bd4759f283d684fdf20c1743fad6eb14e81bb12bf690663c916ce380589"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:m0",
+        "evaluation:friction015:m0",
+        "evaluation:gain070:m0",
+        "evaluation:flat:m0",
+        "loss:independent_m0:positive_control_variance_v1:m0",
+        "loss:common075:flat_velocity_matched_v1:m0"
+      ],
+      "step": 367004,
+      "sha256_tree": "e578739575bfa6afdb8b65af5b598f768bc005fb69519ee2b89b40fad5fa0d08"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:new_DP2"
+      ],
+      "step": 372554,
+      "sha256_tree": "c14a0b6efae5e41006cebb845df77635ecea7c2cbe0ac2adf515305d64d2e88f"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:new_chain3",
+        "loss:independent_m0:positive_control_variance_v1:new_chain3"
+      ],
+      "step": 371804,
+      "sha256_tree": "821c9db89d56bc20b637744e939bbbd7a1afa957471d52d2a78ec450a7cbfa70"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:new_chain4",
+        "loss:independent_m0:positive_control_variance_v1:new_chain4"
+      ],
+      "step": 370904,
+      "sha256_tree": "15b82b158ef81643a69e1dd0eb3707bf067fec2478b86ac61110211155bb9a60"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:old_DP"
+      ],
+      "step": 372634,
+      "sha256_tree": "c1483a488400cad69f4e25c23e800aa36a7b7ddf65b42bf221f1745d86c75943"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:old_chain1",
+        "loss:independent_m0:positive_control_variance_v1:old_chain1"
+      ],
+      "step": 380304,
+      "sha256_tree": "56ebc4433ed169cd61fcecf564b72c9fb4093166d23c13806919ae8fae21560c"
+    },
+    {
+      "ids": [
+        "evaluation:mass8:old_chain2",
+        "loss:independent_m0:positive_control_variance_v1:old_chain2"
+      ],
+      "step": 370604,
+      "sha256_tree": "d0d35f2f22e9069ec030d10f76c13f72b62f890ce8ecf72289968519a7667741"
+    },
+    {
+      "ids": [
+        "loss:independent_m0:positive_control_variance_v1:new_DP2"
+      ],
+      "step": 372554,
+      "sha256_tree": "b75f277ddad8471cea3542a7e5f162fe305dc431dcc3615d981359eb28ef03dc"
+    },
+    {
+      "ids": [
+        "loss:independent_m0:positive_control_variance_v1:old_DP"
+      ],
+      "step": 372634,
+      "sha256_tree": "e2a5637d27a8bc02314ef531fb97d2739fffa952562538ebee6a6f704d335311"
+    }
+  ],
+  "full_file_manifest": "LOCAL_ONLY: analysis/.local_audit/",
+  "hash_method": "SHA256 of sorted UTF8 relative_path TAB file_SHA256 LF; checkpoint tree uses checkpoint-relative paths",
+  "public_scope": "aggregate rows, explicit producer/per-seed loss source names, family-set digests and logical checkpoint IDs; no per-episode/state filename inventory",
+  "aggregation": "independent seed means for loss; pooled snapshots for Spearman; conditional state means for D; paired evaluation seeds across training chains",
+  "mc_cross_target_comparability": "different horizons175/200; no direct cross-target MC return comparison",
+  "source_integrity": "all registered raw inputs and checkpoint files checked unchanged after read; no source writes",
+  "per_file_validation": {
+    "mass_chains_200seed.csv": {
+      "status": "VALIDATED_RAW_MEASUREMENT",
+      "rows": 7
+    },
+    "chain_equality_test.csv": {
+      "status": "VALIDATED_STATUS_ONLY",
+      "rows": 1
+    },
+    "value_mc_rank.csv": {
+      "status": "VALIDATED_RAW_MEASUREMENT",
+      "rows": 4
+    },
+    "common_state_dynamics_error.csv": {
+      "status": "VALIDATED_RAW_MEASUREMENT",
+      "rows": 4
+    },
+    "target_failure_summary.csv": {
+      "status": "VALIDATED_RAW_MEASUREMENT",
+      "rows": 4
+    },
+    "flat_velocity_comparison.csv": {
+      "status": "VALIDATED_RAW_MEASUREMENT",
+      "rows": 2
+    }
+  },
+  "regression_comparisons": [
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "m0",
+      "field": "loss25",
+      "expected": 0.0642,
+      "actual": 0.06420318101691834,
+      "delta": 3.181016918346602e-06,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "m0",
+      "field": "failures_100_old",
+      "expected": 62,
+      "actual": 62,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "m0",
+      "field": "failure_pct",
+      "expected": 64.5,
+      "actual": 64.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "old_chain1",
+      "field": "loss25",
+      "expected": 0.0442,
+      "actual": 0.04421470120747118,
+      "delta": 1.4701207471178035e-05,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "old_chain1",
+      "field": "failures_100_old",
+      "expected": 40,
+      "actual": 40,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "old_chain1",
+      "field": "failure_pct",
+      "expected": 43.5,
+      "actual": 43.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "old_chain2",
+      "field": "loss25",
+      "expected": 0.0375,
+      "actual": 0.03749472611512582,
+      "delta": -5.273884874180956e-06,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "old_chain2",
+      "field": "failures_100_old",
+      "expected": 49,
+      "actual": 49,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "old_chain2",
+      "field": "failure_pct",
+      "expected": 48.0,
+      "actual": 48.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "new_chain3",
+      "field": "loss25",
+      "expected": 0.0352,
+      "actual": 0.03515109595600521,
+      "delta": -4.890404399478937e-05,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "new_chain3",
+      "field": "failures_100_old",
+      "expected": 37,
+      "actual": 37,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "new_chain3",
+      "field": "failure_pct",
+      "expected": 40.0,
+      "actual": 40.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "new_chain4",
+      "field": "loss25",
+      "expected": 0.0379,
+      "actual": 0.037929860003244845,
+      "delta": 2.9860003244841504e-05,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "new_chain4",
+      "field": "failures_100_old",
+      "expected": 52,
+      "actual": 52,
+      "delta": 0,
+      "pass": true
+    },
+    {
+      "table": "mass_chains_200seed.csv",
+      "model": "new_chain4",
+      "field": "failure_pct",
+      "expected": 58.5,
+      "actual": 58.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "source",
+      "field": "rho_head_mc",
+      "expected": 0.57,
+      "actual": 0.5660075556627281,
+      "delta": -0.003992444337271861,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "source",
+      "field": "rho_critic_mc",
+      "expected": 0.76,
+      "actual": 0.7641065830721003,
+      "delta": 0.004106583072100323,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "mass8",
+      "field": "rho_head_mc",
+      "expected": 0.57,
+      "actual": 0.5651035834266518,
+      "delta": -0.004896416573348161,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "mass8",
+      "field": "rho_critic_mc",
+      "expected": 0.77,
+      "actual": 0.7737122060470325,
+      "delta": 0.0037122060470324847,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "friction015",
+      "field": "rho_head_mc",
+      "expected": 0.39,
+      "actual": 0.39019212786673485,
+      "delta": 0.00019212786673483695,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "friction015",
+      "field": "rho_critic_mc",
+      "expected": 0.68,
+      "actual": 0.6791300743254318,
+      "delta": -0.0008699256745682282,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "gain070",
+      "field": "rho_head_mc",
+      "expected": 0.05,
+      "actual": 0.05388404899168109,
+      "delta": 0.0038840489916810855,
+      "pass": true
+    },
+    {
+      "table": "value_mc_rank.csv",
+      "target": "gain070",
+      "field": "rho_critic_mc",
+      "expected": 0.44,
+      "actual": 0.4366825589917566,
+      "delta": -0.0033174410082433825,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "mass8",
+      "field": "m0_mean",
+      "expected": 0.152,
+      "actual": 0.1518929450417764,
+      "delta": -0.00010705495822360689,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "mass8",
+      "field": "adapted_min",
+      "expected": 0.1,
+      "actual": 0.09959710850080963,
+      "delta": -0.00040289149919037204,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "mass8",
+      "field": "adapted_max",
+      "expected": 0.111,
+      "actual": 0.11147491301633579,
+      "delta": 0.0004749130163357873,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "friction015",
+      "field": "m0_mean",
+      "expected": 0.308,
+      "actual": 0.308401652936502,
+      "delta": 0.00040165293650201717,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "friction015",
+      "field": "adapted_min",
+      "expected": 0.255,
+      "actual": 0.25540800762180954,
+      "delta": 0.0004080076218095363,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "friction015",
+      "field": "adapted_max",
+      "expected": 0.271,
+      "actual": 0.27111119760553976,
+      "delta": 0.00011119760553973679,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "gain070",
+      "field": "m0_mean",
+      "expected": 0.171,
+      "actual": 0.1708755713414125,
+      "delta": -0.00012442865858749985,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "gain070",
+      "field": "adapted_min",
+      "expected": 0.144,
+      "actual": 0.14426732221731595,
+      "delta": 0.0002673222173159573,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "gain070",
+      "field": "adapted_max",
+      "expected": 0.146,
+      "actual": 0.1463261944989635,
+      "delta": 0.00032619449896351127,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "flat",
+      "field": "m0_mean",
+      "expected": 0.345,
+      "actual": 0.344589290383855,
+      "delta": -0.0004107096161449775,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "flat",
+      "field": "adapted_min",
+      "expected": 0.23,
+      "actual": 0.2297937662758108,
+      "delta": -0.0002062337241892087,
+      "pass": true
+    },
+    {
+      "table": "common_state_dynamics_error.csv",
+      "target": "flat",
+      "field": "adapted_max",
+      "expected": 0.256,
+      "actual": 0.256034559475776,
+      "delta": 3.4559475776019255e-05,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "m0",
+      "field": "failure_pct",
+      "expected": 62.5,
+      "actual": 62.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "new_chain3",
+      "field": "failure_pct",
+      "expected": 38.0,
+      "actual": 38.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "old_chain1",
+      "field": "failure_pct",
+      "expected": 41.5,
+      "actual": 41.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "new_DP2",
+      "field": "failure_pct",
+      "expected": 43.5,
+      "actual": 43.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "old_chain2",
+      "field": "failure_pct",
+      "expected": 46.5,
+      "actual": 46.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "old_DP",
+      "field": "failure_pct",
+      "expected": 57.0,
+      "actual": 57.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "model": "new_chain4",
+      "field": "failure_pct",
+      "expected": 58.0,
+      "actual": 58.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "model": "m0",
+      "field": "failure_pct",
+      "expected": 81.5,
+      "actual": 81.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "model": "friction_chain2",
+      "field": "failure_pct",
+      "expected": 74.0,
+      "actual": 74.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "model": "friction_60k",
+      "field": "failure_pct",
+      "expected": 74.5,
+      "actual": 74.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "model": "friction_90k",
+      "field": "failure_pct",
+      "expected": 79.0,
+      "actual": 79.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "model": "friction_chain1",
+      "field": "failure_pct",
+      "expected": 87.5,
+      "actual": 87.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "gain070",
+      "model": "m0",
+      "field": "failure_pct",
+      "expected": 58.0,
+      "actual": 58.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "gain070",
+      "model": "gain_chain1",
+      "field": "failure_pct",
+      "expected": 43.0,
+      "actual": 43.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "gain070",
+      "model": "gain_chain2",
+      "field": "failure_pct",
+      "expected": 64.5,
+      "actual": 64.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "flat",
+      "model": "m0",
+      "field": "failure_pct",
+      "expected": 53.0,
+      "actual": 53.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "flat",
+      "model": "flat075_chain2",
+      "field": "failure_pct",
+      "expected": 58.0,
+      "actual": 58.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "flat",
+      "model": "flat075_chain1",
+      "field": "failure_pct",
+      "expected": 62.0,
+      "actual": 62.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "flat_velocity_comparison.csv",
+      "model": "m0",
+      "field": "failure_pct",
+      "expected": 53.0,
+      "actual": 53.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "flat_velocity_comparison.csv",
+      "model": "flat_chain1",
+      "field": "failure_pct",
+      "expected": 91.5,
+      "actual": 91.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "flat_velocity_comparison.csv",
+      "model": "flat_chain2",
+      "field": "failure_pct",
+      "expected": 94.5,
+      "actual": 94.5,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "flat_velocity_comparison.csv",
+      "model": "flat075_chain1",
+      "field": "failure_pct",
+      "expected": 62.0,
+      "actual": 62.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "flat_velocity_comparison.csv",
+      "model": "flat075_chain2",
+      "field": "failure_pct",
+      "expected": 58.0,
+      "actual": 58.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "field": "reduction_min_pct",
+      "actual": 32.29902699572953,
+      "expected_rounded": 32,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "mass8",
+      "field": "reduction_max_pct",
+      "actual": 46.356004254445956,
+      "expected_rounded": 46,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "field": "reduction_min_pct",
+      "actual": 42.19975704051036,
+      "expected_rounded": 42,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "friction015",
+      "field": "reduction_max_pct",
+      "actual": 45.60939694540228,
+      "expected_rounded": 46,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "gain070",
+      "field": "reduction_min_pct",
+      "actual": 43.347568119241174,
+      "expected_rounded": 43,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "gain070",
+      "field": "reduction_max_pct",
+      "actual": 45.00608492173559,
+      "expected_rounded": 45,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "flat",
+      "field": "reduction_min_pct",
+      "actual": 84.4595590876537,
+      "expected_rounded": 84,
+      "pass": true
+    },
+    {
+      "table": "target_failure_summary.csv",
+      "target": "flat",
+      "field": "reduction_max_pct",
+      "actual": 85.41382378234326,
+      "expected_rounded": 85,
+      "pass": true
+    }
+  ]
+}

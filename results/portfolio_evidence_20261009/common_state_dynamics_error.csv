@@ -1,0 +1,5 @@
+target,m0_reward_d_error,adapted_reward_d_min,adapted_reward_d_max,adaptation_train_speed_mps,evaluation_speed_mps,basis,source_report_section
+mass +8kg,0.152,0.1,0.111,1.0,1.0,matched target-specific states; checkpoint mean_plan; model-specific complete25 mask,raw-derived; PROVENANCE.json
+friction 0.15,0.308,0.255,0.271,1.0,1.0,matched target-specific states; checkpoint mean_plan; model-specific complete25 mask,raw-derived; PROVENANCE.json
+gain 0.7x,0.171,0.144,0.146,1.0,1.0,matched target-specific states; checkpoint mean_plan; model-specific complete25 mask,raw-derived; PROVENANCE.json
+flat friction 0.10,0.345,0.23,0.256,1.0,0.75,matched target-specific states; checkpoint mean_plan; model-specific complete25 mask,raw-derived; PROVENANCE.json

@@ -1,0 +1,125 @@
+{
+  "status": "VALIDATED_WITH_NOT_REPRODUCED_TEST",
+  "original_test_reproduced": false,
+  "original_test_status": "NOT_REPRODUCED",
+  "original_p_value": null,
+  "substitute_test_performed": false,
+  "raw_measurement_rows": 38,
+  "compact_csv_rows": {
+    "target_failure_summary.csv": 4,
+    "mass_chains_200seed.csv": 7,
+    "chain_equality_test.csv": 1,
+    "flat_velocity_comparison.csv": 2,
+    "value_mc_rank.csv": 4,
+    "common_state_dynamics_error.csv": 4
+  },
+  "legacy_headers_and_row_counts_preserved": {
+    "target_failure_summary.csv": true,
+    "mass_chains_200seed.csv": true,
+    "chain_equality_test.csv": true,
+    "flat_velocity_comparison.csv": true,
+    "value_mc_rank.csv": true,
+    "common_state_dynamics_error.csv": true
+  },
+  "input_files_hashed": 20665,
+  "checkpoint_trees_hashed": 19,
+  "regression_cells_checked": 66,
+  "all_regression_cells_match": true,
+  "readme_numeric_cells_checked": 39,
+  "all_readme_numeric_cells_match": true,
+  "readme_relative_links_checked": 41,
+  "readme_missing_links": [],
+  "public_scan_flags": [],
+  "full_input_manifest_public": false,
+  "local_audit_git_ignored": true,
+  "source_tracked_git_status_unchanged": true,
+  "source_input_checkpoint_hashes_repeat_identically": true,
+  "controls": {
+    "real_check": {
+      "returncode": 0,
+      "output_content_unchanged": true,
+      "status": "VALIDATED_WITH_NOT_REPRODUCED_TEST"
+    },
+    "deterministic_regeneration": {
+      "returncode": 0,
+      "all_six_csv_and_provenance_bytes_identical": true,
+      "full_input_checkpoint_hash_manifest_identical": true
+    },
+    "per_file_mismatch_preservation": {
+      "returncode": 1,
+      "mismatched_csv_unchanged": true,
+      "five_other_csvs_validated": true,
+      "synthetic_output_only": true
+    },
+    "seed_mean_vs_pooled": {
+      "seed_mean": 0.4,
+      "window_pooled": 0.5,
+      "distinct": true,
+      "synthetic_only": true
+    },
+    "duplicate_loss_seed": "PASS",
+    "nonfinite": "PASS",
+    "missing_test_cannot_be_published_as_numeric_p": "PASS"
+  },
+  "provenance": "results/portfolio_evidence_20261009/PROVENANCE.json",
+  "statistics_search": {
+    "inspected_family_top_level_files": 86,
+    "matched_statistics_artifact": false,
+    "keyword_hit_was_reward_coefficient": true,
+    "scope": "requested original source and portfolio trees; targeted original producer/report/results metadata"
+  },
+  "authorized_changes": {
+    "target_mass_loss_reduction_interval": {
+      "before": "31-45 (incorrect validation family)",
+      "after": "32-46",
+      "raw_min_pct": 32.29902699572953,
+      "raw_max_pct": 46.356004254445956
+    },
+    "six_chain_p": {
+      "before": "reported approximate0.0002; not recomputed",
+      "after": "empty p; NOT_REPRODUCED"
+    },
+    "pairwise_p_claim": "unreproduced claim removed; no replacement test",
+    "mc_values": "unchanged; original175/200 horizons disclosed",
+    "unverified_significance_wording": "removed six-chain rejection, pairwise p, four-of-six improvement count and friction significance wording; measured values retained"
+  },
+  "raw_or_checkpoint_files_modified": false,
+  "raw_evidence_deleted": false,
+  "experiments_started": false,
+  "commit_created": false,
+  "push_performed": false,
+  "commit_candidate_files": [
+    ".gitignore",
+    "README.md",
+    "analysis/build_portfolio_evidence_from_raw.py",
+    "analysis/PORTFOLIO_RAW_PROVENANCE.md",
+    "analysis/portfolio_raw_audit_20261009.json",
+    "docs/REPRODUCIBILITY.md",
+    "docs/VALIDATION.json",
+    "results/portfolio_evidence_20261009/mass_chains_200seed.csv",
+    "results/portfolio_evidence_20261009/chain_equality_test.csv",
+    "results/portfolio_evidence_20261009/value_mc_rank.csv",
+    "results/portfolio_evidence_20261009/common_state_dynamics_error.csv",
+    "results/portfolio_evidence_20261009/target_failure_summary.csv",
+    "results/portfolio_evidence_20261009/flat_velocity_comparison.csv",
+    "results/portfolio_evidence_20261009/PROVENANCE.json",
+    "results/portfolio_evidence_20261009/README.md"
+  ],
+  "aggregation_runtime": {
+    "python": "3.10.21",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "final_check_returncode": 0,
+  "git_diff_check": "PASS",
+  "static_verification": "STATIC_PASS",
+  "output_sha256": {
+    "target_failure_summary.csv": "0227c639c5bd2716496b62fb89a50b5c8dd17a21a0c442ab359d8a5ee3aee76c",
+    "mass_chains_200seed.csv": "3f539e48da3972c864dfe05ecc3b079f81912a17c5e8654a5142a72b5f9bd01f",
+    "chain_equality_test.csv": "5f07be25028b8ad50a1c5e681a735c39825c4490732b3ccd6b94cd88b464db97",
+    "flat_velocity_comparison.csv": "e69a2e10ef7dd442ac5ac67d1278af1853bfbcf07d2092d530d6694379f23e67",
+    "value_mc_rank.csv": "ee90c6ddaf17720cff6039510ccf9b555cb257388b106cb289194c15c89ee3c8",
+    "common_state_dynamics_error.csv": "f4f724ba66247a3883cce4246f8624a530eafd536235d742006c3afca4713a48"
+  },
+  "csv_line_endings": "LF"
+}

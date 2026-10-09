@@ -1,0 +1,5 @@
+target,failure_basis,speed_mps,m0_failure_pct,adapted_failure_pct_list,loss_reduction_pct_approx,evaluation_n,source_report_section
+mass +8kg,inside boxes tile,1.0,62.5,38;41.5;43.5;46.5;57;58,32-46,200,raw-derived target held-out; PROVENANCE.json
+friction 0.15,inside boxes tile,1.0,81.5,74;74.5;79;87.5,42-46,200,raw-derived target held-out; PROVENANCE.json
+gain 0.7x,inside boxes tile,1.0,58.0,43;64.5,43-45,200,raw-derived target held-out; PROVENANCE.json
+flat friction 0.10,entire 1000-step episode,0.75,53.0,58;62,84-85,200,raw-derived target held-out; PROVENANCE.json

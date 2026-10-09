@@ -1,0 +1,8 @@
+chain,collection_policy,latent_mse_25,failures_100,failures_200_pct,basis,source_report_section
+M0,pretrained,0.0642,62,64.5,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json
+Chain 1 / old_chain1,P0,0.0442,40,43.5,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json
+Chain 2 / old_chain2,P0,0.0375,49,48.0,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json
+Chain 3 / new_chain3,P0,0.0352,37,40.0,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json
+Chain 4 / new_chain4,P0,0.0379,52,58.5,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json
+old_DP,policy-adapted data collection,0.0381,62,58.5,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json
+new_DP2,policy-adapted data collection,0.0384,37,45.0,whole episode; up to 1000 steps,raw-derived; PROVENANCE.json

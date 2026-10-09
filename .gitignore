@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+analysis/.local_audit/
 .venv/
 *.h5
 *.hdf5
