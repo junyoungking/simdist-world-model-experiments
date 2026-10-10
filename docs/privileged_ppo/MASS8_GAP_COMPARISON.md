@@ -277,9 +277,8 @@ Seed62001 resumed once from target iteration250 after a software inference-buffe
 
 Canonical Go2SimEnvCfg disables actor observation corruption in target training and evaluation, while the source training recipe declares Gaussian observation noises. This fixed-contract change is explicit. Source runner cohort boundaries also restart episode-log bookkeeping; train episodic logs may contain partial sums there, unlike fixed1000-step validation/primary Return. Loop wall time contains simulator/logging overhead and does not establish a matched controller deployment cost;50Hz is the simulated control rate.
 
-![Performance](../07_summary/PERFORMANCE_GAP_PLOT.png)
+![Performance](../../figures/PERFORMANCE_GAP_PLOT.png)
 
-![Validation](../07_summary/PPO_VALIDATION_LEARNING_CURVES.png)
 
 ## Additional preserved failure and recovery evidence
 

@@ -733,19 +733,14 @@ def validate_readme(details):
         require([int(x) for x in interval.groups()]==[round(min(r['loss_reduction_pct'] for r in adapted)),round(max(r['loss_reduction_pct'] for r in adapted))], 'README held-out family/range mismatch: '+target)
     require('MC horizon은 25-step 뒤 continuation 기준 source/mass에서 175 step, friction/gain에서 200 step' in text,
             'README must map historical MC horizons to their correct targets')
-    mass_rows=[r for r in details[FILES[4]] if r['target']=='mass8' and r['model']!='m0']
-    precise=re.search(r'mass의 감소율은 (\d+(?:\.\d+)?)~(\d+(?:\.\d+)?)%',text)
-    require(precise is not None,'README precise target loss interval missing')
-    require(abs(float(precise[1])-min(r['loss_reduction_pct'] for r in mass_rows))<.0005 and
-            abs(float(precise[2])-max(r['loss_reduction_pct'] for r in mass_rows))<.0005,
-            'README precise target loss interval differs')
+    # Exact held-out reductions, seed coverage and denominators are validated
+    # from raw inputs and in generated provenance; README displays rounded cells.
     mass_loss={r['model']:r['loss25'] for r in details[FILES[0]]}
     independent=[100*(1-mass_loss[m]/mass_loss['m0']) for m in MASS[1:5]]
-    require([round(min(independent)),round(max(independent))]==[31,45] and '4절 검증 세트: 31~45%' in text,
+    independent_cell=re.search(r'4절 검증 세트:\s*(\d+)~(\d+)%',failures[1][1])
+    require(independent_cell is not None and
+            [int(x) for x in independent_cell.groups()]==[round(min(independent)),round(max(independent))]==[31,45],
             'README independent loss family interval differs')
-    require('186001~186020의 seed별 MSE 평균(n=20)' in text and '49301~49310의 MSE 평균(n=10)' in text,
-            'README loss seed/denominator contract differs')
-    require('NOT_REPRODUCED' in text,'README must disclose unreproduced test')
     require(not re.search(r'p\s*[≈=]\s*0\.0002|기각됐',text),'README still asserts unreproduced six-chain test')
     require(all(x['pass'] for x in comparisons),'README numeric mismatch')
     return comparisons
@@ -903,6 +898,27 @@ def compare_historical_csv(name, header, actual, expected):
     return '; '.join(issues) if issues else None
 
 
+def evidence_readme():
+    """Single publication template; checked independently of README prose."""
+    return (
+        '# Raw-derived portfolio evidence\n\n'
+        'Five measurement tables are regenerated from saved seed/episode/state measurements. '
+        '`chain_equality_test.csv` is a NOT_REPRODUCED status record with an empty p-value. '
+        'No replacement statistical test was performed.\n\n'
+        'The six historical CSV headers and row counts are preserved. '
+        '`source_report_section` now points to raw-derived provenance, rather than report transcription.\n\n'
+        'Section 4 loss: independent seeds 49301–49310, arithmetic seed mean. '
+        'Section 7 loss: target common held-out seeds 186001–186020, arithmetic seed mean; '
+        'mass reduction 32.299027–46.356004%. Control evaluations use '
+        '23501–23600 plus 24001–24100.\n\n'
+        'MC continuation is 175 steps for source/mass and 200 for friction/gain. '
+        'Head and critic share identical within-target pairs; cross-target MC returns are not directly compared.\n\n'
+        'See [PROVENANCE.json](PROVENANCE.json) for exact values, per-model counts, checkpoint IDs, '
+        'source selections, SHA256 and per-file publication status; '
+        '[method documentation](../../analysis/PORTFOLIO_RAW_PROVENANCE.md) for schemas and controls. '
+        'The full per-file input inventory is local-only and excluded from Git.\n')
+
+
 def publish(out, tables, audit):
     """Publish one complete generation by atomic rename/exchange on Linux.
 
@@ -920,23 +936,7 @@ def publish(out, tables, audit):
             elif (out / name).is_file():
                 shutil.copyfile(out / name,stage / name)
         (stage / 'PROVENANCE.json').write_text(json.dumps(audit, indent=2, allow_nan=False) + '\n')
-        (stage / 'README.md').write_text(
-            '# Raw-derived portfolio evidence\n\n'
-            'Five measurement tables are regenerated from saved seed/episode/state measurements. '
-            '`chain_equality_test.csv` is a NOT_REPRODUCED status record with an empty p-value. '
-            'No replacement statistical test was performed.\n\n'
-            'The six historical CSV headers and row counts are preserved. '
-            '`source_report_section` now points to raw-derived provenance, rather than report transcription.\n\n'
-            'Section4 loss: independent seeds49301–49310, arithmetic seed mean. '
-            'Section7 loss: target common held-out seeds186001–186020, arithmetic seed mean; '
-            'mass reduction32.299027–46.356004%. Control evaluations use '
-            '23501–23600 plus24001–24100.\n\n'
-            'MC continuation is175 steps for source/mass and200 for friction/gain. '
-            'Head and critic share identical within-target pairs; cross-target MC returns are not directly compared.\n\n'
-            'See [PROVENANCE.json](PROVENANCE.json) for exact values, per-model counts, checkpoint IDs, '
-            'source selections, SHA256 and per-file publication status; '
-            '[method documentation](../../analysis/PORTFOLIO_RAW_PROVENANCE.md) for schemas and controls. '
-            'The full per-file input inventory is local-only and excluded from Git.\n')
+        (stage / 'README.md').write_text(evidence_readme())
         if out.exists():
             require(out.is_dir() and not out.is_symlink(), 'unsafe output directory')
             allowed = set(FILES) | {'PROVENANCE.json', 'README.md'}
@@ -1041,6 +1041,8 @@ def main():
                 problems.append({'reason':'missing generated provenance'})
             elif json.loads((out/'PROVENANCE.json').read_text())!=public:
                 problems.append({'reason':'generated provenance differs from recomputed inputs/methods'})
+            if not (out/'README.md').is_file() or (out/'README.md').read_text()!=evidence_readme():
+                problems.append({'reason':'generated evidence README differs from publication template'})
     except (EvidenceError, KeyError, ValueError, OSError) as exc:
         # Do not echo arbitrary exceptions: parsers/OSError can contain private paths.
         reason = str(exc) if isinstance(exc, EvidenceError) else 'Input/schema/runtime failure: ' + type(exc).__name__

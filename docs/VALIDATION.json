@@ -263,5 +263,162 @@
       "scipy": "1.15.3"
     },
     "all_commit_candidate_whitespace_checked": true
+  },
+  "documentation_contract_alignment_20261010": {
+    "recorded_utc": "2026-10-10T09:13:00.416486+00:00",
+    "scope": "documentation and verification contract alignment; previous validation entries retained unchanged",
+    "status": "PASS",
+    "static_verification": {
+      "command": "python -B tools/verify_portfolio.py",
+      "exit_code": 0,
+      "status": "STATIC_PASS",
+      "python_compiled": 64,
+      "internal_links_checked": 50,
+      "upstream_import_edges_checked": 0,
+      "private_path_flags": [],
+      "credential_flags": [],
+      "failures": []
+    },
+    "raw_builder": {
+      "initial_check": {
+        "command": "python -B analysis/build_portfolio_evidence_from_raw.py --raw-root \"$SIMDIST_RAW_ROOT\" --out results/portfolio_evidence_20261009 --check",
+        "exit_code": 1,
+        "reason": "generated provenance differs from recomputed inputs/methods",
+        "verified_difference": "builder_sha256 only"
+      },
+      "regeneration": {
+        "command": "python -B analysis/build_portfolio_evidence_from_raw.py --raw-root \"$SIMDIST_RAW_ROOT\" --out results/portfolio_evidence_20261009 --write",
+        "exit_code": 0,
+        "report": {
+          "status": "VALIDATED_WITH_NOT_REPRODUCED_TEST",
+          "original_test_status": "NOT_REPRODUCED",
+          "original_p_value": null,
+          "measurement_rows": 38,
+          "issues": [],
+          "input_files_hashed": 20665,
+          "raw_modified": false,
+          "experiments_started": false,
+          "mode": "write"
+        }
+      },
+      "final_check": {
+        "command": "python -B analysis/build_portfolio_evidence_from_raw.py --raw-root \"$SIMDIST_RAW_ROOT\" --out results/portfolio_evidence_20261009 --check",
+        "exit_code": 0,
+        "report": {
+          "status": "VALIDATED_WITH_NOT_REPRODUCED_TEST",
+          "original_test_status": "NOT_REPRODUCED",
+          "original_p_value": null,
+          "measurement_rows": 38,
+          "issues": [],
+          "input_files_hashed": 20665,
+          "raw_modified": false,
+          "experiments_started": false,
+          "mode": "check"
+        },
+        "output_bytes_unchanged": true
+      },
+      "measurement_rows": 38,
+      "checkpoint_trees": 19,
+      "regression_comparisons": 66,
+      "readme_numeric_comparisons": 39,
+      "scientific_calculation_seed_grouping_and_csv_gates_unchanged_ast": true,
+      "source_input_family_and_checkpoint_hashes_identical_to_previous_provenance": true,
+      "provenance_changed_fields": [
+        "builder_sha256"
+      ],
+      "mass_heldout_reduction_min_pct": 32.29902699572953,
+      "mass_heldout_reduction_max_pct": 46.356004254445956,
+      "original_test_status": "NOT_REPRODUCED",
+      "original_p_value": null,
+      "substitute_test_performed": false
+    },
+    "controls": {
+      "exit_code": 0,
+      "fixture_only": true,
+      "polished_readme_accepted": true,
+      "invalid_mass_mse_rejected": true,
+      "mixed_heldout_loss_family_rejected": true,
+      "invalid_independent_loss_family_rejected": true,
+      "invalid_target_failure_rejected": true,
+      "unsupported_p_claim_rejected": true,
+      "mismatched_csv_rejected_and_fixture_unchanged": true,
+      "generated_readme_template_byte_matches": true
+    },
+    "csv_integrity": {
+      "chain_equality_test.csv": {
+        "sha256_before_and_after": "5f07be25028b8ad50a1c5e681a735c39825c4490732b3ccd6b94cd88b464db97",
+        "byte_identical": true,
+        "tracked_blob_matches": true
+      },
+      "common_state_dynamics_error.csv": {
+        "sha256_before_and_after": "f4f724ba66247a3883cce4246f8624a530eafd536235d742006c3afca4713a48",
+        "byte_identical": true,
+        "tracked_blob_matches": true
+      },
+      "flat_velocity_comparison.csv": {
+        "sha256_before_and_after": "e69a2e10ef7dd442ac5ac67d1278af1853bfbcf07d2092d530d6694379f23e67",
+        "byte_identical": true,
+        "tracked_blob_matches": true
+      },
+      "mass_chains_200seed.csv": {
+        "sha256_before_and_after": "3f539e48da3972c864dfe05ecc3b079f81912a17c5e8654a5142a72b5f9bd01f",
+        "byte_identical": true,
+        "tracked_blob_matches": true
+      },
+      "target_failure_summary.csv": {
+        "sha256_before_and_after": "0227c639c5bd2716496b62fb89a50b5c8dd17a21a0c442ab359d8a5ee3aee76c",
+        "byte_identical": true,
+        "tracked_blob_matches": true
+      },
+      "value_mc_rank.csv": {
+        "sha256_before_and_after": "ee90c6ddaf17720cff6039510ccf9b555cb257388b106cb289194c15c89ee3c8",
+        "byte_identical": true,
+        "tracked_blob_matches": true
+      }
+    },
+    "public_hash_changes": {
+      "docs/privileged_ppo/MASS8_GAP_COMPARISON.md": {
+        "public_sha256_before": "e3fe7412093aaba92a14d576032ff68f94eeb71ea9e8b326f2822b62bdfc5a1a",
+        "public_sha256_after": "f8789ac3325bfd473781b36b582add44cbb5f79ad5393bccff6b1b25f6c5b006",
+        "public_bytes_before": 28124,
+        "public_bytes_after": 28060,
+        "source_and_other_record_fields_preserved": true
+      },
+      "analysis/build_portfolio_evidence_from_raw.py": {
+        "sha256_before": "c114c638cec8767da022c3481872f3a89228e1ec1ab870b6224398c5b20643c7",
+        "sha256_after": "6eee70be9d82b60d0fc6ceb6b61220df3e25d05a35e4e9757cea8961733da000"
+      },
+      "results/portfolio_evidence_20261009/PROVENANCE.json": {
+        "sha256_before": "839b48fdfa3398d0596cd12a644192d6e9310beb05d9c3188f6e65bd32c12ba1",
+        "sha256_after": "3490ce5964924e26586a6c024732c1b7c1c01fa1b5b17566d56c83759d1ec2ec",
+        "regenerated_from_raw": true
+      }
+    },
+    "links_and_preservation": {
+      "status": "PASS",
+      "relative_link_counts": {
+        "README.md": 40,
+        "results/portfolio_evidence_20261009/README.md": 2,
+        "docs/REPRODUCIBILITY.md": 10,
+        "analysis/PORTFOLIO_RAW_PROVENANCE.md": 2,
+        "docs/privileged_ppo/MASS8_GAP_COMPARISON.md": 1
+      },
+      "all_targets_tracked_and_present": true,
+      "readme_tables_identical_to_HEAD": true,
+      "manifest_only_one_record_two_public_fields_changed": true
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "exit_code": 0
+    },
+    "source_observation": {
+      "tracked_git_status_unchanged": true,
+      "full_git_status_unchanged": false,
+      "untracked_evaluation_outputs_outside_registered_input_families_observed": true,
+      "task_started_experiments": false,
+      "task_modified_raw_or_checkpoints": false
+    },
+    "previous_five_polished_documents_byte_identical_to_task_start": true,
+    "scientific_numbers_or_conclusions_changed": false
   }
 }

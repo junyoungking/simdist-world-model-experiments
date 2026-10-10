@@ -2582,8 +2582,8 @@
       "source_sha256": "1badd2749d004fae9b9841e9e4885a1ef7a49ceb36156b1a311b5b989b86a566",
       "copied_sha256": "1badd2749d004fae9b9841e9e4885a1ef7a49ceb36156b1a311b5b989b86a566",
       "source_bytes": 28524,
-      "public_sha256": "e3fe7412093aaba92a14d576032ff68f94eeb71ea9e8b326f2822b62bdfc5a1a",
-      "public_bytes": 28124,
+      "public_sha256": "f8789ac3325bfd473781b36b582add44cbb5f79ad5393bccff6b1b25f6c5b006",
+      "public_bytes": 28060,
       "sanitized": true
     },
     {

@@ -4,7 +4,7 @@
   "original_six_chain_test_status": "NOT_REPRODUCED",
   "original_p_value": null,
   "substitute_test_performed": false,
-  "builder_sha256": "c114c638cec8767da022c3481872f3a89228e1ec1ab870b6224398c5b20643c7",
+  "builder_sha256": "6eee70be9d82b60d0fc6ceb6b61220df3e25d05a35e4e9757cea8961733da000",
   "detail_rows": {
     "mass_chains_200seed.csv": [
       {

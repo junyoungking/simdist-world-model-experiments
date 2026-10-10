@@ -80,11 +80,9 @@ Adaptation을 다시 시작해 별도로 데이터 수집과 학습을 반복했
 | Chain 3 | 0.0352 | 37 | 40.0% |
 | Chain 4 | 0.0379 | 52 | 58.5% |
 
-100-seed에서 Chain 1과 Chain 2의 실패 수는 각각 40회와 49회였습니다. 평가를 200 seed로 늘려도 prediction error가 네 chain 중 가장 높은 Chain 1이 Chain 4보다 15%p 낮은 실패율을 보였습니다. 전체 여섯 adaptation chain(P0 수집 네 개와 변형된 policy로 수집한 두 개)의 같은 200-seed 평가 결과는 원자료에서 재집계했습니다. 다만 과거 집단 검정의 원래 통계량과 exact p 산출 경로는 찾지 못해 `NOT_REPRODUCED`로 표시하고 검정 결론은 제외했습니다. 같은 evaluation seed와 별도로 학습한 chain을 구분하며, 대체 검정은 실시하지 않았습니다.
+200 seed로 늘려도 prediction error가 네 adaptation chain 중 가장 높은 Chain 1이 Chain 4보다 실패율이 15%p 낮았습니다. 같은 절차로 적응해도 chain마다 제어 결과가 크게 갈렸고, 공통 검증 세트의 loss 순서와 실패율 순서도 일치하지 않았습니다.
 
-실패율 변화가 evaluation seed의 변동과 adaptation chain의 차이 중 어디에서 왔는지 구분하기 위해 100 seed 한 번의 순위에 의존하지 않았습니다. 이 표는 공통 검증 세트에서 loss가 낮은 순서와 제어 실패율 순서가 반드시 일치하지 않는다는 점을 보여줍니다.
-
-결과: [Chain comparison](results/positive_control_variance_v1/mass8/aggregate/chain_comparison.csv), [Control summary](results/positive_control_variance_v1/mass8/aggregate/condition_summary.csv), [Independent loss](results/positive_control_variance_v1/mass8/losses_summary.csv), [200-seed 집계와 수집 조건](results/portfolio_evidence_20261009/mass_chains_200seed.csv), [6-chain 검정 재현 상태](results/portfolio_evidence_20261009/chain_equality_test.csv).
+결과: [Chain comparison](results/positive_control_variance_v1/mass8/aggregate/chain_comparison.csv), [Control summary](results/positive_control_variance_v1/mass8/aggregate/condition_summary.csv), [Independent loss](results/positive_control_variance_v1/mass8/losses_summary.csv), [200-seed 집계와 수집 조건](results/portfolio_evidence_20261009/mass_chains_200seed.csv).
 
 ## 5. Dynamics와 policy 조합
 
@@ -118,6 +116,7 @@ D30과 P50은 각각 baseline보다 좋았지만 조합한 모델은 두 단독 
 같은 +8 kg target에서 PPO expert는 20개 episode를 모두 완주했습니다. 따라서 task 자체는 수행 가능하지만, pretrained World Model + MPPI가 target dynamics에서 충분한 제어 성능을 내지는 못한다는 기준점을 얻었습니다. Privileged state를 쓰는 PPO의 숫자를 현실에 그대로 적용할 수는 없습니다.
 
 코드: [초기 평가](experiments/eval_s1_v2_batch.py), [100-seed 비교](experiments/score_probe_v1/eval_probe_batch.py)
+
 결과: [Adaptation curve aggregate](results/adaptation_curve_v1/aggregate/condition_summary.csv)
 
 ## 7. 다른 target으로 확장 (2026년 10월 기준, 진행 중)
@@ -126,7 +125,7 @@ Mass +8 kg에서 시작한 분석을 friction과 joint gain 변화, 낮은 마�
 
 ### 평가 규약
 
-IsaacLab Go2에서 25-step PPO expert warm-up 후 seed당 최대 1,000 step을 실행하고, 넘어지면 종료했습니다. 이 절의 제어 평가는 **200 seed**(23501~23600 및 24001~24100)를 기준으로 합니다. Boxes 지형의 `tile 안 실패율`은 전진 변위가 7.425 m를 넘기 전에 넘어진 비율이고, mass, friction, gain은 1.0 m/s에서 평가했습니다. 평지 friction 0.10은 0.75 m/s에서 평가한 전체 episode 실패율로, tile 지표가 아닙니다. 4절의 mass chain을 200 seed에서 **tile 안 실패만 다시 집계한 것**이므로 4절의 전체 episode 실패율과 숫자가 다릅니다.
+IsaacLab Go2에서 25-step PPO expert warm-up 후 seed당 최대 1,000 step을 실행하고, 넘어지면 종료했습니다. 이 절의 제어 평가는 **200 seed**(23501~23600 및 24001~24100)를 기준으로 합니다. Boxes 지형의 `tile 안 실패율`은 전진 변위가 7.425 m를 넘기 전에 넘어진 비율이고, mass, friction, gain은 1.0 m/s에서 평가했습니다. 평지 friction 0.10은 0.75 m/s에서 평가한 전체 episode 실패율로, tile 지표가 아닙니다. 이 절의 mass 실패율은 4절의 mass chain을 같은 200 seed에서 tile 안 실패만 다시 집계한 값이므로 4절의 전체 episode 실패율과 다릅니다.
 
 ### Value head 순위와 dynamics 구간 오차
 
@@ -154,7 +153,7 @@ Mass에서 value head의 순위 상관은 source와 같았지만, friction에서
 
 ### Prediction loss와 실패율
 
-아래 loss 감소율은 각 target의 held-out 평가 요약을 기준으로 했습니다. Target held-out은 186001~186020의 seed별 MSE 평균(n=20)이며, mass의 감소율은 32.299~46.356%입니다. 4절은 별도 독립 수집 seed 49301~49310의 MSE 평균(n=10)으로, window 수로 가중한 pooled 평균과 구분했습니다. Mass는 약 32~46%이며, 4절에 사용한 **별도 독립 검증 세트**의 `0.0642 → 0.0352~0.0442`로 계산하면 약 31~45%입니다. 실패율의 기준은 **mass, friction, gain 모두 boxes tile 안**, 평지는 0.75 m/s의 전체 episode입니다. 7절의 mass 실패율은 4절의 mass chain을 같은 200 seed에서 tile 안 실패만 다시 집계한 값입니다.
+아래 loss 감소율은 각 target의 held-out seed 20개(n=20)에서 계산한 25-step MSE 평균 기준입니다. Mass를 4절의 별도 독립 검증 세트로 계산하면 감소율은 약 31~45%입니다. 실패율은 mass, friction, gain에서 boxes tile 안 기준이고, 평지는 0.75 m/s에서의 전체 episode 기준입니다.
 
 | Target | 25-step loss 감소 | M0 실패율 | Dynamics 적응 후 | 해석 |
 |---|---:|---:|---|---|
